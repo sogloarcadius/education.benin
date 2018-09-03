@@ -1,5 +1,13 @@
 {
+  "scripts": {
+    "dev": "vuepress dev content",
+    "prod": "vuepress build content"
+  },
   "devDependencies": {
+    "bootstrap": "^4.1.3",
     "vuepress": "^0.14.2"
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11"
   }
 }
