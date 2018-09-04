@@ -1,12 +1,35 @@
-# educationbenin
+# Education Benin
 
-## Objectifs
+ Le site de référence sur l'éducation et l’emploi au Bénin.
 
-* Devenir la plateforme de référence pour avoir des informations sur l’éducation au bénin
-* Devenir la plateforme de référence pour l’emploi au Bénin
 
-## Comment contribuer au projet ?
+# Objectifs
 
-Le projet est en cours de développement, C'est un projet ouvert à tous.
+* Devenir la plateforme de référence pour avoir des informations sur l’éducation
 
-Si vous avez envie de contribuer merci de me contacter par mail : rtsoglo@gmail.com
+* Devenir la plateforme de référence pour l’emploi
+
+
+# Contenu du site Web
+
+* Présentation du cursus de formation au Bénin
+
+* Informations sur les parcours d’étude possible après le bac 
+
+* L’annuaire des collèges, lycées, universités publics et privées du Bénin
+
+* Service d’orientation des jeunes
+
+* Information sur comment partir à l’étranger
+
+# Contribution
+
+Pour contribuer à la liste des établissements, il suffit de faire un pull request avec votre établissement au format markdown dans le dossier  ```content```
+
+* ```content/univs``` : liste des établissements d'enseignement supérieur 
+
+* ```content/general``` : liste des établissements d'enseignement primaire et secondaire 
+
+# Licence
+
+MIT Licence

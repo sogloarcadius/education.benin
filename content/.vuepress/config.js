@@ -9,6 +9,7 @@ module.exports = {
         { text: 'Acceuil', link: '/'},
         { text: 'Formation', link: '/formation/' },
         { text: 'Universités', link: '/univs/' },
+        { text: 'Resources', link: '/resources/' }
       ],
      }
 }
