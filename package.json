@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "vuepress dev app",
-    "prod": "vuepress build app"
+    "build": "vuepress build app"
   },
   "devDependencies": {
     "bootstrap": "^4.1.3",
