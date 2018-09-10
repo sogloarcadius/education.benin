@@ -1,0 +1,61 @@
+- id: HECM
+  name: Haute Ecole de Commerce et de Management
+  courses:
+    - name: |
+        Centre de Formation en Journalisme
+        Spécialités
+          - Presse Écrite
+          - Radio & Télé
+      description: Journalisme
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles: 
+        - journaliste
+      fields:
+        - science
+        - multimedia
+      college: HECM
+
+
+    - name: |
+       Licences HECM
+        - Finance Comptabilité et Audit
+        - Banque Finance et Assurance
+        - Marketing, Communication et Commerce
+        - Gestion des Ressources Humaines
+        - Transport et Logistique
+        - Entreuprenariat et Gestion des Projets
+        - Tourisme et Hôtellerie
+        - Secrétariat Bureautique
+        - Génie Informatique
+        - Réseaux Informatiques & Télécommunications
+        - Contrôle Qualité Génie Agroalimentaire 
+      description: licences HECM
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles: 
+        - NA
+      fields:
+        - science
+        - technology
+      college: HECM
+
+
+    - name: |
+       Masters HECM
+          - Audit et Contrôle de Gestion
+          - Administration & Gestion des Ressources Humaines
+          - Management des Projets
+          - Marketing Stratégique et Publicité
+          - Banque Assurance
+          - Fiscalité
+          - Génie Informatique
+      description: Masters HECM
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - NA
+      fields:
+        - science
+        - technology
+      college: HECM

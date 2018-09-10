@@ -1,0 +1,36 @@
+- id: VERECHAGUINE-AK
+  name: Ecole Supérieure de Génie Civil VERECHAGUINE  AK
+  courses:
+    - name: Licence - Master en Génie civil
+      description: Génie civil
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - Génie civil
+      fields:
+        - science
+        - building
+      college: VERECHAGUINE-AK
+
+    - name: Licence professionnelle en Géomètre - Topographe
+      description: Géomètre - Topographe
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - Géomètre 
+        - Topographe
+      fields:
+        - science
+        - building
+      college: VERECHAGUINE-AK
+
+    - name: Licence professionnelle en Protection de l'Environnement
+      description: Protection de l'Environnement
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles: 
+        - NA 
+      fields:
+        - science
+        - environment
+      college: VERECHAGUINE-AK

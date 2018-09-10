@@ -1,0 +1,71 @@
+- id: UATM-GASA
+  name: Université Africaine de Technologie et de Management
+  courses:
+    - name: Licence - Master en Sciences et Techniques
+      description: sciences et techniques
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - NA
+      fields:
+        - science
+        - technology
+      college: UATM-GASA
+
+    - name: Licence professionnelle en sciences juridiques
+      description: sciences juridiques
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles: 
+        - NA
+      fields:
+        - science
+        - law
+      college: UATM-GASA
+
+    - name: Licence - Master en Agronomie
+      description: Agronomie
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - NA
+      fields:
+        - science
+        - agriculture
+      college: UATM-GASA
+
+    - name: Licence professionnelle en Biotechnologie
+      description: Biotechnologie
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles: 
+        - NA
+      fields:
+        - science
+        - biotechnology
+      college: UATM-GASA
+
+    - name: Licence - Master en sciences de gestion
+      description: gestion
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - NA
+      fields:
+        - science
+        - management
+      college: UATM-GASA
+
+    - name: Licence en science politique
+      description: science politique
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles: 
+        - NA
+      fields:
+        - science
+        - politics
+      college: UATM-GASA
+
+
+    

@@ -1,0 +1,72 @@
+- id: UPI-ONM
+  name: Université Polytechnique Internationale du Bénin
+  courses:
+    - name: Licence - Master en Informatique appliquée à la Gestion des Entreprises (LIAGE)
+      description: Informatique appliquée à la Gestion des Entreprises
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - NA
+      fields:
+        - science
+        - management
+        - technology
+        - computing
+      college: UPI-ONM
+
+    - name: Licence professionnelle en Techniques comptables et financieres
+      description: Techniques comptables et financieres
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles: 
+        - NA
+      fields:
+        - finance
+        - economy
+        - accounting
+      college: UPI-ONM
+
+    - name: Licence - Master professionnelle en Transport et logistique
+      description: Transport et logistique
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - NA
+      fields:
+        - transport
+        - logistic
+      college: UPI-ONM
+
+    - name: Licence en Informatique appliquée à la Gestion des Entreprises option Finance - Comptabilité
+      description: Finance - Comptabilité
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles: 
+        - NA
+      fields:
+        - accounting
+        - management
+        - computing
+      college: UPI-ONM
+
+    - name: Master en Comptabilité, Controle et Audit
+      description: Comptabilité, Controle et Audit
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - NA
+      fields:
+        - accounting
+        - management
+      college: UPI-ONM
+
+    - name: Master en Administration des affaires
+      description: Administration des affaires
+      prerequisite: Bac
+      yearsofstudy: 5
+      roles: 
+        - NA
+      fields:
+        - management
+        - business
+      college: UPI-ONM
