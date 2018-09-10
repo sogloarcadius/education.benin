@@ -1,0 +1,329 @@
+{
+    "colleges" : [
+    {
+      "id": "UAC",
+      "name": "Université Abomey Calavy",
+      "address": "01 BP 526 Cotonou",
+      "phone": "+229 21 36 11 19",
+      "email": "vrcireip.uac@uac.bj",
+      "url": "https://www.uac.bj/",
+      "type": "public",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "UP",
+      "name": "Université de Parakou",
+      "address": "Parakou",
+      "phone": "+229 23 61 07 12",
+      "email": "contacts@univ-parakou.bj",
+      "url": "http://www.univ-parakou.bj/",
+      "type": "public",
+      "locations": [
+        "parakou"
+      ]
+    },
+    {
+      "id": "UNSTIM",
+      "name": "Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques",
+      "address": "BP 2282 Goho Abomey",
+      "phone": "+229 20 06 37 95",
+      "email": "NA",
+      "url": "http://www.unstim.bj/",
+      "type": "public",
+      "locations": [
+        "abomey"
+      ]
+    },
+    {
+      "id": "UNA",
+      "name": "Université Nationale d'Agriculture",
+      "address": "Porto Novo",
+      "phone": "NA",
+      "email": "NA",
+      "url": "http://www.una.bj/",
+      "type": "public",
+      "locations": [
+        "porto-novo"
+      ]
+    },
+    {
+      "id": "UATM-GASA",
+      "name": "Université Africaine de Technologie et de Management",
+      "address": "2ème Etage, Bâtiment Continental bank, Face à la Mairie",
+      "phone": "(+229) 95 53 77 11",
+      "email": "info@uatm-gasa.com",
+      "url": "http://www.uatm-gasa.com/",
+      "type": "private",
+      "locations": [
+        "GBEGAMEY",
+        "APKAPKA",
+        "AGLA",
+        "PORTO-NOVO",
+        "CALAVI"
+      ]
+    },
+    {
+      "id": "UPI-ONM",
+      "name": "Université Polytechnique Internationale du Bénin",
+      "address": "02 BP 8133 Cotonou, Fidjrossè Jardin",
+      "phone": "(+229) 21 32 83 95",
+      "email": "contact@upionm.com",
+      "url": "http://upi-onm.com",
+      "type": "private",
+      "locations": [
+        "cotonou",
+        "porto-novo",
+        "abomey",
+        "parakou"
+      ]
+    },
+    {
+      "id": "HECM",
+      "name": "Haute Ecole de Commerce et de Management",
+      "address": "Cotonou",
+      "phone": "+229 21324889",
+      "email": "contact@hecm-afrique.net",
+      "url": "http://www.hecm-afrique.net/",
+      "type": "private",
+      "locations": [
+        "cotonou",
+        "porto-novo",
+        "malanville",
+        "parakou"
+      ]
+    },
+    {
+      "id": "UCAO",
+      "name": "Université Catholique de l’Afrique de l’Ouest",
+      "address": "Cotonou",
+      "phone": "+226 62 58 44 95",
+      "email": "info@ucao.org",
+      "url": "http://ucao.org/",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "POLYTECH-LE-CITOYEN",
+      "name": "Institut Polytechnique - Le Citoyen",
+      "address": "cotonou",
+      "phone": "+229 21 30 51 06",
+      "email": "info@iplecitoyen.com",
+      "url": "http://www.iplecitoyen.com",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "VERECHAGUINE-AK",
+      "name": "Ecole Supérieure de Génie Civil VERECHAGUINE  AK",
+      "address": "Cotonou, Gbégamey",
+      "phone": "+229 97 97 00 96",
+      "email": "contact@verechaguine.com",
+      "url": "http://verechaguine.com",
+      "type": "Private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "ESEP-LE-BERGER",
+      "name": "Ecole Supérieure d’Enseignement Professionnel Le Berger d’Akpakpa",
+      "address": "05 B.P 794, Cotonou, Akpakpa",
+      "phone": "+229 99081512",
+      "email": "info@esepleberger.edu.bj",
+      "url": "https://www.esepleberger.edu.bj",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "CFPMM",
+      "name": "Centre de Formation Professionnelle aux Métiers des Médias",
+      "address": "cotonou",
+      "phone": "(+229) 21 30 11 42",
+      "email": "NA",
+      "url": "NA",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "PIGIER-BENIN",
+      "name": "Ecole Pigier Bénin",
+      "address": "RNIE 1, Cotonou, Benin",
+      "phone": "+229 21 30 29 06",
+      "email": "info@pigierbenin.com",
+      "url": "http://pigierbenin.com",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "IUP-BENIN",
+      "name": "Institut Universitaire Panafricain IUP Ex IESSAF/Porto-Novo",
+      "address": "Place de l’indépendance, Avakpa-Tokpa, 01 BP 3950, Porto-Novo, République du Bénin.",
+      "phone": "(+229) 20 22 10 56 / 20 22 10 58 / 20 06 47 14",
+      "email": "usafbenin@yahoo.fr",
+      "url": "http://iup-universite.com/",
+      "type": "private",
+      "locations": [
+        "porto-novo"
+      ]
+    },
+    {
+      "id": "ESTIM-BENIN",
+      "name": "Ecole Supérieure de Techniques Industrielles et de Management",
+      "address": "sise sur le pavé longeant le Village SOS, Abomey - Calavi - Bénin",
+      "phone": "+229 97168486",
+      "email": "eagoua@gmail.com",
+      "url": "http://estimbenin.com/",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "IIM-BENIN",
+      "name": "Institut International de Management",
+      "address": "01 BP 6829 Cotonou Bénin",
+      "phone": "+ 229 21 32 73 41",
+      "email": "NA",
+      "url": "NA",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "ISSIC-BENIN",
+      "name": "Institut Supérieur des Sciences de l’Information et de la Communication",
+      "address": "cotonou",
+      "phone": "NA",
+      "email": "NA",
+      "url": "NA",
+      "type": "private",
+      "locations": [
+        "NA"
+      ]
+    },
+    {
+      "id": "ISMA",
+      "name": "Institut Supérieur des Métiers de l’Audiovisuel",
+      "address": "Lot 1804 Parcelle « A » Fidjrossè – 01 BP 6174 Cotonou – BENIN",
+      "phone": "(+229) 21300178 / 21300185",
+      "email": "info@isma-benin.org",
+      "url": "http://w3.isma-benin.org/",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "ISM-ADONAI",
+      "name": "Institut Supérieur de Management Adonaï",
+      "address": "Saint Jean, von derrière la Gazette du Golfe",
+      "phone": "(229) 21 32 85 97 / 97 64 46 05 / 95 95 26 24",
+      "email": "ismadonai@ismadonai.net",
+      "url": "http://www.ismadonai.net/fr/",
+      "type": "private",
+      "locations": [
+        "cotonou",
+        "parakou",
+        "abomey-calavi",
+        "porto-novo"
+      ]
+    },
+    {
+      "id": "GROUPE-CERCO",
+      "name": "Institut CERCO de Cotonou",
+      "address": "Cotonou, Sikèkodji, Derrière Golfe Fm",
+      "phone": "+229 21 32 42 22",
+      "email": "cerco@groupecerco.com",
+      "url": "https://groupecerco.com",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "IRGIB Africa",
+      "name": "Institut Régional du Génie Industriel des Biotechnologies et Sciences Appliquées - IRGIB Africa",
+      "address": "07BP 231 Cotonou",
+      "phone": "+229 21 30 68 04 (Français)",
+      "email": "contact@irgibafrica.university",
+      "url": "https://irgibafrica.university/",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "HNAUB",
+      "name": "HOUDEGBE North American University Benin",
+      "address": "06 BP 2080, Route de Porto Novo",
+      "phone": "+229 21 332 127",
+      "email": "NA",
+      "url": "NA",
+      "type": "private",
+      "locations": [
+        "porto-novo"
+      ]
+    },
+    {
+      "id": "USTB",
+      "name": "Université des Sciences et Technologie du Bénin",
+      "address": "Cotonou",
+      "phone": "+229 33 60 10/11",
+      "email": "info@ustbenin.org",
+      "url": "http://www.ustbenin.org/",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "ESM-BENIN",
+      "name": "Ecole Supérieure de Management",
+      "address": "Cotonou, benin republic",
+      "phone": "+229 21382643",
+      "email": "contact@esmbenin.com",
+      "url": "http://esmbenin.com/",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "ISFES-LV",
+      "name": "ISFES Laura Vicuna",
+      "address": "Quartier Fifadji,rue du CEG Zogbo",
+      "phone": "+229 21 158 048/ 66 648 048",
+      "email": "contact@isfes-lv.org",
+      "url": "http://www.isfes-lv.org/",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    },
+    {
+      "id": "ESPERANZA-UNIVERSITY",
+      "name": "ESPERANZA UNIVERSITY",
+      "address": "01 BP 5693 RP Cotonou",
+      "phone": "00229 66116526 / 00229 96969494",
+      "email": "info@esperanza-benin.org",
+      "url": "http://www.esperanza-benin.org",
+      "type": "private",
+      "locations": [
+        "cotonou"
+      ]
+    }
+  ]
+}
