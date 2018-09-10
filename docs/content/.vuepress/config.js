@@ -6,10 +6,9 @@ module.exports = {
       sidebar: 'auto',
       displayAllHeaders: true,
       nav: [
-        { text: 'Acceuil', link: '/'},
-        { text: 'Formation', link: '/formation/' },
-        { text: 'Universités', link: '/univs/' },
-        { text: 'Resources', link: '/resources/' }
+        { text: 'education', link: '/'},
+        { text: 'formation', link: '/formation/' },
+        { text: 'opendata', link: '/opendata/' }
       ],
      }
 }

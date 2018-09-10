@@ -1,0 +1,58 @@
+[
+    {
+      "name": "DUEF",
+      "description": "Enseignement Apprentissage du français",
+      "prerequisite": "Bac+2",
+      "yearsofstudy": 1,
+      "roles": [
+        "professeur de FLE Fonction Internationale",
+        "Traducteur",
+        "Journaliste",
+        "Autres"
+      ],
+      "fields": [
+        "litterature",
+        "languages",
+        "arts"
+      ],
+      "faculty": "CEBELAE",
+      "university": "UAC"
+    },
+    {
+      "name": "Certificat Cadre Européen Commun de Référence",
+      "description": "Enseignement Apprentissage de l'anglais",
+      "prerequisite": "Aucun, Test de niveau initial",
+      "yearsofstudy": "NA",
+      "roles": [
+        "Pratique courante du français dans la vie active et dans les Affaires",
+        "Fonctions Internationales",
+        "Autres"
+      ],
+      "fields": [
+        "litterature",
+        "languages",
+        "arts"
+      ],
+      "faculty": "CEBELAE",
+      "university": "UAC"
+
+    },
+    {
+      "name": "Certificate of Proficiency in English and Business Communication",
+      "description": "Immersion linguistique + Programme Year Abroad",
+      "prerequisite": "Aucun, Test de niveau initial",
+      "yearsofstudy": "NA",
+      "roles": [
+        "Utilisation de l’anglais pour la communication et la pratique courante par les élèves, étudiants, fonctionnaires",
+        "Traducteurs, interprètes",
+        "Anglais pour les affaires"
+      ],
+      "fields": [
+        "litterature",
+        "languages",
+        "arts"
+      ],
+      "faculty": "CEBELAE",
+      "university": "UAC"
+    }
+  ]

@@ -2,7 +2,7 @@
   <div>
     <div>
     <br/>
-     <div class="search-wrapper">
+     <div class="filter-wrapper">
           <span>
              <div class="public-private mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
               <label class="mdl-selectfield__label" for="type">Type</label>
@@ -22,16 +22,16 @@
           </span>
      </div>
       <div class="mdl-grid">
-          <div v-for="college in colleges" :key="college.id" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone college-card mdl-card mdl-shadow--2dp" @click="displayDetails(college.id)">
+          <div v-for="university in universities" :key="university.id" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university)">
               <div class="mdl-card__title mdl-card--expand">
-                  <h2 class="mdl-card__title-text">{{college.id}}</h2>
+                  <h2 class="mdl-card__title-text">{{university.id}}</h2>
               </div>
               <div class="mdl-card__supporting-text">
-                  <strong>Name : </strong> {{college.name}} <br/>
-                  <strong>Licence : </strong> {{college.type}} <br/>
-                  <strong>Phone : </strong> {{college.phone}}<br/>
-                  <strong>Address: </strong> {{college.address}}<br/>
-                  <strong>Website: </strong> {{college.url}}
+                  <strong>Name : </strong> {{university.name}} <br/>
+                  <strong>Licence : </strong> {{university.type}} <br/>
+                  <strong>Phone : </strong> {{university.phone}}<br/>
+                  <strong>Address: </strong> {{university.address}}<br/>
+                  <strong>Website: </strong> {{university.url}}
               </div>
               <div class="mdl-card__actions mdl-card--border">
                 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -52,49 +52,49 @@ export default {
   components: {},
   data(){
 		return {
-      colleges: store.state.colleges.colleges
+      universities: store.state.universities
     }
   },
   methods: {
-    displayDetails (id) {
-      this.$router.push({ name: 'detail', params: { id: id } })
+    displayUniversityDetail (university) {
+      this.$router.push({ name: 'university_detail', params: { university: university } })
     },
 
     FilterByType(mytype) {
       var response = [];
 
       if (mytype == "all") {
-        response = store.state.colleges.colleges; 
+        response = store.state.universities; 
       } else {
-        response = _.filter(store.state.colleges.colleges, function(college) {
-          return college.type == mytype;
+        response = _.filter(store.state.universities, function(university) {
+          return university.type == mytype;
         });
       }
 
-      this.colleges = response;
+      this.universities = response;
       
     },
     FilterByCity(mycity) {
       var response = [];
 
       if (mycity == "all"){
-        response = store.state.colleges.colleges;
+        response = store.state.universities;
       } else {
-        response = _.filter(store.state.colleges.colleges, function(college) {
-            if (_.includes(college.locations, mycity)){
-                return college;
+        response = _.filter(store.state.universities, function(university) {
+            if (_.includes(university.locations, mycity)){
+                return university;
             }
         });
       }
       
-      this.colleges = response;
+      this.universities = response;
 
     },
 
     ListOfCities() {
         var response = [];
-        _.forEach(store.state.colleges.colleges, (function(college) {
-          response.push(college.locations);
+        _.forEach(store.state.universities, (function(university) {
+          response.push(university.locations);
         }));
         response = _.uniq(_.flatten(response)).sort()
         return response;
@@ -106,18 +106,18 @@ export default {
 
 <style scoped>
 
-.college-card.mdl-card {
+.university-card.mdl-card {
   width: 320px;
   height: 320px;
   margin: 12px;
 }
-.college-card > .mdl-card__title {
+.university-card > .mdl-card__title {
   color: #fff;
   background:
     url('../assets/img/school.svg') bottom right 15% no-repeat #46B6AC;
 }
 
-.search-wrapper > .public-private {
+.filter-wrapper > .public-private {
   padding: 20px;
 }
 </style>

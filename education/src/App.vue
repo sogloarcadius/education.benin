@@ -8,13 +8,13 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Education Benin</span>
       <nav class="mdl-navigation">
-        <router-link class="mdl-navigation__link" to="about" @click.native="hideMenu">Home</router-link>
-        <router-link class="mdl-navigation__link" to="colleges" @click.native="hideMenu">Find a college</router-link>
+        <router-link class="mdl-navigation__link" :to="{ name: 'about'}" @click.native="hideMenu">Home</router-link>
+        <router-link class="mdl-navigation__link" :to="{ name: 'university'}" @click.native="hideMenu">Find a university</router-link>
       </nav>
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
-        <div v-if="state.colleges">
+        <div v-if="state.universities">
   				<router-view name="panel"></router-view>
   		</div>
       </div>
