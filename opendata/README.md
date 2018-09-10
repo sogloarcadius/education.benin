@@ -1,1 +1,1 @@
-../docs/content/opendata/README.md
+docs/content/opendata/README.md

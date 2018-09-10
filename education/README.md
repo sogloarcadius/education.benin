@@ -1,1 +1,1 @@
-../docs/content/education/README.md
+docs/content/education/README.md
