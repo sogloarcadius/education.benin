@@ -26,9 +26,9 @@
                 <h2 class="mdl-card__title-text">{{faculty.id.toUpperCase()}}</h2>
             </div>
             <div class="mdl-card__supporting-text">
-                <strong>Id : </strong> {{faculty.name}} <br/>
-                <strong>Name : </strong> {{faculty.name}} <br/>
-                <strong>Ville : </strong> {{faculty.city}}<br/>
+                <strong>Nom : </strong> {{faculty.id.toUpperCase()}} <br/>
+                <strong>Description : </strong> {{faculty.name}} <br/>
+                <strong>Ville : </strong> {{faculty.city.toUpperCase()}}<br/>
             </div>
         </div>
     </div>
@@ -60,8 +60,9 @@ export default {
         }));
 
         response =_.flatten(response);
-        response = _.map(response, _.method('toLowerCase'));
+        response = _.map(response, _.method('toUpperCase'));
         response = _.uniq(response).sort();
+        response = _.compact(response);
         return response;
     },
 
@@ -70,7 +71,7 @@ export default {
         _.forEach(store.state.faculties, (function(university) {
             response.push(university.id);
         }));
-        response = _.map(response, _.method('toLowerCase'));
+        response = _.map(response, _.method('toUpperCase'));
         return response;
     },
 
@@ -80,14 +81,14 @@ export default {
               faculties.push(university.faculties);
             }));
         faculties = _.uniq(_.flatten(faculties)).sort();
-
+        faculties = _.compact(faculties);
         return faculties;
     },
 
     FindFacultiesById(id) {
             var faculties = [];
             _.forEach(store.state.faculties, (function(university) {
-                    if (university.id.toLowerCase() == id) {
+                    if (university.id.toUpperCase() == id) {
                         faculties.push(university.faculties);
                     }
                 }));
@@ -107,7 +108,7 @@ export default {
       }
       else if(this.university_selected == '' && this.city_selected != '' ){
           response = _.filter(this.FindFaculties(), function(faculty) {
-          if (faculty.city.toLowerCase() == self.city_selected){
+          if (faculty.city.toUpperCase() == self.city_selected){
               return faculty;
           }
         });
@@ -117,7 +118,7 @@ export default {
           var response = [];
           var faculties = this.FindFacultiesById(this.university_selected);
           _.forEach(faculties, (function(faculty){
-              if (faculty.city.toLowerCase() == self.city_selected){
+              if (faculty.city.toUpperCase() == self.city_selected){
                 response.push(faculty);
               }
           }));         

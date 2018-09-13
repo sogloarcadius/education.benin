@@ -1,6 +1,6 @@
 <template>
    <div class="mdl-grid center-items">
-      <h3>About</h3>
+      <h3>Education Benin Welcome Page</h3>
    </div>
 </template>
 

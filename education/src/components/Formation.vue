@@ -3,14 +3,23 @@
     <div>
     <br/>
      <div class="mdl-grid filter-wrapper">
-          <span class="mdl-cell--3-col">
+          <span class="mdl-cell--5-col">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-                <label class="mdl-selectfield__label" for="type">Université</label>
+                
+                <label class="mdl-selectfield__label" for="fields">Domaine</label>
+                <select v-model="field_selected" class="mdl-selectfield__select" id="field" name="field">
+                  <option v-on:click="Filter()"></option>
+                  <option v-for='field in ListOfFields()' :key=field v-on:click="Filter()">{{field}}</option>
+                </select>
+                &nbsp;
+
+                <label class="mdl-selectfield__label" for="university">Université</label>
                 <select v-model="university_selected" class="mdl-selectfield__select" id="university" name="university">
                   <option v-on:click="Filter()"></option>
                   <option v-for='university in ListOfUniversities()' :key=university v-on:click="Filter()">{{university}}</option>
                 </select>
                 &nbsp;
+
                 <span v-if="ListOfFaculties(university_selected).length > 0">
                     <label class="mdl-selectfield__label" for="faculty">Faculté</label>
                     <select v-model="faculty_selected" class="mdl-selectfield__select" id="faculty" name="faculty">
@@ -67,6 +76,8 @@ export default {
             }));
 
             response = _.map(response, _.method('toUpperCase'));
+            response = _.compact(response);
+
             return response;
     },
 
@@ -76,10 +87,24 @@ export default {
             response.push(university.id);
         }));
         response = _.map(response, _.method('toUpperCase'));
+        response = _.compact(response);
+        
         return response;
     },
 
+    ListOfFields(){
+        var response = [];
+        _.forEach(store.state.courses, (function(course){
+            response.push(course.fields);
+        }))
 
+        response = _.flatten(response);
+        response = _.map(response, _.method('toUpperCase'));
+        response = _.uniq(response);
+        response = _.compact(response);
+
+        return response;
+    },
     Filter(){
     }
   }

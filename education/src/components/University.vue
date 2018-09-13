@@ -8,8 +8,8 @@
                 <label class="mdl-selectfield__label" for="type">Type</label>
                 <select v-model="type_selected" class="mdl-selectfield__select" id="type" name="type">
                   <option v-on:click="Filter()"></option>
-                  <option v-on:click="Filter()" value='public'>public</option>
-                  <option v-on:click="Filter()" value='private'>privée</option>
+                  <option v-on:click="Filter()" value='PUBLIC'>PUBLIC</option>
+                  <option v-on:click="Filter()" value='PRIVATE'>PRIVEE</option>
                 </select>
                 &nbsp;
                 <label class="mdl-selectfield__label" for="city">Ville</label>
@@ -26,11 +26,11 @@
                   <h2 class="mdl-card__title-text">{{university.id}}</h2>
               </div>
               <div class="mdl-card__supporting-text">
-                  <strong>Name : </strong> {{university.name}} <br/>
-                  <strong>Licence : </strong> {{university.type}} <br/>
-                  <strong>Phone : </strong> {{university.phone}}<br/>
+                  <strong>Nom : </strong> {{university.name}} <br/>
+                  <strong>Email : </strong> {{university.email}} <br/>
+                  <strong>Tél : </strong> {{university.phone}}<br/>
                   <strong>Address: </strong> {{university.address}}<br/>
-                  <strong>Website: </strong> {{university.url}}
+                  <strong>Internet: </strong> {{university.url}}
               </div>
               <div class="mdl-card__actions mdl-card--border">
                 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -69,7 +69,7 @@ export default {
       } 
       else if (this.city_selected == '' && this.type_selected != ''){
           response = _.filter(store.state.universities, function(university) {
-          if (university.type.toLowerCase() == self.type_selected ){
+          if (university.type.toUpperCase() == self.type_selected ){
               return university;
           }
         });
@@ -77,7 +77,7 @@ export default {
       }
       else if( self.type_selected == '' && self.city_selected != '' ){
           response = _.filter(store.state.universities, function(university) {
-          if (_.includes(_.mapValues(university.locations, _.method('toLowerCase')), self.city_selected)){
+          if (_.includes(_.mapValues(university.locations, _.method('toUpperCase')), self.city_selected)){
               return university;
           }
         });
@@ -85,7 +85,7 @@ export default {
       } 
       else {
           response = _.filter(store.state.universities, function(university) {
-          if (_.includes(_.mapValues(university.locations, _.method('toLowerCase')), self.city_selected) && university.type.toLowerCase() == self.type_selected ){
+          if (_.includes(_.mapValues(university.locations, _.method('toUpperCase')), self.city_selected) && university.type.toUpperCase() == self.type_selected ){
                 return university;
           }
           });
@@ -100,8 +100,9 @@ export default {
         }));
 
         response =_.flatten(response);
-        response = _.map(response, _.method('toLowerCase'));
+        response = _.map(response, _.method('toUpperCase'));
         response = _.uniq(response).sort();
+        response = _.compact(response);
         return response;
     }
 
@@ -125,6 +126,7 @@ export default {
 .filter-wrapper {
   margin: 12px;
 }
+
 </style>
 
 
