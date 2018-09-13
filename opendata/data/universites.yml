@@ -26,7 +26,7 @@
   name: Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques
   address: BP 2282 Goho Abomey
   phone: +229 20 06 37 95
-  email: NA
+  email: 
   url: http://www.unstim.bj/
   type: public
   locations:
@@ -35,8 +35,8 @@
 - id: UNA 
   name: Université Nationale d'Agriculture
   address: Porto Novo
-  phone: NA
-  email: NA
+  phone: 
+  email: 
   url: http://www.una.bj/
   type: public
   locations:
@@ -54,11 +54,8 @@
   url: http://www.uatm-gasa.com/
   type: private
   locations:
-    - GBEGAMEY
-    - APKAPKA
-    - AGLA
-    - PORTO-NOVO
-    - CALAVI
+    - cotonou
+    - porto-novo
 
 - id: UPI-ONM
   name: Université Polytechnique Internationale du Bénin
@@ -131,8 +128,8 @@
   name: Centre de Formation Professionnelle aux Métiers des Médias
   address: cotonou
   phone: (+229) 21 30 11 42
-  email: NA
-  url: NA
+  email: 
+  url: 
   type: private
   locations:
     - cotonou
@@ -173,8 +170,8 @@
   name: Institut International de Management
   address: 01 BP 6829 Cotonou Bénin
   phone: + 229 21 32 73 41 
-  email: NA
-  url: NA
+  email: 
+  url: 
   type: private
   locations:
     - cotonou
@@ -182,12 +179,12 @@
 - id: ISSIC-BENIN
   name: Institut Supérieur des Sciences de l’Information et de la Communication
   address: cotonou
-  phone: NA
-  email: NA
-  url: NA
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: ISMA
   name: Institut Supérieur des Métiers de l’Audiovisuel
@@ -210,7 +207,6 @@
   locations:
     - cotonou
     - parakou
-    - abomey-calavi
     - porto-novo
 
 - id: GROUPE-CERCO
@@ -237,8 +233,8 @@
   name: HOUDEGBE North American University Benin 
   address: 06 BP 2080, Route de Porto Novo
   phone: +229 21 332 127
-  email: NA
-  url: NA
+  email: 
+  url: 
   type: private
   locations:
     - porto-novo    
@@ -288,627 +284,627 @@
 
 - id: 
   name: Institut Jean Paul II de Philosophie et de Sciences Humaines
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Université Protestante de l’Afrique de l’Ouest
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Université de Sciences Appliquées et de Management
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Institut Universitaire pour la Paix et le Développement en Afrique
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure Panafricaine de Management Appliquée 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Supérieur de Formation Professionnelle
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 
 - id: 
   name: Ecole Supérieure Internationale d’Enseignement Technique  
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Internationale de Cotonou 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 
 - id: 
   name: Centre d’Etudes Touristiques de l’Agence Africaine de Tourisme
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Ecole Supérieure des Télécommunications du Bénin
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Ecole Supérieure d’Administration et d’Economie
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure des Ingénieurs Géomètres Topographes
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Universitaire du Bénin
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: ECOTES-BENIN
   name: Ecole de Techniciens Supérieurs du Bénin LA GRACE
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Ecole supérieure Sainte Félicité
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Le POLYTECH « ADA »
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure de Gestion d’Informatique et de Sciences
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Supérieur de l’Organisation
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Ecole Supérieure d’Economie  et de Gestion 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: IS-FOPASE
   name: Institut Supérieur de Formation Professionnelle et d’Appui à la Sécurité Economique 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: African School of Economics
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure de Journalisme et de Communication du Centre Africain de Formation et de Perfectionnement des Journalistes 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Professionnelle Spécialisée de la Cité Vie Nouvelle
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Ecole Supérieure Jean Michel Le Faucon
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Les COURS SONOU
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 
 - id: 
   name: Centre de Formation Touristique et Hôtelière
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Centre Régional Africain de Formation pour les Entreprises
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Supérieur de Communication, d’Organisation et de Management
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure d’Expertise Comptable
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Ecole Supérieure Wenser Formation
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Universitaire des Métiers d’Avenir 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Supérieur de Formation des Educateurs Spécialisés Laura Vicuna
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure de l’Entrepreneuriat et de la Prospérité
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Haute Ecole d’Industrie et de Management
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Supérieur d’Expertise et de Gestion
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: ESG-SERENA
   name: Ecole Supérieure de Gestion SERENA 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Centre International de Formation en Expertise Comptable
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Supérieur HCUB
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Haute Ecole de Gestion et Technologie
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Institut Supérieur de l’Afrique de l’Ouest  
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: 
   name: Institut Supérieur de Communication et de Gestion
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 - id: ESTG
   name: Ecole Supérieure de Technologie et de Gestion 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 
 - id: 
   name: Ecole Supérieure de Génie Télécoms et TIC – Ecce Homo et TIC
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure de Gestion et de Technologie 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: ESCAE-BENIN
   name: Ecole Supérieure de Commerce et d’Administration des Entreprises du Bénin 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure d’Administration et de Gestion
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure des Métiers des Energies Renouvelables
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Universitaire West African Union 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 
 
 - id: 
   name: Institut Universitaire de Sciences Economiques et Biologiques Appliquées 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Coopératif de Technologie et de Management 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure pour la Formation et le Recyclage d’Enseignants 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Régional Supérieur des Beaux Arts, de la Culture et de la Communication
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: EFES-SAPIENTIA
   name: Ecole de Formation des Enseignants du Secondaire EFES-SAPIENTIA 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Universitaire des Sciences et Techniques AJAVON Sébastien
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Pinnacle African Institute
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Haute Ecole de Gestion et de Journalisme de Bohicon 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Institut Universitaire de Bohicon 
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure Saint Louis d’Afrique
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Internationale de Théâtre du Bénin
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 
 
 - id: 
   name: Ecole Supérieure des Techniques Avancées et de Management  
-  address: NA
-  phone: NA
-  email: NA
-  url: NA
+  address: 
+  phone: 
+  email: 
+  url: 
   type: private
   locations:
-    - NA
+    - 

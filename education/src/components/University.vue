@@ -6,16 +6,16 @@
           <span class="mdl-cell--3-col">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
                 <label class="mdl-selectfield__label" for="type">Type</label>
-                <select class="mdl-selectfield__select" id="type" name="type">
-                  <option v-on:click="FilterByType('all')" value="all">all</option>
-                  <option v-on:click="FilterByType('public')" value="option1">public</option>
-                  <option v-on:click="FilterByType('private')" value="option2">private</option>
+                <select v-model="type_selected" class="mdl-selectfield__select" id="type" name="type">
+                  <option v-on:click="Filter()"></option>
+                  <option v-on:click="Filter()" value='public'>public</option>
+                  <option v-on:click="Filter()" value='private'>privée</option>
                 </select>
                 &nbsp;
                 <label class="mdl-selectfield__label" for="city">Ville</label>
-                <select class="mdl-selectfield__select" id="city" name="city">
-                  <option :key="all" value="all" v-on:click="FilterByCity('all')">all</option>
-                  <option v-for='city in ListOfCities()' :key=city value=city v-on:click="FilterByCity(city)">{{city}}</option>
+                <select v-model="city_selected" class="mdl-selectfield__select" id="city" name="city">
+                  <option v-on:click="Filter()"></option>
+                  <option v-for='city in ListOfCities()' :key=city v-on:click="Filter()">{{city}}</option>
                 </select>
               </div>
           </span>
@@ -51,43 +51,46 @@ export default {
   components: {},
   data(){
 		return {
-      universities: store.state.universities
+      universities: store.state.universities,
+      city_selected: '',
+      type_selected: ''
     }
   },
   methods: {
     displayUniversityDetail (university) {
-      this.$router.push({ name: 'university_detail', params: { university: university } })
+      this.$router.push({ name: 'university_detail', params: { university_id: university.id } })
     },
 
-    FilterByType(mytype) {
+    Filter(){
+      var self = this;
       var response = [];
-
-      if (mytype == "all") {
-        response = store.state.universities; 
-      } else {
-        response = _.filter(store.state.universities, function(university) {
-          return university.type == mytype;
+      if (this.city_selected == '' && this.type_selected == ''){
+          this.universities = store.state.universities;
+      } 
+      else if (this.city_selected == '' && this.type_selected != ''){
+          response = _.filter(store.state.universities, function(university) {
+          if (university.type.toLowerCase() == self.type_selected ){
+              return university;
+          }
         });
+        this.universities = response;
       }
-
-      this.universities = response;
-      
-    },
-    FilterByCity(mycity) {
-      var response = [];
-
-      if (mycity == "all"){
-        response = store.state.universities;
-      } else {
-        response = _.filter(store.state.universities, function(university) {
-            if (_.includes(university.locations, mycity)){
+      else if( self.type_selected == '' && self.city_selected != '' ){
+          response = _.filter(store.state.universities, function(university) {
+          if (_.includes(_.mapValues(university.locations, _.method('toLowerCase')), self.city_selected)){
+              return university;
+          }
+        });
+        this.universities = response;
+      } 
+      else {
+          response = _.filter(store.state.universities, function(university) {
+          if (_.includes(_.mapValues(university.locations, _.method('toLowerCase')), self.city_selected) && university.type.toLowerCase() == self.type_selected ){
                 return university;
-            }
-        });
+          }
+          });
+          this.universities = response;
       }
-      
-      this.universities = response;
-
     },
 
     ListOfCities() {
@@ -95,7 +98,10 @@ export default {
         _.forEach(store.state.universities, (function(university) {
           response.push(university.locations);
         }));
-        response = _.uniq(_.flatten(response)).sort()
+
+        response =_.flatten(response);
+        response = _.map(response, _.method('toLowerCase'));
+        response = _.uniq(response).sort();
         return response;
     }
 

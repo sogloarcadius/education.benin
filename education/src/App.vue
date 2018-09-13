@@ -8,6 +8,8 @@
     <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
       <div class="mdl-tabs__tab-bar">
         <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'university'}">Universites</router-link>
+        <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'faculty'}">UFR Public</router-link>
+        <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'formation'}">Formation</router-link>
       </div>
     </div>
     <main class="mdl-layout__content">

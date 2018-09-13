@@ -3,28 +3,15 @@
     <div>
     <div class="mdl-grid center-items">
         <div class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone">
-                <strong>Name : </strong> {{this.$route.params.university.name}} <br/>
-                <strong>Licence : </strong> {{this.$route.params.university.type}} <br/>
-                <strong>Phone : </strong> {{this.$route.params.university.phone}}<br/>
-                <strong>Address: </strong> {{this.$route.params.university.address}}<br/>
-                <strong>Website: </strong> {{this.$route.params.university.url}}<br/>
-                <strong>Formations: </strong> {{FindCourses(this.$route.params.university.id).length}}<br/>
-                <strong>Faculties: </strong> {{FindFaculties(this.$route.params.university.id).length}}
+                <strong>Name : </strong> {{FindUniversity(this.$route.params.university_id).name}} <br/>
+                <strong>Licence : </strong> {{FindUniversity(this.$route.params.university_id).type}} <br/>
+                <strong>Phone : </strong> {{FindUniversity(this.$route.params.university_id).phone}}<br/>
+                <strong>Address: </strong> {{FindUniversity(this.$route.params.university_id).address}}<br/>
+                <strong>Website: </strong> {{FindUniversity(this.$route.params.university_id).url}}<br/>
+                <strong>Formations: </strong> {{FindCourses(this.$route.params.university_id).length}}<br/>
+                <strong>Faculties: </strong> {{FindFaculties(this.$route.params.university_id).length}}
         </div>
     </div>
-    <div class="mdl-grid">
-        <div v-for="course in FindCourses(this.$route.params.university.id)" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">{{course.name}}</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-                <strong>Name : </strong> {{course.name}} <br/>
-                <strong>description : </strong> {{course.description}} <br/>
-                <strong>prerequisite : </strong> {{course.prerequisite}}<br/>
-                <strong>yearsofstudy: </strong> {{course.yearsofstudy}}<br/>
-            </div>
-        </div>
-      </div>
     </div>
 </template>
 
@@ -40,20 +27,27 @@ export default {
         }
     },
     methods: {
-        FindFaculties(id) {
+        FindUniversity(id){
+            var response = "";
+            _.forEach(store.state.universities, (function(university){
+                if (university.id == id) {
+                    response = university;
+                }
+            }));
 
+            return response;
+        },
+        FindFaculties(id) {
             var faculties = [];
             _.forEach(store.state.faculties, (function(university) {
                     if (university.id == id) {
                         faculties.push(university.faculties);
                     }
                 }));
-            
             faculties = _.uniq(_.flatten(faculties)).sort();
 
             return faculties;
         },
-
         FindCourses(id) {
             var response = [];
             response = _.filter(store.state.courses, function(course) {
