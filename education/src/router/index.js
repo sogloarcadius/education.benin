@@ -7,7 +7,7 @@ import About from '@/components/About'
 import University from '@/components/University'
 import UniversityDetail from '@/components/UniversityDetail'
 import Faculty from '@/components/Faculty'
-import Formation from '@/components/Formation'
+import FormationDetail from '@/components/FormationDetail'
 
 export default new VueRouter({
   routes: [
@@ -26,7 +26,7 @@ export default new VueRouter({
 			components: { panel: University },
 		},
 		{
-			path: '/detail/:university_id',
+			path: '/myuniversity/:university_id',
 			name: 'university_detail',
 			components: { panel: UniversityDetail }
 		},
@@ -36,10 +36,10 @@ export default new VueRouter({
 			components: { panel: Faculty }
 		},
 		{
-			path: '/formation',
-			name: 'formation',
-			components: { panel: Formation }
-		}
+			path: '/mycourse/:course_name',
+			name: 'course_detail',
+			components: { panel: FormationDetail }
+		},
 		
   ]
 })

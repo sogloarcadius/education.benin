@@ -3,14 +3,23 @@
     <div>
     <br/>
      <div class="mdl-grid filter-wrapper">
-          <span class="mdl-cell--3-col">
+          <span class="mdl-cell--4-col">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+
                 <label class="mdl-selectfield__label" for="type">Université</label>
                 <select v-model="university_selected" class="mdl-selectfield__select" id="university" name="university">
                   <option v-on:click="Filter()"></option>
                   <option v-for='university in ListOfUniversities()' :key=university v-on:click="Filter()">{{university}}</option>
                 </select>
                 &nbsp;
+
+                <label class="mdl-selectfield__label" for="fields">Domaine</label>
+                <select v-model="field_selected" class="mdl-selectfield__select" id="field" name="field">
+                  <option v-on:click="Filter()"></option>
+                  <option v-for='field in ListOfFields()' :key=field v-on:click="Filter()">{{field}}</option>
+                </select>
+                &nbsp;
+              
                 <label class="mdl-selectfield__label" for="city">Ville</label>
                 <select v-model="city_selected" class="mdl-selectfield__select" id="city" name="city">
                   <option v-on:click="Filter()"></option>
@@ -28,6 +37,7 @@
             <div class="mdl-card__supporting-text">
                 <strong>Nom : </strong> {{faculty.id.toUpperCase()}} <br/>
                 <strong>Description : </strong> {{faculty.name}} <br/>
+                <strong>Université : </strong> {{faculty.university}} <br/>
                 <strong>Ville : </strong> {{faculty.city.toUpperCase()}}<br/>
             </div>
         </div>
@@ -46,10 +56,26 @@ export default {
         faculties: store.state.faculties,
         university_selected: '',
         city_selected: '',
+        field_selected: '',
         computed_faculties: this.FindFaculties()
     }
   },
   methods: {
+
+    ListOfFields(){
+        var response = [];
+        _.forEach(this.computed_faculties, (function(faculty){
+            response.push(faculty.fields);
+        }))
+
+        response = _.flatten(response);
+        response = _.map(response, _.method('toUpperCase'));
+        response = _.uniq(response).sort();
+        response = _.compact(response);
+
+        return response;
+    },
+
     ListOfCities() {
         var response = [];
         _.forEach(store.state.faculties, (function(university) {
@@ -59,7 +85,6 @@ export default {
             }))
         }));
 
-        response =_.flatten(response);
         response = _.map(response, _.method('toUpperCase'));
         response = _.uniq(response).sort();
         response = _.compact(response);

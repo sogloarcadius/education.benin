@@ -21,7 +21,7 @@
           </span>
      </div>
       <div class="mdl-grid">
-          <div v-for="university in universities" :key="university.id" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university)">
+          <div v-for="university in universities" :key="university.id" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university.id)">
               <div class="mdl-card__title mdl-card--expand">
                   <h2 class="mdl-card__title-text">{{university.id}}</h2>
               </div>
@@ -57,8 +57,8 @@ export default {
     }
   },
   methods: {
-    displayUniversityDetail (university) {
-      this.$router.push({ name: 'university_detail', params: { university_id: university.id } })
+    displayUniversityDetail (university_id) {
+      this.$router.push({ name: 'university_detail', params: { university_id: university_id } })
     },
 
     Filter(){

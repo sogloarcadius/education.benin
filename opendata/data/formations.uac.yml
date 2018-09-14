@@ -752,9 +752,9 @@
       yearsofstudy: 3
       roles:  Enseignants de Lycees et Colleges
       fields:
-      - litterature
-      - languages
-      - arts
+        - litterature
+        - languages
+        - arts
       college: ENSP
 
     - name: Licence Histoire et Geographie 
@@ -763,9 +763,9 @@
       yearsofstudy: 3
       roles:  Enseignants de Lycees et Colleges
       fields:
-      - litterature
-      - languages
-      - arts
+        - litterature
+        - languages
+        - arts
       college: ENSP
 
 
@@ -775,9 +775,9 @@
       yearsofstudy: 3
       roles:  Enseignants de Lycees et Colleges
       fields:
-      - litterature
-      - languages
-      - arts
+        - litterature
+        - languages
+        - arts
       college: ENSP
 
     - name: Licence Philosophie 
@@ -786,9 +786,9 @@
       yearsofstudy: 3
       roles:  Enseignants de Lycees et Colleges
       fields:
-      - litterature
-      - languages
-      - arts
+        - litterature
+        - languages
+        - arts
       college: ENSP
 
 
@@ -798,9 +798,9 @@
       yearsofstudy: 3
       roles:  Enseignants de Lycees et Colleges
       fields:
-      - litterature
-      - languages
-      - arts
+        - litterature
+        - languages
+        - arts
       college: ENSP
 
 
@@ -810,9 +810,9 @@
       yearsofstudy: 3
       roles:  Enseignants de Lycees et Colleges
       fields:
-      - litterature
-      - languages
-      - arts
+        - litterature
+        - languages
+        - arts
       college: ENSP
 
 
@@ -1879,6 +1879,7 @@
         - economy
         - marketing
         - management
+        - business
       college: HERCI
 
     - name: Licence professionnelle en Gestion des Relation Maritimes Internationales
@@ -1894,6 +1895,7 @@
         - economy
         - marketing
         - management
+        - business
       college: HERCI
 
     - name: Master professionnel en Politique commerciale
@@ -1914,6 +1916,7 @@
       fields:
         - economy
         - management
+        - business
       college: HERCI
     
     - name: Master professionnel en Gestion des relations Maritimes Internationales
@@ -1934,6 +1937,7 @@
       fields:
         - economy
         - management
+        - business
       college: HERCI
     
     - name: Master professionnel en Gouvernance et Encadrement des Organisations Internationales
@@ -1954,6 +1958,7 @@
       fields:
         - economy
         - management
+        - business
       college: HERCI
 
     - name: Master professionnel en Marketing international
@@ -1974,6 +1979,7 @@
       fields:
         - economy
         - marketing
+        - business
       college: HERCI
     
     - name: Master professionnel en Achats et transactions internationales
@@ -1995,6 +2001,7 @@
         - economy
         - marketing
         - management
+        - business
       college: HERCI
 
     - name: Master professionnel en Gestion du contentieux en commerce international
@@ -2016,6 +2023,7 @@
         - economy
         - marketing
         - management
+        - business
       college: HERCI
     
     - name: Master professionnel en Management portuaire et aéroportuaire
@@ -2037,6 +2045,7 @@
         - economy
         - marketing
         - management
+        - business
       college: HERCI
 
     
@@ -2059,6 +2068,7 @@
         - economy
         - marketing
         - management
+        - business
       college: HERCI
 
     - name: Licence - Master en Chinois

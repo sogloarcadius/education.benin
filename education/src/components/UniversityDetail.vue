@@ -42,8 +42,9 @@
         <div class="mdl-cell--1-col mdl-cell--1-col-tablet mdl-cell--1-col-phone"></div>
         <div class="mdl-cell--7-col mdl-cell--7-col-tablet mdl-cell--7-col-phone">
                 <br/><br/>
-                <div> 
+                <div>
                     <span>FORMATIONS</span>
+                    <formation :courses="FindCourses(this.$route.params.university_id)" :faculties="FindFaculties(this.$route.params.university_id)"></formation>
                 </div> 
       
         </div>
@@ -54,8 +55,10 @@
 
 <script>
 import store from '@/components/Store'
+import formation from '@/components/Formation'
 
 export default {
+    components: { formation },
     data(){
         return {
             universities: store.state.universities,
