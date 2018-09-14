@@ -2,7 +2,7 @@
 
 Le site de référence sur l'éducation au Bénin.
 
-[Contribution guide](https://github.com/sogloarcadius/education.benin/wiki)
+[Documentation](https://sogloarcadius.github.io/education.benin/)
 
 # Licence
 
