@@ -7,7 +7,7 @@
   "scripts": {
     "education:dev": " cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "education:build": " cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "education:deploy": "npm run education:build; push-dir --dir=dist --branch=gh-pages --cleanup --force"
+    "education:deploy": "push-dir --dir=dist --branch=gh-pages --local-branch-name --force --verbose"
   },
   "dependencies": {
     "JSONPath": "^0.11.2",
