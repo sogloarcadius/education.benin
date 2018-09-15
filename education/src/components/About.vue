@@ -7,7 +7,7 @@
         <br/>
         <span class="mdl-layout__title">Le site de référence sur l'éducation et l’emploi au Bénin</span>
      </span>
-     <div class="demo-container mdl-grid">
+     <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="mdl-color--white content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
             <h3 id="la-formation-au-b%C3%A9nin">Organisation de l'enseignement primaire et secondaire</h3>

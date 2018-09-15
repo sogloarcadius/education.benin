@@ -3,15 +3,8 @@
     <div>
     <br/>
      <div class="mdl-grid filter-wrapper">
-          <span class="mdl-cell--4-col">
+          <span class="mdl-cell--12-col">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-
-                <label class="mdl-selectfield__label" for="type">Université</label>
-                <select v-model="university_selected" class="mdl-selectfield__select" id="university" name="university">
-                  <option v-on:click="Filter()"></option>
-                  <option v-for='university in ListOfUniversities()' :key=university v-on:click="Filter()">{{university}}</option>
-                </select>
-                &nbsp;
 
                 <label class="mdl-selectfield__label" for="fields">Domaine</label>
                 <select v-model="field_selected" class="mdl-selectfield__select" id="field" name="field">
@@ -30,7 +23,7 @@
      </div>
     </div>
     <div class="mdl-grid">
-        <div v-for="faculty in computed_faculties" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp">
+        <div v-for="faculty in computed_faculties" :key=faculty.name class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">{{faculty.id.toUpperCase()}}</h2>
             </div>
@@ -47,112 +40,86 @@
 
 <script>
 
-import store from '@/components/Store'
-
 export default {
-  components: {},
-  data(){
-	return {
-        faculties: store.state.faculties,
-        university_selected: '',
-        city_selected: '',
-        field_selected: '',
-        computed_faculties: this.FindFaculties()
-    }
-  },
-  methods: {
+    props: ['faculties'],
 
-    ListOfFields(){
-        var response = [];
-        _.forEach(this.computed_faculties, (function(faculty){
-            response.push(faculty.fields);
-        }))
-
-        response = _.flatten(response);
-        response = _.map(response, _.method('toUpperCase'));
-        response = _.uniq(response).sort();
-        response = _.compact(response);
-
-        return response;
+    data(){
+        return {
+            city_selected: '',
+            field_selected: '',
+            computed_faculties: this.faculties
+        }
     },
-
-    ListOfCities() {
-        var response = [];
-        _.forEach(store.state.faculties, (function(university) {
-            var faculties = university.faculties;
-            _.forEach(faculties, (function(faculty){
-                response.push(faculty.city);
+    methods: {
+        ListOfFields(){
+            var response = [];
+            _.forEach(this.faculties, (function(faculty){
+                response.push(faculty.fields);
             }))
-        }));
 
-        response = _.map(response, _.method('toUpperCase'));
-        response = _.uniq(response).sort();
-        response = _.compact(response);
-        return response;
-    },
+            response = _.flatten(response);
+            response = _.map(response, _.method('toUpperCase'));
+            response = _.uniq(response).sort();
+            response = _.compact(response);
 
-    ListOfUniversities() {
-        var response = [];
-        _.forEach(store.state.faculties, (function(university) {
-            response.push(university.id);
-        }));
-        response = _.map(response, _.method('toUpperCase'));
-        return response;
-    },
+            return response;
+        },
 
-    FindFaculties() {
-        var faculties = [];
-        _.forEach(store.state.faculties, (function(university) {
-              faculties.push(university.faculties);
+        ListOfCities() {
+            var response = [];
+            _.forEach(this.faculties, (function(faculty){
+                    response.push(faculty.city);
             }));
-        faculties = _.uniq(_.flatten(faculties)).sort();
-        faculties = _.compact(faculties);
-        return faculties;
-    },
 
-    FindFacultiesById(id) {
+            response = _.map(response, _.method('toUpperCase'));
+            response = _.uniq(response).sort();
+            response = _.compact(response);
+            return response;
+        },
+
+        FindFacultiesByField(field_selected) {
             var faculties = [];
-            _.forEach(store.state.faculties, (function(university) {
-                    if (university.id.toUpperCase() == id) {
-                        faculties.push(university.faculties);
-                    }
+            _.forEach(this.faculties, (function(faculty) {
+                if (_.includes(faculty.fields, field_selected.toLowerCase())) {
+                    faculties.push(faculty);
+                }
                 }));
             faculties = _.uniq(_.flatten(faculties)).sort();
 
             return faculties;
-    },
+        },
 
-    Filter(){
-      var self = this;
-      var response = [];
-      if (this.city_selected == '' && this.university_selected == ''){
-          this.computed_faculties = this.FindFaculties();
-      } 
-      else if (this.city_selected == '' && this.university_selected != ''){
-        this.computed_faculties = this.FindFacultiesById(this.university_selected);
-      }
-      else if(this.university_selected == '' && this.city_selected != '' ){
-          response = _.filter(this.FindFaculties(), function(faculty) {
-          if (faculty.city.toUpperCase() == self.city_selected){
-              return faculty;
-          }
-        });
-        this.computed_faculties = response;
-      } 
-      else {
-          var response = [];
-          var faculties = this.FindFacultiesById(this.university_selected);
-          _.forEach(faculties, (function(faculty){
-              if (faculty.city.toUpperCase() == self.city_selected){
-                response.push(faculty);
-              }
-          }));         
-          this.computed_faculties = response;
-      }
-    },
+        Filter(){
+            var self = this;
+            var response = [];
+            if (this.city_selected == '' && this.field_selected == ''){
+                this.computed_faculties = this.faculties;
+            } 
+            else if (this.city_selected == '' && this.field_selected != ''){
+                this.computed_faculties = this.FindFacultiesByField(this.field_selected);
+            }
+            else if(this.field_selected == '' && this.city_selected != '' ){
+                response = _.filter(this.faculties, function(faculty) {
+                if (faculty.city.toUpperCase() == self.city_selected){
+                    return faculty;
+                }
+                });
+                this.computed_faculties = response;
+            } 
+            else {
+                var response = [];
+                var faculties = this.FindFacultiesByField(this.field_selected);
+                _.forEach(faculties, (function(faculty){
+                    if (faculty.city.toUpperCase() == self.city_selected){
+                        response.push(faculty);
+                    }
+                }));         
+                this.computed_faculties = response;
+            }
+        },
 
-  }
-}
+    }
+    }
 </script>
 
 <style scoped>
@@ -165,7 +132,7 @@ export default {
 .university-card > .mdl-card__title {
   color: #fff;
   background:
-    url('../assets/img/school.svg') bottom right 15% no-repeat #46B6AC;
+    #46B6AC;
 }
 
 .filter-wrapper {

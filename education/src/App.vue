@@ -4,7 +4,6 @@
       <div class="mdl-tabs__tab-bar">
         <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'about'}">Accueil</router-link>
         <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'university'}">Universites</router-link>
-        <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'faculty'}">FAC ?</router-link>
       </div>
     </div>
     <main class="mdl-layout__content">
@@ -14,6 +13,7 @@
   		</div>
       </div>
     </main>
+    
      <footer class="mdl-mini-footer education-footer">
        <div class="mdl-mini-footer__right-section">
           <div class="mdl-layout__header-row education-logo-row">
@@ -24,6 +24,7 @@
           </div>
        </div>
     </footer>
+    
   </div>
 </template>
 
