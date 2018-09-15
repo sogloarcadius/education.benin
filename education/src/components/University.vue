@@ -5,7 +5,7 @@
      <div class="mdl-grid filter-wrapper">
           <span class="mdl-cell--3-col">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-                <label class="mdl-selectfield__label" for="type">Type</label>
+                <label class="mdl-selectfield__label" for="type">Statut</label>
                 <select v-model="type_selected" class="mdl-selectfield__select" id="type" name="type">
                   <option v-on:click="Filter()"></option>
                   <option v-on:click="Filter()" value='PUBLIC'>PUBLIC</option>

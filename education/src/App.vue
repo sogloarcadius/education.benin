@@ -1,18 +1,10 @@
 <template>
   <div class="mdl-layout mdl-js-layout">
-    <!--
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'about'}"><span class="mdl-layout-title">Education Benin</span></router-link>
-      </div>
-    </header>
-    -->
     <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
       <div class="mdl-tabs__tab-bar">
         <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'about'}">Accueil</router-link>
         <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'university'}">Universites</router-link>
         <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'faculty'}">FAC ?</router-link>
-
       </div>
     </div>
     <main class="mdl-layout__content">
@@ -22,6 +14,16 @@
   		</div>
       </div>
     </main>
+     <footer class="mdl-mini-footer education-footer">
+       <div class="mdl-mini-footer__right-section">
+          <div class="mdl-layout__header-row education-logo-row">
+              <span class="mdl-layout__title">
+                  <div class="education-logo"></div>
+                  <span class="mdl-layout__title">edubenin.bj</span>
+              </span>      
+          </div>
+       </div>
+    </footer>
   </div>
 </template>
 
@@ -44,6 +46,11 @@ export default {
 }
 </script>
 <style>
+.mdl-mini-footer{
+  background: white;
+  border: 1px;
+}
+
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://code.getmdl.io/1.2.1/material.blue-red.min.css');
 </style>
