@@ -1,8 +1,8 @@
 # Education Benin
 
-Le site de référence sur l'éducation au Bénin.
+Le site de référence sur l'éducation et l'emploi au Bénin.
 
-[Documentation](https://sogloarcadius.github.io/education.benin/)
+[Github Pages](https://sogloarcadius.github.io/education.benin/)
 
 # Licence
 

@@ -40,7 +40,7 @@ S'informer sur comment partir à l'étranger. Aide en ligne sur les démarches p
 
 ## Contribuer à la liste des universités
 
-Pour contribuer à la liste des établissements, il suffit de faire un pull request avec votre établissement au format **yaml** dans le dossier `opendata/data` du projet sur [Github](https://github.com/sogloarcadius/education.benin).
+Pour contribuer à la liste des établissements, il suffit de faire un pull request avec votre établissement au format **yaml** dans le dossier `api/data` du projet sur [Github](https://github.com/sogloarcadius/education.benin).
 
 ```
 .

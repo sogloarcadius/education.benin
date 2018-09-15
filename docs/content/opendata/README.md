@@ -11,13 +11,13 @@ lang: fr
 
 ## Contribution
 
-Pour ajouter de nouveaux jeux de données, il suffit de faire un pull request avec votre jeux de données dans le dossier `opendata/data` du projet sur [Github](https://github.com/sogloarcadius/education.benin)
+Pour ajouter de nouveaux jeux de données, il suffit de faire un pull request avec votre jeux de données dans le dossier `api/data` du projet sur [Github](https://github.com/sogloarcadius/education.benin)
 
 ```
 .
+├── api
+├── app
 ├── docs
-├── education
-├── opendata
 ├── .gitignore
 └── README.md
 ```
