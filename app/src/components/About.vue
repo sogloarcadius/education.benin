@@ -5,7 +5,7 @@
         <div class="education-logo"></div>
         <span class="mdl-layout__title">edubenin.bj</span>
         <br/>
-        <span class="mdl-layout__title">Le site de référence sur l'éducation et l’emploi au Bénin</span>
+        <span class="mdl-layout__title">Le site de référence sur l'éducation et l’emploi au Bénin.</span>
      </span>
      <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
