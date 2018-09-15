@@ -1,14 +1,13 @@
 module.exports = {
-    title: 'education.benin',
-    description: "Le site de référence sur l'éducation et l’emploi",
+    title: '@github education.benin',
+    description: "Documentation Projet",
     base: '/education.benin/',
     themeConfig: {
       sidebar: 'auto',
       displayAllHeaders: true,
       nav: [
-        { text: 'education', link: '/education/'},
-        { text: 'formation', link: '/formation/' },
-        { text: 'opendata', link: '/opendata/' }
+        { text: 'edubenin.bj', link: '/education/'},
+        { text: 'api', link: '/opendata/' }
       ],
      }
 }

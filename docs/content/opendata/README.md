@@ -1,11 +1,7 @@
 ---
-title: OpenData Benin
+title: api
 lang: fr
 ---
-
-# OPEN DATA BENIN
-
-Le site de référence autour de la science des données au Bénin.
 
 ## Objectifs
 
@@ -13,7 +9,7 @@ Le site de référence autour de la science des données au Bénin.
 * Favoriser l'innovation autour de la science de la donnée au Bénin
 * Devenir le moteur de la transformation digitale du Bénin
 
-# Contribution
+## Contribution
 
 Pour ajouter de nouveaux jeux de données, il suffit de faire un pull request avec votre jeux de données dans le dossier `opendata/data` du projet sur [Github](https://github.com/sogloarcadius/education.benin)
 
@@ -26,7 +22,7 @@ Pour ajouter de nouveaux jeux de données, il suffit de faire un pull request av
 └── README.md
 ```
 
-## Projets Open Data
+## Autres projets Open Data
 
 * [opendataforafrica](http://dataportal.opendataforafrica.org/)
 
@@ -42,6 +38,6 @@ Pour ajouter de nouveaux jeux de données, il suffit de faire un pull request av
 
 * [Etalab](https://github.com/etalab/)
 
-# Licence
+## Licence
 
 MIT Licence

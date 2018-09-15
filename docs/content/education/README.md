@@ -7,6 +7,18 @@ lang: fr
 
 Le site de référence sur l'éducation et l’emploi au Bénin.
 
+## Formation
+
+S'informer sur le système d’enseignement et sur l'organisation de la formation au Bénin.
+
+## Orientation
+
+Service d'orientation gratuit en ligne. Liste officielle et à jour des établissements publics et privés au Bénin.
+
+## Voyager
+
+S'informer sur comment partir à l'étranger. Aide en ligne sur les démarches pour poursuivre les études à l'étranger.
+
 ## Objectifs
 
 * Devenir la plateforme de référence pour avoir des informations sur l’éducation
@@ -60,3 +72,27 @@ Pour contribuer à la liste des établissements, il suffit de faire un pull requ
 * [akoeko](http://akoeko.com/schools/upi-onm)
 
 * [Liste des univs](http://didierhoundenou.centerblog.net/6463427-delivrance-des-licences-et-masters-au-benin)
+
+## La formation au Bénin
+
+Le Bénin a supprimé les frais de scolarité au primaire et en secondaire. Le français est la langue officielle du Bénin et est généralement la langue d'enseignement. Depuis le gouvernement du président Thomas Boni Yayi, les langues nationales dont le Fon sont enseignées dès le primaire.
+
+L'éducation est obligatoire pour tous les enfants de moins de onze ans. 
+
+Après deux à trois ans en maternelle, il faut six ans pour achever et obtenir le Certificat d'Études Primaires (CEP) qui marque la fin de l'école primaire.
+
+Il faut sept ans pour terminer le secondaire. À la fin des quatre premières années de l'école secondaire, les élèves doivent passer le BEPC (Brevet d'Etudes du Premier Cycle). Après trois années, les étudiants passent le  Baccalauréat (BAC). 
+
+## Organisation de l’enseignement supérieur
+
+Les  universités sont placées sous la tutelle du Ministère de l’Enseignement Supérieur et de la Recherche Scientifique (MESRS). 
+
+L’offre de formation proposée par les universités est très large et couvre l’ensemble des champs 
+disciplinaires. 
+
+Depuis 2011, le système LMD (Licence, Master, Doctorat) est devenu la norme au Bénin, suite à la présentation le 28 avril 2010 en conseil des ministres du décret instituant le LMD.
+
+
+## Orientation
+
+[PASS'AVENIR](https://www.fondation-jae.org/passavenir-insertion/)
