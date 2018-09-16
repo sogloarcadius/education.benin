@@ -31,12 +31,7 @@
                     <h2 class="mdl-card__title-text">{{course.name}}</h2>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    <strong>Description : </strong> {{course.description}} <br/>
-                    <strong>Prérequis : </strong> {{course.prerequisite}} <br/>
-                    <strong>Année d'étude : </strong> {{course.yearsofstudy}}<br/>
-                    <strong>Université : </strong> {{course.university}}<br/>
-                    <strong>Faculté : </strong> {{course.faculty}}<br/>
-
+                    <strong>UFR : </strong> {{course.college.toUpperCase()}}<br/>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -76,7 +71,7 @@ export default {
 
             response = _.flatten(response);
             response = _.map(response, _.method('toUpperCase'));
-            response = _.uniq(response);
+            response = _.uniq(response).sort();
             response = _.compact(response);
 
             return response;
@@ -105,7 +100,7 @@ export default {
             }
             else if(this.field_selected == '' && this.faculty_selected != '' ){
                 response = _.filter(this.courses, function(course) {
-                if (course.faculty.toUpperCase() == self.faculty_selected){
+                if (course.college.toUpperCase() == self.faculty_selected){
                     return faculty;
                 }
                 });
@@ -115,7 +110,7 @@ export default {
                 var response = [];
                 var courses = this.FindCoursesByField(this.field_selected);
                 _.forEach(courses, (function(course){
-                    if (course.faculty.toUpperCase() == self.faculty_selected){
+                    if (course.college.toUpperCase() == self.faculty_selected){
                         response.push(course);
                     }
                 }));         

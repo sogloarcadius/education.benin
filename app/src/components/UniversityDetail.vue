@@ -88,7 +88,10 @@ export default {
                         faculties.push(university.faculties);
                     }
                 }));
-            faculties = _.uniq(_.flatten(faculties)).sort();
+
+            faculties = _.uniq(_.flatten(faculties));
+            
+            faculties = _.sortBy(faculties, o => o.id);
 
             return faculties;
         },

@@ -1,37 +1,37 @@
-- id: POLYTECH-LE-CITOYEN
-  name: Institut Polytechnique - Le Citoyen
-  courses:
-    - name: Licence - Master en Communication de Développement
-      description: Communication de Développement
-      prerequisite: Bac
-      yearsofstudy: 3
-      roles: 
-        - NA
-      fields:
-        - science
-        - communication
-      college: POLYTECH-LE-CITOYEN
+id: POLYTECH-LE-CITOYEN
+name: Institut Polytechnique - Le Citoyen
+courses:
+  - name: Licence - Master en Communication de Développement
+    description: Communication de Développement
+    prerequisite: Bac
+    yearsofstudy: 3
+    roles: 
+      - NA
+    fields:
+      - science
+      - communication
+    college: POLYTECH-LE-CITOYEN
 
-    - name: Licence - Master en Management des Ressources Humaines
-      description: Management des Ressources Humaines
-      prerequisite: Bac
-      yearsofstudy: 5
-      roles: 
-        - NA
-      fields:
-        - science
-        - communication
-        - management
-      college: POLYTECH-LE-CITOYEN
+  - name: Licence - Master en Management des Ressources Humaines
+    description: Management des Ressources Humaines
+    prerequisite: Bac
+    yearsofstudy: 5
+    roles: 
+      - NA
+    fields:
+      - science
+      - communication
+      - management
+    college: POLYTECH-LE-CITOYEN
 
-    - name: Master Management des Projets et Développement
-      description: Management des Projets et Développement
-      prerequisite: Bac
-      yearsofstudy: 5
-      roles: 
-        - NA
-      fields:
-        - science
-        - communication
-        - management
-      college: POLYTECH-LE-CITOYEN
+  - name: Master Management des Projets et Développement
+    description: Management des Projets et Développement
+    prerequisite: Bac
+    yearsofstudy: 5
+    roles: 
+      - NA
+    fields:
+      - science
+      - communication
+      - management
+    college: POLYTECH-LE-CITOYEN

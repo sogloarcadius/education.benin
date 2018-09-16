@@ -1,77 +1,77 @@
-- id: UCAO
-  name: Université Catholique de l’Afrique de l’Ouest
-  courses:
-    - name: |
-        Licences UCAO
-          - Licence Droit
-          - Licence Sciences sociales
-          - Licence de Lettres
-          - Licence Économie, gestion
-          - Licence Information communication
-          - Licence Langues, littératures et civilisations
-          - Licence Mathématiques et informatique
-          - Licence Psychologie
-          - Licence Sciences de l’éducation
-          - Licence Sciences Théologie
-          - Licence Sciences sociales parcours Sociologie et anthropologie
-      description: licences UCAO
-      prerequisite: Bac
-      yearsofstudy: 3
-      roles: 
-        - NA
-      fields:
-        - science
-        - technology
-      college: UCAO
-  
-    - name: |
-        Masters UCAO
-          - International Master in Environmental Management (IMEM)
-          - Master Gestion des projets et développement
-          - Master en Ressources humaines
-          - Master Sciences de l'éducation
-          - Master Théologie catholique
-          - Master Enseignement, Education et Formation
-      description: masters UCAO
-      prerequisite: Bac
-      yearsofstudy: 5
-      roles: 
-        - NA
-      fields:
-        - science
-        - education 
-        - religion
-      college: UCAO
+id: UCAO
+name: Université Catholique de l’Afrique de l’Ouest
+courses:
+  - name: |
+      Licences UCAO
+        - Licence Droit
+        - Licence Sciences sociales
+        - Licence de Lettres
+        - Licence Économie, gestion
+        - Licence Information communication
+        - Licence Langues, littératures et civilisations
+        - Licence Mathématiques et informatique
+        - Licence Psychologie
+        - Licence Sciences de l’éducation
+        - Licence Sciences Théologie
+        - Licence Sciences sociales parcours Sociologie et anthropologie
+    description: licences UCAO
+    prerequisite: Bac
+    yearsofstudy: 3
+    roles: 
+      - NA
+    fields:
+      - science
+      - technology
+    college: UCAO
+
+  - name: |
+      Masters UCAO
+        - International Master in Environmental Management (IMEM)
+        - Master Gestion des projets et développement
+        - Master en Ressources humaines
+        - Master Sciences de l'éducation
+        - Master Théologie catholique
+        - Master Enseignement, Education et Formation
+    description: masters UCAO
+    prerequisite: Bac
+    yearsofstudy: 5
+    roles: 
+      - NA
+    fields:
+      - science
+      - education 
+      - religion
+    college: UCAO
 
 
-    - name: |
-        Doctorats UCAO
-          - Doctorat canonique de théologie
-          - Doctorat Éducation
-          - Doctorat mention lettres, littératures, civilisation étrangère, interculturalité
-      description: Doctorats UCAO
-      prerequisite: Bac
-      yearsofstudy: 8
-      roles: 
-        - NA
-      fields:
-        - science
-        - religion
-        - litterature
-        - languages
-      college: UCAO
+  - name: |
+      Doctorats UCAO
+        - Doctorat canonique de théologie
+        - Doctorat Éducation
+        - Doctorat mention lettres, littératures, civilisation étrangère, interculturalité
+    description: Doctorats UCAO
+    prerequisite: Bac
+    yearsofstudy: 8
+    roles: 
+      - NA
+    fields:
+      - science
+      - religion
+      - litterature
+      - languages
+    college: UCAO
 
-    - name: |
-        Diplômes canoniques
-          - Baccalauréat canonique de théologie
-          - Doctorat canonique de théologie
-          - Licence canonique de théologie
-      description: Diplômes canoniques
-      prerequisite: Bac
-      yearsofstudy: 8
-      roles: 
-        - NA
-      fields:
-        - science
-        - religion
-      college: UCAO
+  - name: |
+      Diplômes canoniques
+        - Baccalauréat canonique de théologie
+        - Doctorat canonique de théologie
+        - Licence canonique de théologie
+    description: Diplômes canoniques
+    prerequisite: Bac
+    yearsofstudy: 8
+    roles: 
+      - NA
+    fields:
+      - science
+      - religion
+    college: UCAO

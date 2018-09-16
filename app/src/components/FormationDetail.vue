@@ -1,16 +1,23 @@
 <template>
 
 <div>
-    <div class="mdl-layout__header">
-        <div class="mdl-layout__header-row center-items">
-            <span class="">{{FindCourse().name}}</span>
+    <div>
+    <br/>
+    <br/>
+    <div class="mdl-layout__title">
+        <div class="mdl-layout">
+            <div> 
+                <strong>Formation: </strong> {{FindCourse().name}}
+            </div>
+            <hr/>
         </div>
+    </div>
     </div>
 
     <div class="mdl-grid">
         <div class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
                 <br/><br/>
-                <div> Formation : {{FindCourse().name}}
+                 <div>Description : {{FindCourse().description}}
                 </div>
                 <hr/>
                  <div>Diplome requis : {{FindCourse().prerequisite}}

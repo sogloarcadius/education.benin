@@ -1,26 +1,26 @@
-- id: UPIB
-  name: Université Polytechnique Internationale du Bénin
-  courses:
-      - name: Licence en Informatique appliquée à la Gestion des Entreprises (LIAGE)
-        description: Licence en Informatique appliquée à la Gestion des Entreprises (LIAGE)
-        prerequisite: Bac
-        yearsofstudy: 3
-        roles:
-          - Autres
-        fields:
-        - science
-        - technology
-        - business
-        college: UPIB
-      
-      - name: Licence professionnelle en Techniques comptables et financières
-        description: Licence professionnelle en Techniques comptables et financières
-        prerequisite: Bac
-        yearsofstudy: 3
-        roles:
-          - Autres
-        fields:
-        - science
-        - economy
-        - business
-        college: UPIB 
+id: UPIB
+name: Université Polytechnique Internationale du Bénin
+courses:
+    - name: Licence en Informatique appliquée à la Gestion des Entreprises (LIAGE)
+      description: Licence en Informatique appliquée à la Gestion des Entreprises (LIAGE)
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles:
+        - Autres
+      fields:
+      - science
+      - technology
+      - business
+      college: UPIB
+    
+    - name: Licence professionnelle en Techniques comptables et financières
+      description: Licence professionnelle en Techniques comptables et financières
+      prerequisite: Bac
+      yearsofstudy: 3
+      roles:
+        - Autres
+      fields:
+      - science
+      - economy
+      - business
+      college: UPIB 

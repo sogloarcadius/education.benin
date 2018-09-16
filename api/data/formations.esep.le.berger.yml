@@ -1,37 +1,37 @@
-- id: ESEP-LE-BERGER
-  name: Ecole Supérieure d’Enseignement Professionnel Le Berger d’Akpakpa 
-  courses:
-    - name: Licence - Master en audit contrôle de gestion
-      description: audit contrôle de gestion
-      prerequisite: Bac
-      yearsofstudy: 5
-      roles: 
-        - controleur de gestion
-      fields:
-        - science
-        - accounting
-        - management
-      college: ESEP-LE-BERGER
+id: ESEP-LE-BERGER
+name: Ecole Supérieure d’Enseignement Professionnel Le Berger d’Akpakpa 
+courses:
+  - name: Licence - Master en audit contrôle de gestion
+    description: audit contrôle de gestion
+    prerequisite: Bac
+    yearsofstudy: 5
+    roles: 
+      - controleur de gestion
+    fields:
+      - science
+      - accounting
+      - management
+    college: ESEP-LE-BERGER
 
-    - name: Licence - Master en administration et gestion des ressources humaines
-      description: administration et gestion des ressources humaines
-      prerequisite: Bac
-      yearsofstudy: 5
-      roles: 
-        - administration et gestion des ressources humaines
-      fields:
-        - science
-        - management
-      college: ESEP-LE-BERGER
+  - name: Licence - Master en administration et gestion des ressources humaines
+    description: administration et gestion des ressources humaines
+    prerequisite: Bac
+    yearsofstudy: 5
+    roles: 
+      - administration et gestion des ressources humaines
+    fields:
+      - science
+      - management
+    college: ESEP-LE-BERGER
 
-    - name: Licence professionnelle gestion des entreprises option finance et comptabilité
-      description: finance et comptabilité
-      prerequisite: Bac
-      yearsofstudy: 3
-      roles: 
-        - comptables
-        - responsable de la finance
-      fields:
-        - science
-        - accounting
-      college: ESEP-LE-BERGER
+  - name: Licence professionnelle gestion des entreprises option finance et comptabilité
+    description: finance et comptabilité
+    prerequisite: Bac
+    yearsofstudy: 3
+    roles: 
+      - comptables
+      - responsable de la finance
+    fields:
+      - science
+      - accounting
+    college: ESEP-LE-BERGER

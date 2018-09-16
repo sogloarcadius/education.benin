@@ -1,14 +1,14 @@
-- id: CFPMM
-  name: Centre de Formation Professionnelle aux Métiers des Médias
-  courses:
-    - name: Licence en journalisme
-      description: journalisme
-      prerequisite: Bac
-      yearsofstudy: 3
-      roles: 
-        - journaliste
-      fields:
-        - science
-        - multimedia
-        - journalism
-      college: CFPMM
+id: CFPMM
+name: Centre de Formation Professionnelle aux Métiers des Médias
+courses:
+  - name: Licence en journalisme
+    description: journalisme
+    prerequisite: Bac
+    yearsofstudy: 3
+    roles: 
+      - journaliste
+    fields:
+      - science
+      - multimedia
+      - journalism
+    college: CFPMM
