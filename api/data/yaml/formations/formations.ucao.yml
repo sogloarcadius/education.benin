@@ -1,8 +1,8 @@
 id: UCAO
 name: Université Catholique de l’Afrique de l’Ouest
 courses:
-  - name: |
-      Licences UCAO
+  - name: Licences UCAO
+    description: >
         - Licence Droit
         - Licence Sciences sociales
         - Licence de Lettres
@@ -14,46 +14,44 @@ courses:
         - Licence Sciences de l’éducation
         - Licence Sciences Théologie
         - Licence Sciences sociales parcours Sociologie et anthropologie
-    description: licences UCAO
     prerequisite: Bac
     yearsofstudy: 3
     roles: 
-      - NA
+      - Avocat
+      - Journaliste
+      - Autres
     fields:
       - science
       - technology
     college: UCAO
 
-  - name: |
-      Masters UCAO
+  - name: Masters UCAO
+    description: >
         - International Master in Environmental Management (IMEM)
         - Master Gestion des projets et développement
         - Master en Ressources humaines
         - Master Sciences de l'éducation
         - Master Théologie catholique
         - Master Enseignement, Education et Formation
-    description: masters UCAO
     prerequisite: Bac
     yearsofstudy: 5
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - education 
       - religion
     college: UCAO
 
-
-  - name: |
-      Doctorats UCAO
+  - name: Doctorats UCAO
+    description: >
         - Doctorat canonique de théologie
         - Doctorat Éducation
         - Doctorat mention lettres, littératures, civilisation étrangère, interculturalité
-    description: Doctorats UCAO
     prerequisite: Bac
     yearsofstudy: 8
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - religion
@@ -61,16 +59,16 @@ courses:
       - languages
     college: UCAO
 
-  - name: |
-      Diplômes canoniques
+
+  - name: Diplômes canoniques
+    description: >
         - Baccalauréat canonique de théologie
         - Doctorat canonique de théologie
         - Licence canonique de théologie
-    description: Diplômes canoniques
     prerequisite: Bac
     yearsofstudy: 8
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - religion

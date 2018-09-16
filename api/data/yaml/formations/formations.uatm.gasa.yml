@@ -6,7 +6,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 5
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - technology
@@ -17,7 +17,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 3
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - law
@@ -28,7 +28,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 5
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - agriculture
@@ -39,7 +39,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 3
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - biotechnology
@@ -50,7 +50,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 5
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - management
@@ -61,7 +61,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 3
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - politics

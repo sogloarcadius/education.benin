@@ -14,18 +14,26 @@ from parsers import API_DIR
 
 
 COURSES_FILE = [
-    "formations.uac.yml",
-    "formations.up.yml",
-    "formations.una.yml",
-    "formations.unstim.yml",
-    "formations.hecm.yml"
+    "formations.cfpmm.yml",
+    "formations.polytech.le.citoyen.yml",
+    "formations.ucao.yml",
+    "formations.upib.yml",
+    "formations.verechaguine.ak.yml",
+    "formations.esep.le.berger.yml",
+    "formations.uac.yml",                  
+    "formations.una.yml",     
+    "formations.upi.onm.yml",
+    "formations.hecm.yml",            
+    "formations.uatm.gasa.yml",            
+    "formations.unstim.yml",  
+    "formations.up.yml"
 ]
 
 DEST_DIR = os.path.join(os.path.dirname(API_DIR), "app", "src", "store")
 
 
 def read_yaml_file(file_name):
-    with open(os.path.join(os.path.join(API_DIR, "data"), file_name)) as fp:
+    with open(os.path.join(os.path.join(API_DIR, "data", "yaml", "formations"), file_name)) as fp:
         data = yaml.safe_load(fp)
 
     return data

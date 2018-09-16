@@ -12,7 +12,7 @@ import json
 from parsers import API_DIR
 
 
-FILE_PATH = os.path.join(os.path.join(API_DIR, "data"), "facultes.universites.public.yml")
+FILE_PATH = os.path.join(os.path.join(API_DIR, "data", "yaml"), "facultes.yml")
 DEST_DIR = os.path.join(os.path.dirname(API_DIR), "app", "src", "store")
 
 

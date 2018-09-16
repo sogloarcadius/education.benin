@@ -6,7 +6,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 5
     roles: 
-      - NA
+      - Autres
     fields:
       - science
       - management
@@ -19,7 +19,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 3
     roles: 
-      - NA
+      - Autres
     fields:
       - finance
       - economy
@@ -31,7 +31,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 5
     roles: 
-      - NA
+      - Autres
     fields:
       - transport
       - logistic
@@ -42,7 +42,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 3
     roles: 
-      - NA
+      - Autres
     fields:
       - accounting
       - management
@@ -54,7 +54,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 5
     roles: 
-      - NA
+      - Autres
     fields:
       - accounting
       - management
@@ -65,7 +65,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 5
     roles: 
-      - NA
+      - Autres
     fields:
       - management
       - business

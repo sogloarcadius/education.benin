@@ -1,0 +1,25 @@
+---
+- name: alibori
+  size: '26242'
+- name: atacora
+  size: '20499'
+- name: atlantique
+  size: '3233'
+- name: borgou
+  size: '25856'
+- name: collines
+  size: '13931'
+- name: couffo
+  size: '2404'
+- name: donga
+  size: '11126'
+- name: littoral
+  size: '79'
+- name: Mono
+  size: '1605'
+- name: Ouémé
+  size: '1281'
+- name: plateau
+  size: '3264'
+- name: zou
+  size: '5243'
