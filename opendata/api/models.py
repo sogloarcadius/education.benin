@@ -26,7 +26,7 @@ class Province(models.Model):
 # Etablissements d'enseignement supérieur
 class University(models.Model):
     STATUS_CHOICES = [
-        ('public', 'public')
+        ('public', 'public'),
         ('private', 'private')
     ]
     short_name = models.CharField(max_length=25, primary_key=True)
@@ -35,11 +35,11 @@ class University(models.Model):
     phone = models.CharField(max_length=25)
     email = models.EmailField()
     url = models.URLField()
-    status = models.CharField(max_length=1, choices=STATUS_CHOICES)
+    status = models.CharField(max_length=8, choices=STATUS_CHOICES)
     cities = models.ManyToManyField(City)
 
 
-class Field(models.model):
+class Field(models.Model):
     name = models.CharField(max_length=25, primary_key=True)
 
 class Job(models.Model):
@@ -54,7 +54,7 @@ class Faculty(models.Model):
     fields = models.ManyToManyField(Field)
 
 
-class Course(model.Model):
+class Course(models.Model):
     name = models.TextField(primary_key=True)
     description = models.TextField()
     prerequisite = models.CharField(max_length=25)

@@ -1,19 +1,55 @@
-from django.contrib.auth.models import User, Group
+from api import models
+from api import serializers 
 from rest_framework import viewsets
-from api.serializers import UserSerializer, GroupSerializer
+from rest_framework_swagger.views import get_swagger_view
 
 
-class UserViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    queryset = User.objects.all().order_by('-date_joined')
-    serializer_class = UserSerializer
+api_swagger = get_swagger_view(title='Edubenin API')
 
 
-class GroupViewSet(viewsets.ModelViewSet):
+class DistrictViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows groups to be viewed or edited.
+    /districts
     """
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
+    queryset = models.District.objects.all()
+    serializer_class = serializers.DistrictSerializer
+
+
+class CityViewSet(viewsets.ModelViewSet):
+    """
+    /cities
+    """
+    queryset = models.City.objects.all()
+    serializer_class = serializers.CitySerializer
+
+
+class ProvinceViewSet(viewsets.ModelViewSet):
+    """
+    /provinces
+    """
+    queryset = models.Province.objects.all()
+    serializer_class = serializers.ProvinceSerializer
+
+
+class UniversityViewSet(viewsets.ModelViewSet):
+    """
+    /universities
+    """
+    queryset = models.University.objects.all()
+    serializer_class = serializers.UniversitySerializer
+
+
+class FacultyViewSet(viewsets.ModelViewSet):
+    """
+    /faculties
+    """
+    queryset = models.Faculty.objects.all()
+    serializer_class = serializers.FacultySerializer
+
+
+class CourseViewSet(viewsets.ModelViewSet):
+    """
+    /courses
+    """
+    queryset = models.Course.objects.all()
+    serializer_class = serializers.CourseSerializer
