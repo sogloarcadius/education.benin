@@ -4,6 +4,7 @@ from api.models import District, City, Province, University, Faculty, Course
 from rest_framework import serializers
 
 
+
 class DistrictSerializer(serializers.ModelSerializer):
     class Meta:
         model = District

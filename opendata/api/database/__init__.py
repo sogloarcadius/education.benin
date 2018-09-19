@@ -1,1 +1,0 @@
-# Module to parse YAML files and insert to the database

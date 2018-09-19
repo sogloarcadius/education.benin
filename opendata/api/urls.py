@@ -4,7 +4,7 @@ from api import views
 
 class ApiReference(routers.APIRootView):
     """
-    Edubenin API
+    Edubenin API Reference
     """
     pass
 
@@ -22,6 +22,7 @@ router.register(r'faculties', views.FacultyViewSet)
 router.register(r'courses', views.CourseViewSet)
 
 urlpatterns = [
-    url(r'^swagger$', views.api_swagger),
+    url(r'^$', views.api_swagger),
+    url(r'^schema/$', views.schema_view),
     url(r'^', include(router.urls))
 ]

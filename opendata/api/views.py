@@ -2,9 +2,10 @@ from api import models
 from api import serializers 
 from rest_framework import viewsets
 from rest_framework_swagger.views import get_swagger_view
-
+from rest_framework.schemas import get_schema_view
 
 api_swagger = get_swagger_view(title='Edubenin API')
+schema_view = get_schema_view(title='Edubenin API')
 
 
 class DistrictViewSet(viewsets.ModelViewSet):
@@ -13,6 +14,8 @@ class DistrictViewSet(viewsets.ModelViewSet):
     """
     queryset = models.District.objects.all()
     serializer_class = serializers.DistrictSerializer
+    http_method_names = ['get']
+
 
 
 class CityViewSet(viewsets.ModelViewSet):
@@ -21,6 +24,8 @@ class CityViewSet(viewsets.ModelViewSet):
     """
     queryset = models.City.objects.all()
     serializer_class = serializers.CitySerializer
+    http_method_names = ['get']
+
 
 
 class ProvinceViewSet(viewsets.ModelViewSet):
@@ -29,6 +34,8 @@ class ProvinceViewSet(viewsets.ModelViewSet):
     """
     queryset = models.Province.objects.all()
     serializer_class = serializers.ProvinceSerializer
+    http_method_names = ['get']
+
 
 
 class UniversityViewSet(viewsets.ModelViewSet):
@@ -37,6 +44,7 @@ class UniversityViewSet(viewsets.ModelViewSet):
     """
     queryset = models.University.objects.all()
     serializer_class = serializers.UniversitySerializer
+    http_method_names = ['get']
 
 
 class FacultyViewSet(viewsets.ModelViewSet):
@@ -45,6 +53,8 @@ class FacultyViewSet(viewsets.ModelViewSet):
     """
     queryset = models.Faculty.objects.all()
     serializer_class = serializers.FacultySerializer
+    http_method_names = ['get']
+
 
 
 class CourseViewSet(viewsets.ModelViewSet):
@@ -53,3 +63,4 @@ class CourseViewSet(viewsets.ModelViewSet):
     """
     queryset = models.Course.objects.all()
     serializer_class = serializers.CourseSerializer
+    http_method_names = ['get']
