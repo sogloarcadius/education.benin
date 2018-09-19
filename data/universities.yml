@@ -8,7 +8,7 @@
   email: vrcireip.uac@uac.bj
   url: https://www.uac.bj/
   type: public
-  locations:
+  cities:
     - cotonou
 
 - id: UP
@@ -18,7 +18,7 @@
   email: contacts@univ-parakou.bj
   url: http://www.univ-parakou.bj/
   type: public
-  locations:
+  cities:
     - parakou
 
 
@@ -29,7 +29,7 @@
   email: 
   url: http://www.unstim.bj/
   type: public
-  locations:
+  cities:
     - abomey
 
 - id: UNA 
@@ -39,7 +39,7 @@
   email: 
   url: http://www.una.bj/
   type: public
-  locations:
+  cities:
     - porto-novo
 
 
@@ -53,7 +53,7 @@
   email: info@uatm-gasa.com
   url: http://www.uatm-gasa.com/
   type: private
-  locations:
+  cities:
     - cotonou
     - porto-novo
 
@@ -64,7 +64,7 @@
   email: contact@upionm.com
   url: http://upi-onm.com
   type: private
-  locations:
+  cities:
     - cotonou
     - porto-novo
     - abomey
@@ -77,7 +77,7 @@
   email: contact@hecm-afrique.net
   url: http://www.hecm-afrique.net/
   type: private
-  locations:
+  cities:
     - cotonou
     - porto-novo
     - malanville
@@ -90,7 +90,7 @@
   email: info@ucao.org
   url: http://ucao.org/
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: POLYTECH-LE-CITOYEN
@@ -100,7 +100,7 @@
   email: info@iplecitoyen.com
   url: http://www.iplecitoyen.com
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: VERECHAGUINE-AK
@@ -110,7 +110,7 @@
   email: contact@verechaguine.com
   url: http://verechaguine.com
   type: Private
-  locations:
+  cities:
     - cotonou
 
 
@@ -121,7 +121,7 @@
   email: info@esepleberger.edu.bj
   url: https://www.esepleberger.edu.bj
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: CFPMM
@@ -131,7 +131,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: PIGIER-BENIN
@@ -141,7 +141,7 @@
   email: info@pigierbenin.com
   url: http://pigierbenin.com
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: IUP-BENIN
@@ -151,7 +151,7 @@
   email: usafbenin@yahoo.fr
   url: http://iup-universite.com/
   type: private
-  locations:
+  cities:
     - porto-novo
 
 
@@ -163,7 +163,7 @@
   email: eagoua@gmail.com
   url: http://estimbenin.com/
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: IIM-BENIN
@@ -173,7 +173,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: ISSIC-BENIN
@@ -183,7 +183,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: ISMA
@@ -193,7 +193,7 @@
   email: info@isma-benin.org
   url: http://w3.isma-benin.org/
   type: private
-  locations:
+  cities:
     - cotonou
 
 
@@ -204,7 +204,7 @@
   email: ismadonai@ismadonai.net
   url: http://www.ismadonai.net/fr/
   type: private
-  locations:
+  cities:
     - cotonou
     - parakou
     - porto-novo
@@ -216,7 +216,7 @@
   email: cerco@groupecerco.com
   url: https://groupecerco.com
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: IRGIB Africa
@@ -226,7 +226,7 @@
   email: contact@irgibafrica.university 
   url: https://irgibafrica.university/
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: HNAUB
@@ -236,7 +236,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - porto-novo    
 
 - id: USTB
@@ -246,7 +246,7 @@
   email: info@ustbenin.org
   url: http://www.ustbenin.org/
   type: private
-  locations:
+  cities:
     - cotonou
 
   
@@ -257,7 +257,7 @@
   email: contact@esmbenin.com 
   url: http://esmbenin.com/
   type: private
-  locations:
+  cities:
     - cotonou
 
 
@@ -268,7 +268,7 @@
   email: contact@isfes-lv.org 
   url: http://www.isfes-lv.org/
   type: private
-  locations:
+  cities:
     - cotonou
 
 - id: ESPERANZA-UNIVERSITY
@@ -278,7 +278,7 @@
   email: info@esperanza-benin.org
   url: http://www.esperanza-benin.org
   type: private
-  locations:
+  cities:
     - cotonou
 
 
@@ -289,7 +289,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -300,7 +300,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -311,7 +311,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -322,7 +322,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -332,7 +332,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -342,7 +342,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -354,7 +354,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -364,7 +364,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -376,7 +376,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -387,7 +387,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -398,7 +398,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -408,7 +408,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -418,7 +418,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -429,7 +429,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -440,7 +440,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -450,7 +450,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -460,7 +460,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -470,7 +470,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -481,7 +481,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -492,7 +492,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -502,7 +502,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -512,7 +512,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -522,7 +522,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -533,7 +533,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -543,7 +543,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -555,7 +555,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -565,7 +565,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -575,7 +575,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -585,7 +585,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -596,7 +596,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -606,7 +606,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -616,7 +616,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -626,7 +626,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -637,7 +637,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -647,7 +647,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -658,7 +658,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -669,7 +669,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -679,7 +679,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -689,7 +689,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -700,7 +700,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -711,7 +711,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -722,7 +722,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -734,7 +734,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -744,7 +744,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: ESCAE-BENIN
@@ -754,7 +754,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -764,7 +764,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -774,7 +774,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -784,7 +784,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 
@@ -796,7 +796,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -806,7 +806,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -816,7 +816,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -826,7 +826,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: EFES-SAPIENTIA
@@ -836,7 +836,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -846,7 +846,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -856,7 +856,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -866,7 +866,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -876,7 +876,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -886,7 +886,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -896,7 +896,7 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
 
 - id: 
@@ -906,5 +906,5 @@
   email: 
   url: 
   type: private
-  locations:
+  cities:
     - 
