@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Documentation Projet',
-    description: "edubenin.bj",
+    title: 'edubenin.bj',
+    description: "Documentation",
     base: '/education.benin/',
     themeConfig: {
       sidebar: 'auto',
