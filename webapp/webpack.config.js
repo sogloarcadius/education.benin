@@ -19,7 +19,7 @@ module.exports = {
 				loader: 'vue-loader',
 				options: {
 					loaders: {
-            js: 'babel-loader?presets[]=es2015'
+            			js: 'babel-loader?presets[]=@babel/preset-env'
 					}
 					// other vue-loader options go here
 				}
@@ -29,7 +29,7 @@ module.exports = {
 				loader: 'babel-loader',
 				exclude: /node_modules/,
 				query: {
-          			presets: ['es2015']
+          			presets: ['@babel/preset-env']
         		}	
 			},
 			{
