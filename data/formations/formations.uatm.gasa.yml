@@ -10,7 +10,7 @@ courses:
     fields:
       - science
       - technology
-    college: UATM-GASA
+    faculty: UATM-GASA
 
   - name: Licence professionnelle en sciences juridiques
     description: sciences juridiques
@@ -21,7 +21,7 @@ courses:
     fields:
       - science
       - law
-    college: UATM-GASA
+    faculty: UATM-GASA
 
   - name: Licence - Master en Agronomie
     description: Agronomie
@@ -32,7 +32,7 @@ courses:
     fields:
       - science
       - agriculture
-    college: UATM-GASA
+    faculty: UATM-GASA
 
   - name: Licence professionnelle en Biotechnologie
     description: Biotechnologie
@@ -43,7 +43,7 @@ courses:
     fields:
       - science
       - biotechnology
-    college: UATM-GASA
+    faculty: UATM-GASA
 
   - name: Licence - Master en sciences de gestion
     description: gestion
@@ -54,7 +54,7 @@ courses:
     fields:
       - science
       - management
-    college: UATM-GASA
+    faculty: UATM-GASA
 
   - name: Licence en science politique
     description: science politique
@@ -65,7 +65,7 @@ courses:
     fields:
       - science
       - politics
-    college: UATM-GASA
+    faculty: UATM-GASA
 
 
   

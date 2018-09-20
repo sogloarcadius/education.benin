@@ -12,7 +12,7 @@ courses:
       - management
       - technology
       - computing
-    college: UPI-ONM
+    faculty: NaN
 
   - name: Licence professionnelle en Techniques comptables et financieres
     description: Techniques comptables et financieres
@@ -24,7 +24,7 @@ courses:
       - finance
       - economy
       - accounting
-    college: UPI-ONM
+    faculty: NaN
 
   - name: Licence - Master professionnelle en Transport et logistique
     description: Transport et logistique
@@ -35,7 +35,7 @@ courses:
     fields:
       - transport
       - logistic
-    college: UPI-ONM
+    faculty: NaN
 
   - name: Licence en Informatique appliquée à la Gestion des Entreprises option Finance - Comptabilité
     description: Finance - Comptabilité
@@ -47,7 +47,7 @@ courses:
       - accounting
       - management
       - computing
-    college: UPI-ONM
+    faculty: NaN
 
   - name: Master en Comptabilité, Controle et Audit
     description: Comptabilité, Controle et Audit
@@ -58,7 +58,7 @@ courses:
     fields:
       - accounting
       - management
-    college: UPI-ONM
+    faculty: NaN
 
   - name: Master en Administration des affaires
     description: Administration des affaires
@@ -69,4 +69,4 @@ courses:
     fields:
       - management
       - business
-    college: UPI-ONM
+    faculty: NaN

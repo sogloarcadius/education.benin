@@ -11,7 +11,7 @@ courses:
     fields:
       - science
       - multimedia
-    college: HECM
+    faculty: NaN
 
   - name: Licences HECM
     description: >
@@ -33,7 +33,7 @@ courses:
     fields:
       - science
       - technology
-    college: HECM
+    faculty: NaN
 
 
   - name: Masters HECM
@@ -52,4 +52,4 @@ courses:
     fields:
       - science
       - technology
-    college: HECM
+    faculty: NaN

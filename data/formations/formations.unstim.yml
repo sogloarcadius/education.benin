@@ -12,7 +12,7 @@ courses:
       - science
       - mathematics
       - physics
-    college: EnsN
+    faculty: EnsN
   
   - name: Licence en Chimie
     description: Physique-Chimie
@@ -26,7 +26,7 @@ courses:
       - mathematics
       - physics
       - chemical
-    college: EnsN
+    faculty: EnsN
 
   
   - name: Licence en Mathématiques
@@ -39,7 +39,7 @@ courses:
     fields:
       - science
       - mathematics
-    college: EnsN
+    faculty: EnsN
 
   
   - name: Licence professionnelle Economie gestion
@@ -52,7 +52,7 @@ courses:
       - science
       - management
       - economy
-    college: Enset
+    faculty: Enset
 
   
   - name: Licence professionnelle Comptabilité gestion
@@ -65,7 +65,7 @@ courses:
       - science
       - accounting
       - management
-    college: Enset
+    faculty: Enset
 
   - name: Licence professionnelle Secrétariat
     description: Secrétariat 
@@ -75,7 +75,7 @@ courses:
       - Enseignants des lycées et Collèges
     fields:
       - secretariat
-    college: Enset
+    faculty: Enset
 
   
   - name: Licence professionnelle Génie Civil
@@ -86,7 +86,7 @@ courses:
       - Enseignants des lycées et Collèges
     fields:
       - science
-    college: Enset
+    faculty: Enset
 
   - name: Licence professionnelle Génie électrique 
     description: Génie électrique 
@@ -96,7 +96,7 @@ courses:
       - Enseignants des lycées et Collèges
     fields:
       - science
-    college: Enset
+    faculty: Enset
   
   - name: Licence professionnelle Electrotechnique
     description: Electrotechnique
@@ -106,7 +106,7 @@ courses:
       - Enseignants des lycées et Collèges
     fields:
       - science
-    college: Enset
+    faculty: Enset
   
   - name: Licence professionnelle Mécanique automobile
     description: Mécanique automobile
@@ -116,7 +116,7 @@ courses:
       - Enseignants des lycées et Collèges
     fields:
       - science
-    college: Enset
+    faculty: Enset
   
   - name: Licence professionnelle Fabrication automobile
     description: Fabrication automobile
@@ -126,7 +126,7 @@ courses:
       - Enseignants des lycées et Collèges
     fields:
       - science
-    college: Enset
+    faculty: Enset
   
   - name: Licence professionnelle Production animale
     description: Production animale 
@@ -137,7 +137,7 @@ courses:
     fields:
       - science
       - livestock
-    college: Enset
+    faculty: Enset
   
   - name: Licence professionnelle Production végétale 
     description: Production végétale 
@@ -148,7 +148,7 @@ courses:
     fields:
       - science
       - agriculture
-    college: Enset
+    faculty: Enset
 
   
   - name: Licence professionnelle Economie familiale et sociale
@@ -161,7 +161,7 @@ courses:
       - science
       - economy
       - society
-    college: Enset
+    faculty: Enset
 
   - name: Licence - Master Architecture et Urbanisme
     description: Architecture et Urbanisme
@@ -179,7 +179,7 @@ courses:
       - science
       - environment
       - building
-    college: Estbr
+    faculty: Estbr
 
   
   - name: Licence - Master Bâtiments Travaux Publics BTP
@@ -199,7 +199,7 @@ courses:
       - science
       - environment
       - building
-    college: Estbr
+    faculty: Estbr
 
   - name: Licence - Master Aménagement et Assainissement Urbain
     description: Aménagement et Assainissement Urbain
@@ -216,7 +216,7 @@ courses:
       - science
       - environment
       - building
-    college: Estbr
+    faculty: Estbr
   
   - name: Licence - Master Géomètre Topographe
     description: Géomètre Topographe
@@ -232,7 +232,7 @@ courses:
       - science
       - environment
       - building
-    college: Estbr
+    faculty: Estbr
 
   
   - name: Licence en Physique
@@ -249,7 +249,7 @@ courses:
       - science
       - physics
       - mathematics
-    college: FastN
+    faculty: FastN
 
   - name: Licence en Chimie
     description: Chimie
@@ -265,7 +265,7 @@ courses:
       - physics
       - mathematics
       - chemical
-    college: FastN
+    faculty: FastN
 
   
   - name: Licence en Mathématiques
@@ -280,7 +280,7 @@ courses:
     fields:
       - science
       - mathematics
-    college: FastN
+    faculty: FastN
 
   - name: Licence en Chimie-Biologie-Géologie
     description: Chimie-Biologie-Géologie
@@ -298,7 +298,7 @@ courses:
       - mathematics
       - biology
       - geology
-    college: FastN
+    faculty: FastN
 
   
   - name: Licence en Sciences et Techniques, Science de la Vie et de la Terre et applications
@@ -309,7 +309,7 @@ courses:
     fields:
       - science
       - biotechnology
-    college: FastD
+    faculty: FastD
   
   - name: Licence en Sciences et Techniques, Biotechnologie, Amélioration des Productions Végétales et Production des semances
     description: Biotechnologie, Amélioration des Productions Végétales et Production des semances
@@ -327,7 +327,7 @@ courses:
     fields:
       - science
       - health
-    college: FastD
+    faculty: FastD
   
   - name: Licence en Sciences et Techniques, Gestion de l’Agrobiodiversité et ressources génétiques forestières
     description: Gestion de l’Agrobiodiversité et ressources génétiques forestières
@@ -344,7 +344,7 @@ courses:
       - science
       - health
       - environment
-    college: FastD
+    faculty: FastD
 
   
   - name: Licence en Sciences et Techniques, Biotechnologie et Amélioration des espèces animales
@@ -359,7 +359,7 @@ courses:
     fields:
       - science
       - biotechnology
-    college: FastD
+    faculty: FastD
   
   - name: Licence en Sciences et Techniques, Analyse biomédicale
     description: Analyse biomédicale
@@ -373,7 +373,7 @@ courses:
     fields:
       - science
       - health
-    college: FastD
+    faculty: FastD
   
   - name: Licence en Sciences et Techniques, Géologie, Mines et Recherche pétrolière
     description: Géologie, Mines et Recherche pétrolière
@@ -389,7 +389,7 @@ courses:
     fields:
       - science
       - biotechnology
-    college: FastD
+    faculty: FastD
 
   - name: Licence Professionnelle Génie Civil
     description: Génie Civil
@@ -408,7 +408,7 @@ courses:
       - Technicien supérieur dans le public 
     fields:
       - science
-    college: IutL
+    faculty: IutL
 
   
   - name: Licence Professionnelle Génie Electrique et Informatique Industrielle
@@ -425,7 +425,7 @@ courses:
       - science
       - technology
       - computing
-    college: IutL
+    faculty: IutL
   
   - name: Licence Professionnelle Génie Mécanique et Energetique
     description: Génie Mécanique et Energetique
@@ -446,7 +446,7 @@ courses:
       - science
       - energy
       - mechanics
-    college: IutL
+    faculty: IutL
 
   - name:   Licence Professionnelle Génie Industriel et Maintenance
     description: Génie Industriel et Maintenance
@@ -461,7 +461,7 @@ courses:
       - Services  de contrôle de la qualité 
     fields:
       - science
-    college: IutL
+    faculty: IutL
   
   - name: Licence Professionnelle Génie Biologique industriel
     description: Génie Biologique industriel
@@ -476,7 +476,7 @@ courses:
     fields:
       - science
       - biology
-    college: IutL
+    faculty: IutL
 
 
   - name: Licence Professionnelle Energies Renouvelables et Maintenance des Systèmes Energétiques 
@@ -492,7 +492,7 @@ courses:
     fields:
       - science
       - energy
-    college: IutL
+    faculty: IutL
   
   - name: Classe Préparatoire
     description: Classes Préparatoires
@@ -502,6 +502,6 @@ courses:
       - Poursuite d'Etudes d'ingénieurs
     fields:
       - prepa
-    college: Inspei
+    faculty: Inspei
 
 

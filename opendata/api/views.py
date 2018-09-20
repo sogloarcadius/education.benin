@@ -54,6 +54,7 @@ class FacultyViewSet(viewsets.ModelViewSet):
     queryset = models.Faculty.objects.all()
     serializer_class = serializers.FacultySerializer
     http_method_names = ['get']
+    filter_fields = ('university', 'city',)
 
 
 

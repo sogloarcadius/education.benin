@@ -10,7 +10,7 @@ courses:
     fields:
       - science
       - communication
-    college: POLYTECH-LE-CITOYEN
+    faculty: NaN
 
   - name: Licence - Master en Management des Ressources Humaines
     description: Management des Ressources Humaines
@@ -22,7 +22,7 @@ courses:
       - science
       - communication
       - management
-    college: POLYTECH-LE-CITOYEN
+    faculty: NaN
 
   - name: Master Management des Projets et Développement
     description: Management des Projets et Développement
@@ -34,4 +34,4 @@ courses:
       - science
       - communication
       - management
-    college: POLYTECH-LE-CITOYEN
+    faculty: NaN

@@ -16,7 +16,7 @@ courses:
     fields:
       - science
       - environment
-    college: Efib
+    faculty: Efib
   
   - name: Licence professionnelle Gestion et Production Végétale et Semencière
     description: Gestion et Production Végétale et Semencière
@@ -36,7 +36,7 @@ courses:
       - science
       - environment
       - agriculture
-    college: Egpvs
+    faculty: Egpvs
 
   - name: Licence professionnelle Gestion et Exploitation des Systèmes d’Elevage
     description: Gestion et Exploitation des Systèmes d’Elevage 
@@ -56,7 +56,7 @@ courses:
     fields:
       - science
       - livestock
-    college: Egese
+    faculty: Egese
 
   - name: Licence professionnelle Machinisme Agricole et Construction Mécanique
     description: Machinisme Agricole et Construction Mécanique 
@@ -78,7 +78,7 @@ courses:
       - science
       - agriculture
       - mechanics
-    college: Emacm
+    faculty: Emacm
   
   - name: Licence professionnelle Sociologie et de Vulgarisation Rurales 
     description: Sociologie et de Vulgarisation Rurales 
@@ -95,7 +95,7 @@ courses:
     fields:
       - science
       - sociology
-    college: Esvr
+    faculty: Esvr
   
   - name: Licence professionnelle Conservation et Transformation des Produits Agricoles 
     description: Conservation et Transformation des Produits Agricoles 
@@ -114,7 +114,7 @@ courses:
     fields:
       - science
       - agriculture
-    college: Estctpa
+    faculty: Estctpa
 
   - name: Licence professionnelle Agrobusiness et Politique Agricole  
     description: Agrobusiness et Politique Agricole  
@@ -137,7 +137,7 @@ courses:
       - science
       - business
       - agriculture
-    college: Eapa
+    faculty: Eapa
 
   
   - name: Licence - Master Aquaculture
@@ -160,7 +160,7 @@ courses:
     fields:
       - science
       - aquaculture
-    college: Eav
+    faculty: Eav
 
   
   - name: Licence professionnelle Horticulture et Aménagement des Espaces Verts
@@ -193,6 +193,6 @@ courses:
     fields:
       - science
       - environment
-    college: Ehaev
+    faculty: Ehaev
 
 

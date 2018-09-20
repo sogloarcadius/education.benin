@@ -42,9 +42,8 @@ class University(models.Model):
 class Field(models.Model):
     name = models.CharField(max_length=25, primary_key=True)
 
-class Job(models.Model):
-    name = models.TextField()
-
+class Profession(models.Model):
+    name = models.TextField(primary_key=True)
 
 class Faculty(models.Model):
     short_name = models.CharField(max_length=25, primary_key=True)
@@ -59,9 +58,9 @@ class Course(models.Model):
     description = models.TextField()
     prerequisite = models.CharField(max_length=25)
     years_of_study = models.IntegerField()
+    faculty = models.TextField()
     university = models.ForeignKey(University, on_delete=models.CASCADE)
-    faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE)
     fields = models.ManyToManyField(Field)
-    jobs = models.ManyToManyField(Job)
+    professions = models.ManyToManyField(Profession)
 
 

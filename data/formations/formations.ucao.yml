@@ -23,7 +23,7 @@ courses:
     fields:
       - science
       - technology
-    college: UCAO
+    faculty: NaN
 
   - name: Masters UCAO
     description: >
@@ -41,7 +41,7 @@ courses:
       - science
       - education 
       - religion
-    college: UCAO
+    faculty: NaN
 
   - name: Doctorats UCAO
     description: >
@@ -57,7 +57,7 @@ courses:
       - religion
       - litterature
       - languages
-    college: UCAO
+    faculty: NaN
 
 
   - name: Diplômes canoniques
@@ -72,4 +72,4 @@ courses:
     fields:
       - science
       - religion
-    college: UCAO
+    faculty: NaN

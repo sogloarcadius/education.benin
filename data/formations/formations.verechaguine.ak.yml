@@ -10,7 +10,7 @@ courses:
     fields:
       - science
       - building
-    college: VERECHAGUINE-AK
+    faculty: NaN
 
   - name: Licence professionnelle en Géomètre - Topographe
     description: Géomètre - Topographe
@@ -22,7 +22,7 @@ courses:
     fields:
       - science
       - building
-    college: VERECHAGUINE-AK
+    faculty: NaN
 
   - name: Licence professionnelle en Protection de l'Environnement
     description: Protection de l'Environnement
@@ -33,4 +33,4 @@ courses:
     fields:
       - science
       - environment
-    college: VERECHAGUINE-AK
+    faculty: NaN

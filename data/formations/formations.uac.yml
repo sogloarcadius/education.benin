@@ -14,7 +14,7 @@ courses:
       - litterature
       - languages
       - arts
-    college: CEBELAE
+    faculty: CEBELAE
 
   - name: Certificat Cadre Européen Commun de Référence
     description: Enseignement Apprentissage de l'anglais
@@ -28,7 +28,7 @@ courses:
       - litterature
       - languages
       - arts
-    college: CEBELAE 
+    faculty: CEBELAE 
   
   - name: Certificate of Proficiency in English and Business Communication
     description: Immersion linguistique + Programme Year Abroad
@@ -42,7 +42,7 @@ courses:
       - litterature
       - languages
       - arts
-    college: CEBELAE
+    faculty: CEBELAE
 
   - name: Licence professionnelle en Environnement, Hygiène et Santé 
     description: Environnement, Hygiène et Santé
@@ -57,7 +57,7 @@ courses:
       - science
       - health
       - environment
-    college: CIFRED
+    faculty: CIFRED
 
   - name: Master en Environnement, Santé et Développement Durable (5 ans)
     description: Environnement, Santé et Développement Durable
@@ -73,7 +73,7 @@ courses:
       - science
       - health
       - environment
-    college: CIFRED
+    faculty: CIFRED
 
   - name: Master en Géosciences de l’environnement et du Développement Durable (5 ans)
     description: Géosciences de l’Environnement et du Développement  Durable
@@ -90,7 +90,7 @@ courses:
       - science
       - health
       - environment
-    college: CIFRED
+    faculty: CIFRED
           
   - name: Licence en Génie Logiciel  
     description: Génie Logiciel
@@ -105,7 +105,7 @@ courses:
       - science
       - technology
       - computing
-    college: FOADEL
+    faculty: FOADEL
 
   - name: Licence en Réseau et Systèmes 
     description: Réseaux et Systèmes
@@ -118,7 +118,7 @@ courses:
       - science
       - technology
       - computing
-    college: FOADEL
+    faculty: FOADEL
 
   - name: Licence - Master - Doctorat Océanographie Physique et Applications 
     description: Master (5 ans) / Doctorat (8 ans) 
@@ -134,7 +134,7 @@ courses:
       - science
       - environment
       - physics
-    college: UNESCO
+    faculty: UNESCO
 
   - name: Licence - Master - Doctorat Physique Mathématique de la Matière
     description: Master (5 ans) / Doctorat (8 ans)
@@ -149,7 +149,7 @@ courses:
       - science
       - physics
       - mathematics
-    college: UNESCO
+    faculty: UNESCO
 
   - name:  Licence - Master - Doctorat Qualité des soins et Gestion des services de santé
     description: Master (5 ans) / Doctorat (8 ans)
@@ -164,7 +164,7 @@ courses:
       - science
       - mathematics
       - health
-    college: UNESCO
+    faculty: UNESCO
 
   - name:  Licence - Master - Doctorat Statistiques Appliquées au Vivant Master (5 ans) / Doctorat (8 ans)
     description: Licence - Master - Doctorat 
@@ -179,7 +179,7 @@ courses:
       - science
       - mathematics
       - health
-    college: UNESCO
+    faculty: UNESCO
 
   - name: Licence - Master - Doctorat Géo-information et Applications à la Gestion Intégrée des Eaux et des Ecosystèmes
     description:  Master (5 ans) / Doctorat (8 ans) 
@@ -192,7 +192,7 @@ courses:
     fields:
       - science
       - environment
-    college: UNESCO
+    faculty: UNESCO
 
 
   - name: Licence Professionnelle en Administration Generale option Diplomatie - Relations Internationales
@@ -205,7 +205,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Administration Generale option Administration Générale et Territoriale
     description: Administration Générale et Territoriale
@@ -216,7 +216,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Administration Generale option Administration du Travail et de Sécurité Sociale
     description: Administration du Travail et de Sécurité Sociale
@@ -227,7 +227,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Administration des Finances option Administration des Finances et du Trésor
     description: Administration des Finances et du Trésor
@@ -238,7 +238,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Administration des Finances option Administration des Impots
     description: Administration des Impots
@@ -248,7 +248,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Administration des Finances option Administration Hospitaliere, Universitaire et d'Intendance
     description: Administration Hospitaliere, Universitaire et d'Intendance
@@ -261,7 +261,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Administration des Finances option Gestion des Marchés Publics
     description: Gestion des Marchés Publics
@@ -272,7 +272,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Administration des Finances option Gestion financiere des Collectivites Locales
     description: Gestion financiere des Collectivites Locales
@@ -283,7 +283,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
 
   - name: Licence Professionnelle en Administration des Finances option Planification et Developpement local
@@ -295,7 +295,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
 
   - name: Licence Professionnelle en Sciences et Tech de l'Information Documentaire
@@ -307,7 +307,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Secretariat de direction option Secretariat Comptable
     description: Secretariat  Comptable
@@ -318,14 +318,14 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Secretariat de direction option Secretariat bilingue
     description: Secretariat bilingue
     prerequisite: Bac A, B, G
     roles: 
       - Administrations publiques et privees
-    college: ENAM  
+    faculty: ENAM  
 
   - name: Licence Professionnelle en Secretariat de direction option Secretariat medical
     description: Secretariat medical
@@ -336,7 +336,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Secretariat de direction option Secretariat de direction
     description: Secretariat de direction
@@ -347,7 +347,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
 
   - name: Licence Professionnelle en Journalisme option Presse Ecrite
@@ -362,7 +362,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
 
   - name: Licence Professionnelle en Journalisme option Presse Audio
@@ -376,7 +376,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
   - name: Licence Professionnelle en Journalisme option Presse Visuelle
     description: Presse Visuelle
@@ -390,7 +390,7 @@ courses:
     fields:
       - politics
       - administration
-    college: ENAM
+    faculty: ENAM
 
 
   
@@ -408,7 +408,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
 
@@ -427,7 +427,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
 
@@ -446,7 +446,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
   - name: Licence Professionnelle en Economie - Gestion de l'environnement option Economie et Gestion de l'environnement
@@ -464,7 +464,7 @@ courses:
       - economy
       - management
       - environment
-    college: ENEAM
+    faculty: ENEAM
 
 
   - name: Licence Professionnelle en Economie - Developpement local et regional
@@ -482,7 +482,7 @@ courses:
       - economy
       - mathematics
       - management
-    college: ENEAM
+    faculty: ENEAM
 
   - name: Licence Professionnelle en Economie - Banque et Finance de marche
     description: Banque et Finance de marche
@@ -496,7 +496,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
   - name: Licence Professionnelle en Gestion - Assurance
     description: Assurance
@@ -510,7 +510,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
   - name: Licence Professionnelle en Gestion - Banques et Institutions de micro finance
@@ -524,7 +524,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
   - name: Licence Professionnelle en Gestion des ressources humaines
@@ -539,7 +539,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
 
@@ -560,7 +560,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
   - name: Licence Professionnelle en Gestion financière et comptable
@@ -574,7 +574,7 @@ courses:
       - finance
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
   - name: Licence Professionnelle en Gestion - Force de vente
@@ -589,7 +589,7 @@ courses:
       - marketing
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
 
   - name: Licence Professionnelle en Gestion - Commerce International
@@ -605,7 +605,7 @@ courses:
       - mathematics
       - economy
       - management
-    college: ENEAM
+    faculty: ENEAM
 
   - name: Licence Professionnelle en Analyse informatique et Programmation
     description: Analyse informatique et Programmation
@@ -621,7 +621,7 @@ courses:
       - science
       - technology
       - computing
-    college: ENEAM
+    faculty: ENEAM
 
 
 
@@ -640,7 +640,7 @@ courses:
       - science
       - technology
       - computing
-    college: ENEAM
+    faculty: ENEAM
 
 
   - name: BTS Comptabilité Gestion
@@ -653,7 +653,7 @@ courses:
       - science
       - economy
       - mathematics
-    college: ENEAM  
+    faculty: ENEAM  
 
   - name: BTS Banque et Finance d'Entreprise
     description: Technicien Banque et Finance d'Entreprise
@@ -665,7 +665,7 @@ courses:
       - science
       - economy
       - finance
-    college: ENEAM  
+    faculty: ENEAM  
 
   - name:  BTS Marketing et Action Commerciale
     description: Technicien Marketing et Action Commerciale
@@ -677,7 +677,7 @@ courses:
       - science
       - economy
       - marketing
-    college: ENEAM  
+    faculty: ENEAM  
 
   - name:  BTS Transport et Logistiques
     description: Technicien Transport et Logistiques
@@ -690,7 +690,7 @@ courses:
       - economy
       - logistic
       - transports
-    college: ENEAM  
+    faculty: ENEAM  
 
   - name: BTS Communication d'Entreprise
     description: Technicien Communication d'Entreprise
@@ -702,7 +702,7 @@ courses:
       - languages
       - marketing
       - arts
-    college: ENEAM  
+    faculty: ENEAM  
 
   - name: BTS Informatique de Gestion
     description: Technicien Informatique de Gestion
@@ -715,7 +715,7 @@ courses:
       - technology
       - computing
       - economy
-    college: ENEAM  
+    faculty: ENEAM  
 
 
   - name: Licence professionnelle en Sciences et Techniques de l'Information et de la Communication
@@ -744,76 +744,76 @@ courses:
       - arts
       - marketing
       - multimedia
-    college: ENSTIC
+    faculty: ENSTIC
 
   - name: Licence Lettres Modernes 
     description: Lettres Modernes
     prerequisite: Bac A, B, D
     yearsofstudy: 3
-    roles:  Enseignants de Lycees et Colleges
+    roles:  Enseignants de Lycees et facultys
     fields:
       - litterature
       - languages
       - arts
-    college: ENSP
+    faculty: ENSP
 
   - name: Licence Histoire et Geographie 
     description: Histoire et Geographie
     prerequisite: Bac A, B, D
     yearsofstudy: 3
-    roles:  Enseignants de Lycees et Colleges
+    roles:  Enseignants de Lycees et facultys
     fields:
       - litterature
       - languages
       - arts
-    college: ENSP
+    faculty: ENSP
 
 
   - name: Licence Anglais 
     description: Anglais
     prerequisite: Bac A, B, D
     yearsofstudy: 3
-    roles:  Enseignants de Lycees et Colleges
+    roles:  Enseignants de Lycees et facultys
     fields:
       - litterature
       - languages
       - arts
-    college: ENSP
+    faculty: ENSP
 
   - name: Licence Philosophie 
     description: Philosophie
     prerequisite: Bac A, B, D
     yearsofstudy: 3
-    roles:  Enseignants de Lycees et Colleges
+    roles:  Enseignants de Lycees et facultys
     fields:
       - litterature
       - languages
       - arts
-    college: ENSP
+    faculty: ENSP
 
 
   - name: Licence Allemand 
     description: Allemand
     prerequisite: Bac A
     yearsofstudy: 3
-    roles:  Enseignants de Lycees et Colleges
+    roles:  Enseignants de Lycees et facultys
     fields:
       - litterature
       - languages
       - arts
-    college: ENSP
+    faculty: ENSP
 
 
   - name: Licence Espagnol 
     description: Espagnol
     prerequisite: Bac A
     yearsofstudy: 3
-    roles:  Enseignants de Lycees et Colleges
+    roles:  Enseignants de Lycees et facultys
     fields:
       - litterature
       - languages
       - arts
-    college: ENSP
+    faculty: ENSP
 
 
 
@@ -826,7 +826,7 @@ courses:
     fields:
       - science
       - health
-    college: EPAC
+    faculty: EPAC
 
 
   - name: Licence - Master Genie d'Imagerie Medicale et de Radiobiologie
@@ -839,7 +839,7 @@ courses:
     fields:
       - science
       - health
-    college: EPAC
+    faculty: EPAC
 
 
   - name:  Licence - Master Genie de l'Environnement
@@ -853,7 +853,7 @@ courses:
     fields:
       - science
       - environment
-    college: EPAC
+    faculty: EPAC
 
 
   - name: Licence - Master Production et Sante Animales
@@ -866,7 +866,7 @@ courses:
       - science
       - environment
       - health
-    college: EPAC
+    faculty: EPAC
 
 
   - name: Licence - Master Genie de Technologie Alimentaire
@@ -880,7 +880,7 @@ courses:
     fields:
       - science
       - health
-    college: EPAC
+    faculty: EPAC
 
 
   - name:  Formation d'Ingenieurs de Conception Genie Civil
@@ -900,7 +900,7 @@ courses:
       - science
       - environment
       - transports
-    college: EPAC
+    faculty: EPAC
 
 
   - name: Formation d'Ingenieurs de Conception Genie Electrique
@@ -914,7 +914,7 @@ courses:
     fields:
       - science
       - electricity
-    college: EPAC
+    faculty: EPAC
 
 
   - name:  Formation d'Ingenieurs de Conception Genie Mecanique et Energetique
@@ -934,7 +934,7 @@ courses:
       - mechanics
       - energy
       - environment
-    college: EPAC
+    faculty: EPAC
 
 
   - name: Formation d'Ingenieurs de Conception Genie Informatique et Telecom
@@ -948,7 +948,7 @@ courses:
     fields:
       - science
       - technology
-    college: EPAC
+    faculty: EPAC
 
 
   - name: Formation d'Ingenieurs de Conception Genie Bio Medical
@@ -963,7 +963,7 @@ courses:
     fields:
       - science
       - health
-    college: EPAC
+    faculty: EPAC
 
 
   - name: Licence Professionnelle en Maintenance Biomedicale et Hospitaliere
@@ -978,7 +978,7 @@ courses:
     fields:
       - science
       - health
-    college: EPAC
+    faculty: EPAC
 
 
   - name: Licence Professionnelle en Mecanisation Agricole
@@ -997,7 +997,7 @@ courses:
       - science
       - mechanics
       - agriculture
-    college: EPAC
+    faculty: EPAC
 
   - name: Licence Professionnelle en Standardisation des Connaissances Endogenes
     description: Standardisation des Connaissances Endogenes
@@ -1009,7 +1009,7 @@ courses:
       - sciences
       - languages
       - arts
-    college: EUSCE
+    faculty: EUSCE
         
 
   - name: Licence en Sciences de l'Homme et des Civilisations Etrangeres
@@ -1022,7 +1022,7 @@ courses:
       - sciences
       - languages
       - arts
-    college: ESHCE
+    faculty: ESHCE
 
   
   - name:  Licence en Droit Public
@@ -1035,7 +1035,7 @@ courses:
       - politics
       - administration
       - management
-    college: FADESP
+    faculty: FADESP
 
   - name:  Licence en Sciences Politiques
     description: Sciences Politiques
@@ -1048,7 +1048,7 @@ courses:
       - politics
       - administration
       - management
-    college: FADESP
+    faculty: FADESP
 
   - name:  Licence en Droit Privé
     description: Droit Privé
@@ -1060,7 +1060,7 @@ courses:
       - politics
       - administration
       - management
-    college: FADESP
+    faculty: FADESP
 
   - name:  Licence en Droit et Sciences Politiques
     description: Formation continue en Droit et Sciences Politiques
@@ -1072,7 +1072,7 @@ courses:
       - politics
       - administration
       - management
-    college: FADESP
+    faculty: FADESP
 
   - name:  Master professionnel en Droit des affaires et fiscalité
     description: Droit des affaires et fiscalité
@@ -1088,7 +1088,7 @@ courses:
       - politics
       - administration
       - management
-    college: FADESP
+    faculty: FADESP
 
   - name: Licence - Master - Doctorat en lettres modernes
     description: Lettres modernes
@@ -1113,7 +1113,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
   
   - name: Licence - Master en Sciences du Langage et de la Communication
@@ -1138,7 +1138,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
   
   - name: Licence en Psychologie et Sciences de l’Education 
@@ -1171,7 +1171,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
 
   - name: Licence en Sociologie Anthropologie
@@ -1186,7 +1186,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
   
   - name: Licence en Géographie et Aménagement du Territoire
@@ -1202,7 +1202,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
 
   - name: Licence en Langue, Littérature et Civilisation Étrangères
@@ -1216,7 +1216,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
   
   - name: Licence en Philosophie
@@ -1229,7 +1229,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
   
   - name: Licence en Histoire Archéologie
@@ -1255,7 +1255,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
   
   - name: Licence en Art et Management Culturel
@@ -1272,7 +1272,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
 
   - name: Licence professionnelle en hôtellerie et tourisme
@@ -1286,7 +1286,7 @@ courses:
       - arts
       - litterature
       - tourism
-    college: FLASH
+    faculty: FLASH
 
   
   - name: BTS - Licence - Master en Tourisme et Loisir, Hôtellerie et Restauration
@@ -1299,7 +1299,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
   
   - name: Master en formations professionnelles
@@ -1312,7 +1312,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
   
   - name: Licences professionnelles en Art dramatique/Arts plastiques/Danse et chorégraphie/Musique et musicologie
     description: Institut National des Métiers d’Art d’Archéologie et de la Culture
@@ -1325,7 +1325,7 @@ courses:
       - arts
       - litterature
       - culture
-    college: FLASH
+    faculty: FLASH
 
   - name: Master professionnel en Management de la culture et du tourisme
     description: Institut National des Métiers d’Art d’Archéologie et de la Culture
@@ -1337,7 +1337,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: FLASH
+    faculty: FLASH
 
 
   - name: Licence - Master en Génie rural, Eau, Pêche  et aquaculture
@@ -1359,7 +1359,7 @@ courses:
       - environment
       - aquaculture
       - fishing
-    college: FSA
+    faculty: FSA
 
   
   - name: Licence - Master en Aménagement des forêts et Gestion des Parcours naturels
@@ -1375,7 +1375,7 @@ courses:
       - sciences
       - environment
       - forest
-    college: FSA
+    faculty: FSA
 
   
   - name: Licence - Master en Cultures Vivrières et Pérennes
@@ -1396,7 +1396,7 @@ courses:
       - sciences
       - environment
       - agriculture
-    college: FSA
+    faculty: FSA
 
   
   - name: Licence - Master en Horticulture
@@ -1416,7 +1416,7 @@ courses:
     fields:
       - sciences
       - environment
-    college: FSA
+    faculty: FSA
 
   
   
@@ -1434,7 +1434,7 @@ courses:
     fields:
       - sciences
       - health
-    college: FSA
+    faculty: FSA
 
   
   - name: Licence - Master en Industries agro-alimentaires 
@@ -1450,7 +1450,7 @@ courses:
       - sciences
       - health
       - agriculture
-    college: FSA
+    faculty: FSA
 
   - name: Licence - Master en Elevage des Monogastriques
     description: Elevage des Monogastriques
@@ -1466,7 +1466,7 @@ courses:
       - sciences
       - environment
       - society
-    college: FSA
+    faculty: FSA
 
   - name: Licence - Master en Elevage des Polygastriques
     description: Elevage des Polygastriques
@@ -1482,7 +1482,7 @@ courses:
       - sciences
       - environment
       - livestock
-    college: FSA
+    faculty: FSA
 
   
   
@@ -1498,7 +1498,7 @@ courses:
       - sciences
       - environment
       - agriculture
-    college: FSA  
+    faculty: FSA  
 
   
   - name: Licence - Master 2 en Economie et Gestion des Entreprises Agricoles
@@ -1514,7 +1514,7 @@ courses:
       - sciences
       - management
       - agriculture
-    college: FSA
+    faculty: FSA
 
   
   - name: Diplômes d’ingénieur agronome, Science et technique de production animale
@@ -1530,7 +1530,7 @@ courses:
     fields:
       - sciences
       - livestock
-    college: FSA
+    faculty: FSA
   
   - name: Diplômes d’ingénieur agronome, Science et technique de production végétale
     description: Science et technique de production végétale
@@ -1546,7 +1546,7 @@ courses:
       - sciences
       - environment
       - agriculture
-    college: FSA
+    faculty: FSA
 
   
   - name: Diplômes d’ingénieur agronome, Aménagement et gestion des Ressources Naturelles
@@ -1562,7 +1562,7 @@ courses:
     fields:
       - sciences
       - environment
-    college: FSA
+    faculty: FSA
   
   - name: Diplômes d’ingénieur agronome, Nutrition et sciences alimentaires
     description: Nutrition et sciences alimentaires
@@ -1578,7 +1578,7 @@ courses:
       - sciences
       - health
       - nutrition
-    college: FSA
+    faculty: FSA
 
 
   
@@ -1596,7 +1596,7 @@ courses:
       - sciences
       - sociology
       - economy
-    college: FSA  
+    faculty: FSA  
 
 
   - name: LMD mention Sciences économiques option Marketing
@@ -1609,7 +1609,7 @@ courses:
     fields:
       - sciences
       - economy
-    college: FASEG
+    faculty: FASEG
 
   
   - name: LMD mention Sciences économiques option Management des Organisations
@@ -1627,7 +1627,7 @@ courses:
       - economy
       - accountancy
       - management
-    college: FASEG
+    faculty: FASEG
 
   
   - name: LMD mention Gestion option Economie
@@ -1642,7 +1642,7 @@ courses:
       - sciences
       - economy
       - management
-    college: FASEG
+    faculty: FASEG
 
 
   - name: Médecine
@@ -1655,7 +1655,7 @@ courses:
     fields:
       - sciences
       - health
-    college: FSS
+    faculty: FSS
 
   - name: Pharmacie
     description: UFR de Pharmacie 
@@ -1666,7 +1666,7 @@ courses:
     fields:
       - sciences
       - health
-    college: FSS
+    faculty: FSS
 
   - name: Dentiste 
     description: Ecole d’Odontostomatologie
@@ -1677,7 +1677,7 @@ courses:
     fields:
       - sciences
       - health
-    college: FSS
+    faculty: FSS
   
   - name: Licence - Master en Travail Social
     description: Ecole Supérieure des Assistants Sociaux 
@@ -1688,7 +1688,7 @@ courses:
     fields:
       - sciences
       - health
-    college: FSS
+    faculty: FSS
 
   - name: Licence - Master en Protection de l’Enfance et de la Jeunesse
     description: Ecole Supérieure des Assistants Sociaux 
@@ -1699,7 +1699,7 @@ courses:
     fields:
       - sciences
       - health
-    college: FSS
+    faculty: FSS
 
   
   - name: Kinésithérapeute
@@ -1711,7 +1711,7 @@ courses:
     fields:
       - sciences
       - health
-    college: FSS
+    faculty: FSS
   
 
   - name: Diététiciens
@@ -1731,7 +1731,7 @@ courses:
     fields:
       - sciences
       - health
-    college: FSS
+    faculty: FSS
 
   - name: Licence en Sciences Naturelles
     description: Sciences Naturelles
@@ -1743,7 +1743,7 @@ courses:
     fields:
       - sciences
       - biology
-    college: FAST
+    faculty: FAST
 
   - name: Licence en Mathématiques 
     description: Mathématiques
@@ -1755,7 +1755,7 @@ courses:
     fields:
       - sciences
       - mathematics
-    college: FAST
+    faculty: FAST
   
   
   - name: Licence de Physique
@@ -1768,7 +1768,7 @@ courses:
     fields:
       - sciences
       - physics
-    college: FAST
+    faculty: FAST
   
   - name: Licence de Chimie
     description: Chimie
@@ -1781,7 +1781,7 @@ courses:
       - sciences
       - chemical
       - physics
-    college: FAST
+    faculty: FAST
 
   - name: Licence spécialisée de Géologie
     description: Géologie
@@ -1795,7 +1795,7 @@ courses:
       - physics
       - energy
       - environment
-    college: FAST
+    faculty: FAST
 
   
   - name: Licence spécialisée de Biochimie
@@ -1808,7 +1808,7 @@ courses:
       - sciences
       - mathematics
       - physics
-    college: FAST
+    faculty: FAST
   
   - name: Licence professionnelle de Biotechnologie alimentaire
     description: Biotechnologie alimentaire
@@ -1820,7 +1820,7 @@ courses:
       - sciences
       - health
       - biotechnology
-    college: FAST   
+    faculty: FAST   
   
   - name: Licence spécialisée de Physiologie
     description: Physiologie
@@ -1830,7 +1830,7 @@ courses:
       - Laboratoires de physiologie
     fields:
       - sciences
-    college: FAST
+    faculty: FAST
   
   - name: Maitrise de Mac Pro 
     description: Formation 2nd Cycle
@@ -1841,7 +1841,7 @@ courses:
     fields:
       - sciences
       - mathematics
-    college: FAST
+    faculty: FAST
 
   - name: Master des statistiques appliquées aux vivants
     description: Formation 2nd Cycle
@@ -1852,7 +1852,7 @@ courses:
     fields:
       - sciences
       - mathematics
-    college: FAST
+    faculty: FAST
 
   - name: Master en entomologie appliquée
     description: Formation 2nd Cycle
@@ -1863,7 +1863,7 @@ courses:
     fields:
       - sciences
       - mathematics
-    college: FAST
+    faculty: FAST
 
 
   - name: Licence professionnelle en Négociation Internationale
@@ -1880,7 +1880,7 @@ courses:
       - marketing
       - management
       - business
-    college: HERCI
+    faculty: HERCI
 
   - name: Licence professionnelle en Gestion des Relation Maritimes Internationales
     description: Gestion des Relation Maritimes Internationales
@@ -1896,7 +1896,7 @@ courses:
       - marketing
       - management
       - business
-    college: HERCI
+    faculty: HERCI
 
   - name: Master professionnel en Politique commerciale
     description: Politique commerciale
@@ -1917,7 +1917,7 @@ courses:
       - economy
       - management
       - business
-    college: HERCI
+    faculty: HERCI
   
   - name: Master professionnel en Gestion des relations Maritimes Internationales
     description: Gestion des relations Maritimes Internationales
@@ -1938,7 +1938,7 @@ courses:
       - economy
       - management
       - business
-    college: HERCI
+    faculty: HERCI
   
   - name: Master professionnel en Gouvernance et Encadrement des Organisations Internationales
     description: Gouvernance et Encadrement des Organisations Internationales
@@ -1959,7 +1959,7 @@ courses:
       - economy
       - management
       - business
-    college: HERCI
+    faculty: HERCI
 
   - name: Master professionnel en Marketing international
     description: Marketing international
@@ -1980,7 +1980,7 @@ courses:
       - economy
       - marketing
       - business
-    college: HERCI
+    faculty: HERCI
   
   - name: Master professionnel en Achats et transactions internationales
     description: Achats et transactions internationales
@@ -2002,7 +2002,7 @@ courses:
       - marketing
       - management
       - business
-    college: HERCI
+    faculty: HERCI
 
   - name: Master professionnel en Gestion du contentieux en commerce international
     description: Gestion du contentieux en commerce international
@@ -2024,7 +2024,7 @@ courses:
       - marketing
       - management
       - business
-    college: HERCI
+    faculty: HERCI
   
   - name: Master professionnel en Management portuaire et aéroportuaire
     description: Management portuaire et aéroportuaire
@@ -2046,7 +2046,7 @@ courses:
       - marketing
       - management
       - business
-    college: HERCI
+    faculty: HERCI
 
   
   - name: Master professionnel en Politique et négociation en commerce international
@@ -2069,7 +2069,7 @@ courses:
       - marketing
       - management
       - business
-    college: HERCI
+    faculty: HERCI
 
   - name: Licence - Master en Chinois
     description: Chinois
@@ -2085,7 +2085,7 @@ courses:
       - languages
       - arts
       - litterature
-    college: IC
+    faculty: IC
 
   - name: Infirmiers et Infirmières d’Etat
     description: Infirmiers et Infirmières d’Etat
@@ -2099,7 +2099,7 @@ courses:
     fields:
       - science
       - health
-    college: INMES
+    faculty: INMES
 
   
   - name: Sages-Femmes d’Etat
@@ -2114,7 +2114,7 @@ courses:
     fields:
       - science
       - health
-    college: INMES
+    faculty: INMES
 
 
 
@@ -2134,7 +2134,7 @@ courses:
       - health
       - sports
       - education
-    college: INJEPS
+    faculty: INJEPS
 
   
   - name: Licence - Master - Doctorat en Entraînement sportif
@@ -2152,7 +2152,7 @@ courses:
       - health
       - sports
       - education
-    college: INJEPS
+    faculty: INJEPS
   
   - name: Licence - Master - Doctorat en Développement et Communautaire
     description: Développement et Communautaire
@@ -2169,7 +2169,7 @@ courses:
       - health
       - sports
       - education
-    college: INJEPS
+    faculty: INJEPS
 
   
   - name: Licence - Master - Doctorat en Andragogie
@@ -2186,7 +2186,7 @@ courses:
       - science
       - health
       - sports
-    college: INJEPS
+    faculty: INJEPS
 
   - name: Licence - Master - Doctorat en Récréologie
     description: Récréologie
@@ -2203,7 +2203,7 @@ courses:
       - health
       - sports
       - education
-    college: INJEPS
+    faculty: INJEPS
 
   - name: Licence - Master - Doctorat en Entrepreneuriat
     description: Entrepreneuriat
@@ -2220,7 +2220,7 @@ courses:
       - health
       - sports
       - education
-    college: INJEPS
+    faculty: INJEPS
 
   - name: Licence professionnelle Géohydrologie
     description: Géohydrologie
@@ -2239,7 +2239,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
   
   - name: Licence professionnelle Hydrologie quantitative
@@ -2259,7 +2259,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
   
   
   - name: Licence professionnelle Ecohydrologie
@@ -2279,7 +2279,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
   
   - name: Licence professionnelle Génie rural et Maitrise de l’Eau
@@ -2295,7 +2295,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
   
   - name: Licence professionnelle Sciences et Techniques de l’Eau
@@ -2311,7 +2311,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
   - name: Licence professionnelle Eau Hygiène et Santé
     description: Eau Hygiène et Assainissement
@@ -2325,7 +2325,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
   - name: Master Géohydrologie
     description: Géohydrologie
@@ -2344,7 +2344,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
   
   - name: Master Hydrologie quantitative
     description: Hydrologie quantitative
@@ -2363,7 +2363,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
   
   - name: Master Ecohydrologie
@@ -2383,7 +2383,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
   
   - name: Master Génie rural et Maitrise de l’Eau
     description: Génie rural et Maitrise de l’Eau
@@ -2398,7 +2398,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
   
   - name: Master Eau, Climat et Société
@@ -2414,7 +2414,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
   
   - name: Master Sciences et Techniques de l’Eau
@@ -2430,7 +2430,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
   
   - name: Master Management Environnemental et Qualité des Eaux
     description: Management Environnemental et Qualité des Eaux
@@ -2445,7 +2445,7 @@ courses:
       - science
       - environment
       - hydraulic
-    college: INE
+    faculty: INE
 
 
   - name: Licence Professionnelle en Logistique de Santé
@@ -2461,7 +2461,7 @@ courses:
     fields:
       - science
       - health
-    college: IRSP
+    faculty: IRSP
 
   
   - name: Master Spécialiste de la santé publique
@@ -2473,7 +2473,7 @@ courses:
     fields:
       - science
       - health
-    college: IRSP
+    faculty: IRSP
 
   
   - name: Master Spécialiste de l'Epidémiologie
@@ -2485,7 +2485,7 @@ courses:
     fields:
       - science
       - health
-    college: IRSP
+    faculty: IRSP
 
   
   - name: Master Spécialiste de la Nutrition et de la Santé des Populations
@@ -2499,7 +2499,7 @@ courses:
     fields:
       - science
       - health
-    college: IRSP
+    faculty: IRSP
 
   - name: Doctorat en Sciences de la Santé publique
     description: Doctorat en Sciences de la Santé publique
@@ -2513,7 +2513,7 @@ courses:
     fields:
       - science
       - health
-    college: IRSP
+    faculty: IRSP
 
   - name: Licence professionnelle en Sécurité informatique
     description: Génie Logiciel
@@ -2532,7 +2532,7 @@ courses:
       - technology
       - computing
       - security
-    college: IFRI
+    faculty: IFRI
   
   - name: Licence professionnelle en génie logiciel
     description: Sécurité informatique
@@ -2549,7 +2549,7 @@ courses:
       - science
       - technology
       - computing
-    college: IFRI
+    faculty: IFRI
 
   
   - name: Licence professionnelle en Classe préparatoire (1 an)
@@ -2563,7 +2563,7 @@ courses:
     fields:
       - science
       - technology
-    college: IFRI
+    faculty: IFRI
   
   - name: Licence - Master en informatique
     description: professionnel de l'Informatique
@@ -2587,7 +2587,7 @@ courses:
       - science
       - technology
       - computing
-    college: IFRI
+    faculty: IFRI
 
   
   - name: Master de recherche en informatique
@@ -2604,7 +2604,7 @@ courses:
       - science
       - technology
       - computing
-    college: IFRI
+    faculty: IFRI
 
   - name: Licence - Master - Doctorat en Géographie de l’aménagement du Territoire et de l’Environnement
     description: Géographie de l’aménagement du Territoire et de l’Environnement
@@ -2621,7 +2621,7 @@ courses:
       - science
       - environment
       - geography
-    college: IGATE
+    faculty: IGATE
 
 
   - name: Maîtrise en Langue arabe et Culture islamique
@@ -2634,7 +2634,7 @@ courses:
       - arts
       - religion
       - languages
-    college: ILACI
+    faculty: ILACI
 
   - name: Classes préparatoires d’entrée dans les grandes écoles
     description: Classes préparatoires d’entrée dans les grandes écoles
@@ -2647,7 +2647,7 @@ courses:
       - science
       - mathematics
       - physics
-    college: IMSP
+    faculty: IMSP
 
   
   - name: Ingénieur de Génie Informatique et Sciences Appliquées 
@@ -2660,7 +2660,7 @@ courses:
       - science
       - technology
       - computing
-    college: IMSP
+    faculty: IMSP
   
   - name: Master en Mathématiques
     description: Master II en Mathématiques 
@@ -2671,7 +2671,7 @@ courses:
     fields:
       - science
       - mathematics
-    college: IMSP
+    faculty: IMSP
   
   - name: Master en Physique Théorique
     description: Master II en Physique théorique 
@@ -2683,7 +2683,7 @@ courses:
       - science
       - mathematics
       - physics
-    college: IMSP
+    faculty: IMSP
   
   - name: Master en Didactique des Sciences et des Technologies
     description: Master II en Didactique des Sciences et des Technologies 
@@ -2693,7 +2693,7 @@ courses:
       - Enseignement - Recherche
     fields:
       - science
-    college: IMSP
+    faculty: IMSP
 
   - name: Master en probabilité statistique
     description: Master probabilité statistique 
@@ -2705,7 +2705,7 @@ courses:
     fields:
       - science
       - mathematics
-    college: IMSP
+    faculty: IMSP
 
   - name: Master Recherche Opérationnelle
     description: Master Recherche Opérationnelle 
@@ -2717,7 +2717,7 @@ courses:
     fields:
       - science
       - research
-    college: IMSP
+    faculty: IMSP
   
   - name: Doctorat en Mathématiques
     description: Thèse en Mathématiques
@@ -2728,7 +2728,7 @@ courses:
     fields:
       - science
       - mathematics
-    college: IMSP
+    faculty: IMSP
 
   - name: Doctorat en Physique
     description: Thèse en Physique 
@@ -2740,5 +2740,5 @@ courses:
       - science
       - mathematics
       - physics
-    college: IMSP
+    faculty: IMSP
 

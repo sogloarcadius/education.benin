@@ -60,5 +60,8 @@ def get_courses():
         current_courses = current_file_content["courses"]
         for course in current_courses:
             course["university"] = current_file_content["id"]
-        courses += current_courses 
+        courses += current_courses
+
+
+    return courses
 

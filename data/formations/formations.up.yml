@@ -14,7 +14,7 @@ courses:
     fields:
       - science
       - health
-    college: Enatse
+    faculty: Enatse
   
   - name: Master professionnel en SP option Promotion de la santé
     description: Promotion de la Santé
@@ -27,7 +27,7 @@ courses:
     fields:
       - science
       - health
-    college: Enatse
+    faculty: Enatse
   
   - name: Licence professionnelle en sciences de la planification option Démographie & Statistiques sociale
     description: Démographie & Statistiques sociale
@@ -42,7 +42,7 @@ courses:
     fields:
       - science
       - mathematics
-    college: Enspd
+    faculty: Enspd
 
   
   - name: Licence professionnelle en sciences de la planification option Statistiques économiques et financières
@@ -60,7 +60,7 @@ courses:
       - mathematics
       - finance
       - economy
-    college: Enspd
+    faculty: Enspd
   
   
   - name: Licence professionnelle en sciences de la planification option Planification du développement local
@@ -76,7 +76,7 @@ courses:
     fields:
       - science
       - mathematics
-    college: Enspd
+    faculty: Enspd
   
   - name: Licence professionnelle en sciences et Techniques de Production Végétale
     description: Sciences et Techniques de Production Végétale
@@ -88,7 +88,7 @@ courses:
     fields:
       - science
       - agriculture
-    college: Agro
+    faculty: Agro
 
   
   - name: Licence professionnelle en Aménagement et Gestion des ressources naturelles
@@ -102,7 +102,7 @@ courses:
       - science
       - agriculture
       - environment
-    college: Agro
+    faculty: Agro
   
   - name: Licence professionnelle en Sciences et Techniques de Production animale
     description: Sciences et Techniques de Production animale
@@ -115,7 +115,7 @@ courses:
       - science
       - agriculture
       - livestock
-    college: Agro
+    faculty: Agro
 
   - name: Licence professionnelle en Economie et Sociologie rurales 
     description: Economie et Sociologie rurales
@@ -128,7 +128,7 @@ courses:
       - science
       - economy
       - sociology
-    college: Agro
+    faculty: Agro
 
   - name: Licence professionnelle en Nutrition et Sciences AgroAlimentaire
     description: Nutrition et Sciences AgroAlimentaire
@@ -141,7 +141,7 @@ courses:
       - science
       - mathematics
       - nutrition
-    college: Agro
+    faculty: Agro
 
 
   - name: Licence en Droit Privé
@@ -155,7 +155,7 @@ courses:
       - science
       - politics
       - law
-    college: Fdsp
+    faculty: Fdsp
   
   - name: Licence en Droit Public
     description: Droit Public
@@ -167,7 +167,7 @@ courses:
       - science
       - politics
       - law
-    college: Fdsp
+    faculty: Fdsp
   
   - name: Licence en Sciences Politiques
     description: Science Politique
@@ -179,7 +179,7 @@ courses:
       - science
       - politics
       - law
-    college: Fdsp
+    faculty: Fdsp
   
   - name: Doctorat en médecine
     description: Médecine
@@ -190,7 +190,7 @@ courses:
     fields:
       - science
       - health
-    college: Medecine
+    faculty: Medecine
   
   - name: Licence en Sociologie Anthropologie 
     description: Sociologie Anthropologie
@@ -204,7 +204,7 @@ courses:
       - litterature
       - languages
       - arts
-    college: Flash
+    faculty: Flash
 
   
   - name: Licence en Géographie et Aménagement du Territoire
@@ -221,7 +221,7 @@ courses:
       - litterature
       - languages
       - arts
-    college: Flash
+    faculty: Flash
 
   - name: Licence en Anglais
     description: Anglais
@@ -234,7 +234,7 @@ courses:
       - litterature
       - languages
       - arts
-    college: Flash
+    faculty: Flash
 
   
   - name: Licence en Finance et Comptabilité
@@ -249,7 +249,7 @@ courses:
       - science
       - economy
       - finance
-    college: Faseg
+    faculty: Faseg
   
   - name: Licence en Marketing et Management des Organisations
     description: Marketing et Management des Organisations
@@ -264,7 +264,7 @@ courses:
       - science
       - marketing
       - management
-    college: Faseg
+    faculty: Faseg
 
   
   - name: Licence en Économie et Finance Internationale
@@ -278,7 +278,7 @@ courses:
       - science
       - economy
       - finance
-    college: Faseg
+    faculty: Faseg
 
   - name: Licence en Analyse et Politiques Économiques 
     description: Analyse et Politiques Économiques
@@ -291,7 +291,7 @@ courses:
       - economy
       - marketing
       - management
-    college: Faseg
+    faculty: Faseg
 
   
   - name: Licence professionnelle en Gestion des Banques
@@ -304,7 +304,7 @@ courses:
     - economy
     - finance
     - science
-    college: Iut
+    faculty: Iut
   
   - name: Licence professionnelle en Gestion des Entreprises
     description: Gestion des Entreprises
@@ -315,7 +315,7 @@ courses:
     fields:
     - science
     - management
-    college: Iut
+    faculty: Iut
   
   - name: Licence professionnelle en Gestion Commerciale
     description: Gestion Commerciale
@@ -328,7 +328,7 @@ courses:
       - marketing
       - management
       - business
-    college: Iut
+    faculty: Iut
   
   - name: Licence professionnelle en Informatique de Gestion
     description: Informatique de Gestion
@@ -342,7 +342,7 @@ courses:
       - technology
       - computing
       - management
-    college: Iut
+    faculty: Iut
   
   - name: Licence professionnelle en Gestion des Transports et Logistique
     description: Gestion des Transports et Logistique
@@ -354,7 +354,7 @@ courses:
       - economy
       - transport
       - management
-    college: Iut
+    faculty: Iut
 
   - name: BTS Banque et Finance d’Entreprise
     description: BTS
@@ -366,7 +366,7 @@ courses:
     - economy
     - finance
     - management
-    college: Iut
+    faculty: Iut
 
   - name: BTS Comptabilité de Gestion
     description: BTS
@@ -378,7 +378,7 @@ courses:
       - science
       - accounting
       - management
-    college: Iut
+    faculty: Iut
 
   - name:  BTS Marketing et Action Commerciale  
     description: BTS
@@ -389,7 +389,7 @@ courses:
     fields:
       - marketing
       - management
-    college: Iut
+    faculty: Iut
 
 
   - name: BTS Management des Ressources Humaines 
@@ -399,7 +399,7 @@ courses:
     roles: Technicien Supérieur
     fields:
       - management
-    college: Iut
+    faculty: Iut
 
   - name: Infirmiers et Infirmières d’Etat
     description: Infirmiers et Infirmières 
@@ -417,7 +417,7 @@ courses:
     fields:
       - science
       - health
-    college: Ifsio
+    faculty: Ifsio
   
   - name: Sages-Femmes d’Etat
     description: Sages-Femmes d’Etat 
@@ -435,6 +435,6 @@ courses:
     fields:
       - science
       - health
-    college: Ifsio
+    faculty: Ifsio
 
   

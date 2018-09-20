@@ -11,7 +11,7 @@ courses:
       - science
       - accounting
       - management
-    college: ESEP-LE-BERGER
+    faculty: NaN
 
   - name: Licence - Master en administration et gestion des ressources humaines
     description: administration et gestion des ressources humaines
@@ -22,7 +22,7 @@ courses:
     fields:
       - science
       - management
-    college: ESEP-LE-BERGER
+    faculty: NaN
 
   - name: Licence professionnelle gestion des entreprises option finance et comptabilité
     description: finance et comptabilité
@@ -34,4 +34,4 @@ courses:
     fields:
       - science
       - accounting
-    college: ESEP-LE-BERGER
+    faculty: NaN
