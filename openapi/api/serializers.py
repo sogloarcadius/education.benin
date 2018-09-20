@@ -1,6 +1,6 @@
 
 
-from api.models import District, City, Province, University, Faculty, Course
+from api.models import District, City, Province, University, Faculty, Course, Emergency
 from rest_framework import serializers
 
 
@@ -37,4 +37,10 @@ class FacultySerializer(serializers.ModelSerializer):
 class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
+        fields = '__all__'
+
+
+class EmergencySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Emergency
         fields = '__all__'

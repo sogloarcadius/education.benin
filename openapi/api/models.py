@@ -29,8 +29,8 @@ class University(models.Model):
         ('public', 'public'),
         ('private', 'private')
     ]
-    short_name = models.CharField(max_length=25, primary_key=True)
-    long_name = models.CharField(max_length=25)
+    name = models.CharField(max_length=25, primary_key=True)
+    fullname = models.CharField(max_length=25)
     address = models.CharField(max_length=100)
     phone = models.CharField(max_length=25)
     email = models.EmailField()
@@ -46,21 +46,23 @@ class Profession(models.Model):
     name = models.TextField(primary_key=True)
 
 class Faculty(models.Model):
-    short_name = models.CharField(max_length=25, primary_key=True)
-    long_name = models.CharField(max_length=25)
+    name = models.CharField(max_length=25, primary_key=True)
+    fullname = models.CharField(max_length=25)
     city = models.ForeignKey(City, on_delete=models.CASCADE)
     university = models.ForeignKey(University, on_delete=models.CASCADE)
     fields = models.ManyToManyField(Field)
-
 
 class Course(models.Model):
     name = models.TextField(primary_key=True)
     description = models.TextField()
     prerequisite = models.CharField(max_length=25)
-    years_of_study = models.IntegerField()
+    yearsofstudy = models.CharField(max_length=25)
     faculty = models.TextField()
     university = models.ForeignKey(University, on_delete=models.CASCADE)
     fields = models.ManyToManyField(Field)
     professions = models.ManyToManyField(Profession)
 
 
+class Emergency(models.Model):
+    name = models.CharField(max_length=25, primary_key=True)
+    phone = models.CharField(max_length=25)

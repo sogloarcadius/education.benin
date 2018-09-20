@@ -65,3 +65,12 @@ class CourseViewSet(viewsets.ModelViewSet):
     queryset = models.Course.objects.all()
     serializer_class = serializers.CourseSerializer
     http_method_names = ['get']
+
+
+class EmergencyViewSet(viewsets.ModelViewSet):
+    """
+    /emergency
+    """
+    queryset = models.Emergency.objects.all()
+    serializer_class = serializers.EmergencySerializer
+    http_method_names = ['get']

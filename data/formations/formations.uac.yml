@@ -19,7 +19,7 @@ courses:
   - name: Certificat Cadre Européen Commun de Référence
     description: Enseignement Apprentissage de l'anglais
     prerequisite: Aucun, Test de niveau initial
-    yearsofstudy: NA
+    yearsofstudy: NaN
     roles:
       - Pratique courante du français dans la vie active et dans les Affaires
       - Fonctions Internationales
@@ -33,7 +33,7 @@ courses:
   - name: Certificate of Proficiency in English and Business Communication
     description: Immersion linguistique + Programme Year Abroad
     prerequisite: Aucun, Test de niveau initial
-    yearsofstudy: NA
+    yearsofstudy: NaN
     roles:
       - Utilisation de l’anglais pour la communication et la pratique courante par les élèves, étudiants, fonctionnaires
       - Traducteurs, interprètes
@@ -323,8 +323,12 @@ courses:
   - name: Licence Professionnelle en Secretariat de direction option Secretariat bilingue
     description: Secretariat bilingue
     prerequisite: Bac A, B, G
+    yearsofstudy: 3
     roles: 
       - Administrations publiques et privees
+    fields:
+      - politics
+      - administration
     faculty: ENAM  
 
   - name: Licence Professionnelle en Secretariat de direction option Secretariat medical
@@ -368,6 +372,7 @@ courses:
   - name: Licence Professionnelle en Journalisme option Presse Audio
     description: Presse Audio
     prerequisite: Bac A, B, D
+    yearsofstudy: 3
     roles: 
       - Journaliste
       - Freelance

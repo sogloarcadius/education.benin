@@ -1,4 +1,4 @@
-from opendata.settings.base import *
+from openapi.settings.base import *
 
 
 DEBUG = False

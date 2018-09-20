@@ -29,7 +29,7 @@ courses:
     prerequisite: Bac
     yearsofstudy: 3
     roles: 
-      - NA 
+      - NaN 
     fields:
       - science
       - environment

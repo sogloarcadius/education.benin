@@ -20,6 +20,8 @@ router.register(r'provinces', views.ProvinceViewSet)
 router.register(r'universities', views.UniversityViewSet)
 router.register(r'faculties', views.FacultyViewSet)
 router.register(r'courses', views.CourseViewSet)
+router.register(r'emergency', views.EmergencyViewSet)
+
 
 urlpatterns = [
     url(r'^$', views.api_swagger),

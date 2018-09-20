@@ -46,7 +46,7 @@ Pour contribuer à la liste des établissements, il suffit de faire un pull requ
 .
 ├── docs
 ├── education
-├── opendata
+├── openapi
 ├── .gitignore
 └── README.md
 ```
