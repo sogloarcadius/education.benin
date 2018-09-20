@@ -1,13 +1,14 @@
 module.exports = {
-    title: '@github education.benin',
-    description: "Documentation Projet",
+    title: 'Documentation Projet',
+    description: "edubenin.bj",
     base: '/education.benin/',
     themeConfig: {
       sidebar: 'auto',
       displayAllHeaders: true,
       nav: [
-        { text: 'edubenin.bj', link: '/education/'},
-        { text: 'openapi.edubenin.bj', link: '/openapi/' }
+        { text: 'openapi', link: 'http://github.com/sogloarcadius/education.benin' },
+        { text: 'contribution', link: '/contribution/' }
+
       ],
      }
 }
