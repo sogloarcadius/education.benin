@@ -12,7 +12,7 @@
 
 # Guide du developpeur
 
-* [CONTRIBUTE](http://localhost:8080/education.benin/contribution/)
+* [CONTRIBUTE](https://sogloarcadius.github.io/education.benin/)
 
 * [API REFERENCE]()
 
