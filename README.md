@@ -6,11 +6,15 @@
 
 # Contribution
 
-[Contribution Guide](https://sogloarcadius.github.io/education.benin/)
+[Contribution Guide](http://localhost:8080/education.benin/contribution/)
 
 # Guide d'utilisation
 
-[User Guide]()
+* [WEBSITE]()
+
+* [ANDROID]()
+
+* [API REFERENCE]()
 
 # Licence
 
