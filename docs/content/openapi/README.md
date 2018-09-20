@@ -1,28 +1,27 @@
 ---
-title: api
+title: openapi
 lang: fr
 ---
 
 ## Objectifs
 
-* Devenir la plateforme open data de référence au benin
 * Favoriser l'innovation autour de la science de la donnée au Bénin
 * Devenir le moteur de la transformation digitale du Bénin
 
 ## Contribution
 
-Pour ajouter de nouveaux jeux de données, il suffit de faire un pull request avec votre jeux de données dans le dossier `api/data` du projet sur [Github](https://github.com/sogloarcadius/education.benin)
+Pour ajouter de nouveaux jeux de données, il suffit de faire un pull request avec votre jeux de données dans le dossier `data` du projet sur [Github](https://github.com/sogloarcadius/education.benin)
 
 ```
 .
-├── api
-├── app
+├── data
+├── webapp
 ├── docs
 ├── .gitignore
 └── README.md
 ```
 
-## Autres projets Open Data
+## Projets Open Data (Banque de données)
 
 * [opendataforafrica](http://dataportal.opendataforafrica.org/)
 

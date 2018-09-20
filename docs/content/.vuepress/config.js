@@ -7,7 +7,7 @@ module.exports = {
       displayAllHeaders: true,
       nav: [
         { text: 'edubenin.bj', link: '/education/'},
-        { text: 'api', link: '/opendata/' }
+        { text: 'openapi.edubenin.bj', link: '/openapi/' }
       ],
      }
 }
