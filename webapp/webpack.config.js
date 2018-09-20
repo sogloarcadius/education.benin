@@ -1,12 +1,15 @@
 var path = require('path')
 var webpack = require('webpack')
+const { VueLoaderPlugin } = require('vue-loader')
 
 function resolve (dir) {
 	return path.join(__dirname, dir)
 }
 
 module.exports = {
-	entry: './src/main.js',
+	entry: [
+		path.join(__dirname, 'src', 'main.js')
+	],
 	output: {
 		path: path.resolve(__dirname, './build'),
 		publicPath: '/build/',
@@ -21,7 +24,6 @@ module.exports = {
 					loaders: {
             			js: 'babel-loader?presets[]=@babel/preset-env'
 					}
-					// other vue-loader options go here
 				}
 			},
 			{
@@ -76,15 +78,10 @@ if (process.env.NODE_ENV === 'production') {
 				 _: 'lodash',
 				 jsonPath: 'JSONPath'
 		}),
-		new webpack.optimize.UglifyJsPlugin({
-			sourceMap: true,
-			compress: {
-				warnings: false
-			}
-		}),
 		new webpack.LoaderOptionsPlugin({
 			minimize: true
-		})
+		}),
+		new VueLoaderPlugin(),
 	])
 } else if (process.env.NODE_ENV === 'development') {
 	module.exports.devtool = '#source-map'
@@ -99,6 +96,7 @@ if (process.env.NODE_ENV === 'production') {
 				 jquery: 'jquery',
 				 _: 'lodash',
 				 jsonPath: 'JSONPath'
-		})
+		}),
+		new VueLoaderPlugin(),
 	])
 }
