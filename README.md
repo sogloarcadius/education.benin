@@ -1,8 +1,16 @@
-# Education Benin
+# Le projet edubenin
 
-Le site de référence sur l'éducation et l'emploi au Bénin.
+* Le site de référence sur l'éducation et l'emploi au Bénin.
 
-[Github Pages](https://sogloarcadius.github.io/education.benin/)
+* API ouvert à tous pour recupérer des données sur le Bénin.
+
+# Contribution
+
+[Contribution Guide](https://sogloarcadius.github.io/education.benin/)
+
+# Guide d'utilisation
+
+[User Guide]()
 
 # Licence
 
