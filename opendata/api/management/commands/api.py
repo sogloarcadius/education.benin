@@ -1,10 +1,72 @@
-import json
 import os
+import yaml
+import json
 import sys
 from multiprocessing import Process
 from django.core.management.base import BaseCommand
 from api import models
-from . import _data
+
+CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
+
+OPENDATA_DIR = os.path.dirname(os.path.dirname(os.path.dirname(CURRENT_DIR)))
+
+DATA_DIR = os.path.join(os.path.dirname(OPENDATA_DIR), "data")
+
+EMERGENCY_DATASET_PATH = os.path.join(DATA_DIR, "emergency.yml")
+
+FACULTIES_DATASET_PATH = os.path.join(DATA_DIR, "faculties.yml")
+
+PROVINCES_DATASET_PATH = os.path.join(DATA_DIR, "provinces.yml")
+
+UNIVERSITIES_DATASET_PATH = os.path.join(DATA_DIR, "universities.yml")
+
+COURSES_DATASET_PATH = [
+    os.path.join(DATA_DIR, 'formations', x) for x in os.listdir(os.path.join(DATA_DIR, 'formations'))
+]
+
+class Data(object):      
+
+    @staticmethod
+    def get_emergency():
+        with open(EMERGENCY_DATASET_PATH) as fp:
+            data = yaml.safe_load(fp)
+            
+        return data
+
+    @staticmethod
+    def get_faculties():
+        with open(FACULTIES_DATASET_PATH) as fp:
+            data = yaml.safe_load(fp)
+            
+        return data
+
+    @staticmethod
+    def get_provinces():
+        with open(PROVINCES_DATASET_PATH) as fp:
+            data = yaml.safe_load(fp)
+            
+        return data
+
+    @staticmethod
+    def get_universities():
+        with open(UNIVERSITIES_DATASET_PATH) as fp:
+            data = yaml.safe_load(fp)
+            
+        return data
+
+    @staticmethod
+    def get_courses():
+        courses = []
+        for file in COURSES_DATASET_PATH:
+            with open(file, 'r+') as fp:
+                current_file_content = yaml.safe_load(fp)
+            current_courses = current_file_content["courses"]
+            for course in current_courses:
+                course["university"] = current_file_content["id"]
+            courses += current_courses
+
+
+        return courses
 
 class Command(BaseCommand):
     
@@ -31,19 +93,17 @@ class Command(BaseCommand):
         if str(action) == "delete":
             self.delete()
 
-
     def load(self):
         self.stdout.write('Loading data to database...')
-        #self.load_provinces()
+        self.load_provinces()
         self.load_universities()
         self.load_faculties()
-        #self.load_courses()
+        self.load_courses()
         self.stdout.write('Loading data to database...done.')
-
     
     def load_universities(self):
         self.stdout.write('Loading universities data to database...')
-        universities = _data.get_universities()
+        universities = Data.get_universities()
 
         for university in universities:
             current_university = models.University(
@@ -69,7 +129,7 @@ class Command(BaseCommand):
 
     def load_courses(self):
         self.stdout.write("Loading courses data to database...")
-        courses = _data.get_courses()
+        courses = Data.get_courses()
         for course in courses:
             try:
                 current_course = models.Course(
@@ -95,10 +155,9 @@ class Command(BaseCommand):
                 print("University isn't in the database yet.")
         self.stdout.write("Loading courses data to database...done.")
 
-
     def load_faculties(self):
         self.stdout.write('Loading faculties data to database...')
-        faculties = _data.get_faculties()
+        faculties = Data.get_faculties()
         for university in faculties:
             try:
                 current_faculties = university["faculties"]
@@ -121,16 +180,14 @@ class Command(BaseCommand):
 
         self.stdout.write('Loading faculties data to database...done.')
 
-
     def load_provinces(self):
         self.stdout.write('Loading province data to database...')
-        provinces = _data.get_provinces()
+        provinces = Data.get_provinces()
         for province in provinces:
             p = Process(target=self.load_province, args=(province,))
             p.start()
             p.join()
         self.stdout.write('Loading province data to database...done.')
-
 
     def load_province(self, province):
         current_province = models.Province(name=province["lib_dep"])
@@ -147,14 +204,13 @@ class Command(BaseCommand):
                     district.neighborhoods.add(neighborhood)
                 city.districts.add(district)
             current_province.cities.add(city)            
-
     
+        
     def display(self):
         self.stdout.write("Total provinces %s" %(len(models.Province.objects.all())))
         self.stdout.write("Total universities %s" %(len(models.University.objects.all())))
         self.stdout.write("Total Faculties %s" %(len(models.Faculty.objects.all())))
         self.stdout.write("Total Courses %s" %(len(models.Course.objects.all())))
-
 
     def delete(self):
         self.stdout.write("Deleting %s provinces..." %(len(models.Province.objects.all())))
