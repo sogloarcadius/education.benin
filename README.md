@@ -4,14 +4,13 @@
 
 * API ouvert à tous pour recupérer des données sur le Bénin.
 
-
-# User Guide
+# Guide d'utilisation
 
 * [WEBSITE]()
 
 * [ANDROID]()
 
-# Developper GUide
+# Guide du developpeur
 
 * [CONTRIBUTE](http://localhost:8080/education.benin/contribution/)
 
