@@ -1,10 +1,9 @@
 <template>
   <div class="mdl-layout mdl-js-layout">
     <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-      <div class="mdl-tabs__tab-bar">
-        <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'about'}">Accueil</router-link>
-        <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'university'}">Universites</router-link>
-      </div>
+        <div class="mdl-tabs__tab-bar">
+            <router-link class="mdl-tabs__tab mdl-navigation__link" :to="{ name: 'about'}">Accueil</router-link>
+        </div>    
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">

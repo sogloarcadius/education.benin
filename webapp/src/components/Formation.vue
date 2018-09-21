@@ -5,21 +5,19 @@
      <div class="mdl-grid filter-wrapper">
           <span class="mdl-cell--12-col">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-                
+
+                <label class="mdl-selectfield__label" for="university">Université</label>
+                <select v-model="university_selected" class="mdl-selectfield__select" id="university" name="university">
+                  <option v-on:click="Filter()"></option>
+                  <option v-for='university in ListOfUniversities()' :key=university v-on:click="Filter()">{{university}}</option>
+                </select>
+                &nbsp;
+
                 <label class="mdl-selectfield__label" for="fields">Domaine</label>
                 <select v-model="field_selected" class="mdl-selectfield__select" id="field" name="field">
                   <option v-on:click="Filter()"></option>
                   <option v-for='field in ListOfFields()' :key=field v-on:click="Filter()">{{field}}</option>
                 </select>
-                &nbsp;
-
-                <span v-if="faculties.length > 0">
-                    <label class="mdl-selectfield__label" for="faculty">Faculté</label>
-                    <select v-model="faculty_selected" class="mdl-selectfield__select" id="faculty" name="faculty">
-                        <option v-on:click="Filter()"></option>
-                        <option v-for='faculty in faculties' :key=faculty.name v-on:click="Filter()">{{faculty.name.toUpperCase()}}</option>
-                    </select>
-                </span>
               </div>
           </span>
      </div>
@@ -31,7 +29,9 @@
                     <h2 class="mdl-card__title-text">{{course.name}}</h2>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    <strong>UFR : </strong> {{course.faculty.toUpperCase()}}<br/>
+                    <strong>Université : </strong> {{course.university.toUpperCase()}}<br/>
+                    <span v-if="course.faculty != 'NaN'"><strong>Faculté : </strong> {{course.faculty.toUpperCase()}}</span>
+
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -45,15 +45,28 @@
 </template>
 
 <script>
+
+import { mapState } from 'vuex'
+
 export default {
 
-    props: ['courses', 'faculties'],
+    created () {
+        this.$store.dispatch('courses/getAllCourses'),
+        this.$store.dispatch('faculties/getAllFaculties')
+
+    },
+
+    computed: mapState({
+        courses: state => state.courses.all,
+        faculties: state => state.faculties.all
+
+    }),
 
     data(){
         return {
-            faculty_selected: '', 
+            university_selected: '',
             field_selected: '',
-            computed_courses: this.courses
+            computed_courses: this.$store.state.courses.all
         }
     },
 
@@ -62,6 +75,20 @@ export default {
         displayFormationDetail (course_name) {
             this.$router.push({ name: 'course_detail', params: { course_name: course_name } })
         },
+
+        ListOfUniversities(){
+            var universities = [];
+            _.forEach(this.courses, (function(course) {
+                    universities.push(course.university);
+                }));
+
+            universities = _.map(universities, _.method('toUpperCase'));
+            universities = _.uniq(universities).sort();
+
+            return universities;
+
+        },
+
 
         ListOfFields(){
             var response = [];
@@ -91,17 +118,17 @@ export default {
         
         Filter(){
             var self = this;
-            var response = [];
-            if (this.faculty_selected == '' && this.field_selected == ''){
+            
+            if (this.university_selected == '' && this.field_selected == '' ){
                 this.computed_courses = this.courses;
             } 
-            else if (this.faculty_selected == '' && this.field_selected != ''){
+            else if (this.university_selected == '' && this.field_selected != ''){
                 this.computed_courses = this.FindCoursesByField(this.field_selected);
             }
-            else if(this.field_selected == '' && this.faculty_selected != '' ){
-                response = _.filter(this.courses, function(course) {
-                if (course.faculty.toUpperCase() == self.faculty_selected){
-                    return faculty;
+            else if(this.field_selected == '' && this.university_selected != '' ){
+                var response = _.filter(this.courses, function(course) {
+                if (course.university.toUpperCase() == self.university_selected){
+                        return course;
                 }
                 });
                 this.computed_courses = response;
@@ -110,12 +137,13 @@ export default {
                 var response = [];
                 var courses = this.FindCoursesByField(this.field_selected);
                 _.forEach(courses, (function(course){
-                    if (course.faculty.toUpperCase() == self.faculty_selected){
+                    if (course.university.toUpperCase() == self.university_selected){
                         response.push(course);
                     }
                 }));         
                 this.computed_courses = response;
             }
+            
         },
     }
 }

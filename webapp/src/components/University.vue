@@ -60,7 +60,7 @@ export default {
   
   data(){
 		return {
-      filter_universities: this.universities,
+      filter_universities: this.$store.state.universities.all,
       city_selected: '',
       type_selected: ''
     }

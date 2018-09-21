@@ -6,6 +6,8 @@ Vue.use(VueRouter)
 import About from '@/components/About'
 import University from '@/components/University'
 import UniversityDetail from '@/components/UniversityDetail'
+import Faculty from '@/components/Faculty'
+import Formation from '@/components/Formation'
 import FormationDetail from '@/components/FormationDetail'
 
 export default new VueRouter({
@@ -18,7 +20,7 @@ export default new VueRouter({
 			path: '/about',
 			name: 'about',
 			components: { panel: About }
-		}, 
+		},
 		{
 			path: '/university',
 			name: 'university',
@@ -28,6 +30,16 @@ export default new VueRouter({
 			path: '/myuniversity/:university_id',
 			name: 'university_detail',
 			components: { panel: UniversityDetail }
+		},
+		{
+			path: '/faculty',
+			name: 'faculty',
+			components: { panel: Faculty },
+		},
+		{
+			path: '/course',
+			name: 'course',
+			components: { panel: Formation },
 		},
 		{
 			path: '/mycourse/:course_name',

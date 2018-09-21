@@ -6,18 +6,20 @@
           <span class="mdl-cell--12-col">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
 
+                <label class="mdl-selectfield__label" for="university">Université</label>
+                <select v-model="university_selected" class="mdl-selectfield__select" id="university" name="university">
+                  <option v-on:click="Filter()"></option>
+                  <option v-for='university in ListOfUniversities()' :key=university v-on:click="Filter()">{{university}}</option>
+                </select>
+                &nbsp;
+
+
                 <label class="mdl-selectfield__label" for="fields">Domaine</label>
                 <select v-model="field_selected" class="mdl-selectfield__select" id="field" name="field">
                   <option v-on:click="Filter()"></option>
                   <option v-for='field in ListOfFields()' :key=field v-on:click="Filter()">{{field}}</option>
                 </select>
-                &nbsp;
               
-                <label class="mdl-selectfield__label" for="city">Ville</label>
-                <select v-model="city_selected" class="mdl-selectfield__select" id="city" name="city">
-                  <option v-on:click="Filter()"></option>
-                  <option v-for='city in ListOfCities()' :key=city v-on:click="Filter()">{{city}}</option>
-                </select>
               </div>
           </span>
      </div>
@@ -29,7 +31,7 @@
             </div>
             <div class="mdl-card__supporting-text">
                 <strong>Nom : </strong> {{faculty.name.toUpperCase()}} <br/>
-                <strong>Description : </strong> {{faculty.name}} <br/>
+                <strong>Description : </strong> {{faculty.fullname}} <br/>
                 <strong>Université : </strong> {{faculty.university}} <br/>
                 <strong>Ville : </strong> {{faculty.city.toUpperCase()}}<br/>
             </div>
@@ -40,14 +42,24 @@
 
 <script>
 
+import { mapState } from 'vuex'
+
+
 export default {
-    props: ['faculties'],
+
+    created () {
+        this.$store.dispatch('faculties/getAllFaculties')
+    },
+
+    computed: mapState({
+        faculties: state => state.faculties.all
+    }),
 
     data(){
         return {
-            city_selected: '',
+            university_selected: '',
             field_selected: '',
-            computed_faculties: this.faculties
+            computed_faculties: this.$store.state.faculties.all
         }
     },
     methods: {
@@ -65,10 +77,10 @@ export default {
             return response;
         },
 
-        ListOfCities() {
+        ListOfUniversities() {
             var response = [];
             _.forEach(this.faculties, (function(faculty){
-                    response.push(faculty.city);
+                    response.push(faculty.university);
             }));
 
             response = _.map(response, _.method('toUpperCase'));
@@ -92,15 +104,15 @@ export default {
         Filter(){
             var self = this;
             var response = [];
-            if (this.city_selected == '' && this.field_selected == ''){
+            if (this.university_selected == '' && this.field_selected == ''){
                 this.computed_faculties = this.faculties;
             } 
-            else if (this.city_selected == '' && this.field_selected != ''){
+            else if (this.university_selected == '' && this.field_selected != ''){
                 this.computed_faculties = this.FindFacultiesByField(this.field_selected);
             }
-            else if(this.field_selected == '' && this.city_selected != '' ){
+            else if(this.field_selected == '' && this.university_selected != '' ){
                 response = _.filter(this.faculties, function(faculty) {
-                if (faculty.city.toUpperCase() == self.city_selected){
+                if (faculty.university.toUpperCase() == self.university_selected){
                     return faculty;
                 }
                 });
@@ -110,7 +122,7 @@ export default {
                 var response = [];
                 var faculties = this.FindFacultiesByField(this.field_selected);
                 _.forEach(faculties, (function(faculty){
-                    if (faculty.city.toUpperCase() == self.city_selected){
+                    if (faculty.university.toUpperCase() == self.university_selected){
                         response.push(faculty);
                     }
                 }));         
