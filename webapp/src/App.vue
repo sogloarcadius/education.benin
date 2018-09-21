@@ -8,9 +8,7 @@
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
-        <div v-if="state.universities">
   				<router-view name="panel"></router-view>
-  		</div>
       </div>
     </main>
     
@@ -30,14 +28,10 @@
 
 
 <script>
-import store from '@/components/Store'
 require('material-design-lite')
 
 export default {
   name: 'app',
-	data(){
-		return {state: store.state}
-	},
 	methods: {
       hideMenu: function () {
         document.getElementsByClassName('mdl-layout__drawer')[0].classList.remove('is-visible')

@@ -56,25 +56,32 @@
 </template>
 
 <script>
-import store from '@/components/Store'
+
 import formation from '@/components/Formation'
 import faculty from '@/components/Faculty'
+
+import { mapState } from 'vuex'
 
 
 export default {
     components: { formation, faculty },
-    data(){
-        return {
-            universities: store.state.universities,
-            faculties: store.state.faculties,
-            courses: store.state.courses
-        }
+
+    created () {
+        this.$store.dispatch('universities/getAllUniversities'),
+        this.$store.dispatch('faculties/getAllFaculties'),
+        this.$store.dispatch('courses/getAllCourses')
     },
+
+    computed: mapState({
+        universities: state => state.universities.all,
+        faculties: state => state.faculties.all,
+        courses: state => state.courses.all
+    }),
     methods: {
         FindUniversity(id){
             var response = "";
-            _.forEach(store.state.universities, (function(university){
-                if (university.id == id) {
+            _.forEach(this.universities, (function(university){
+                if (university.name == id) {
                     response = university;
                 }
             }));
@@ -83,22 +90,21 @@ export default {
         },
         FindFaculties(id) {
             var faculties = [];
-            _.forEach(store.state.faculties, (function(university) {
-                    if (university.id == id) {
-                        faculties.push(university.faculties);
+            _.forEach(this.faculties, (function(faculty) {
+                    if (faculty.university == id) {
+                        faculties.push(faculty);
                     }
                 }));
 
-            faculties = _.uniq(_.flatten(faculties));
-            
-            faculties = _.sortBy(faculties, o => o.id);
+            faculties = _.uniq(faculties);
+            faculties = _.sortBy(faculties, o => o.name);
 
             return faculties;
         },
         
         FindCourses(id) {
             var response = [];
-            response = _.filter(store.state.courses, function(course) {
+            response = _.filter(this.courses, function(course) {
                 return course.university == id;
             });
 

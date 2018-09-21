@@ -21,12 +21,12 @@
           </span>
      </div>
       <div class="mdl-grid">
-          <div v-for="university in universities" :key="university.id" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university.id)">
+          <div v-for="university in filter_universities" :key="university.name" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university.name)">
               <div class="mdl-card__title mdl-card--expand">
-                  <h2 class="mdl-card__title-text">{{university.id}}</h2>
+                  <h2 class="mdl-card__title-text">{{university.name}}</h2>
               </div>
               <div class="mdl-card__supporting-text">
-                  <strong>Nom : </strong> {{university.name}} <br/>
+                  <strong>Nom : </strong> {{university.fullname}} <br/>
                   <strong>Email : </strong> {{university.email}} <br/>
                   <strong>Tél : </strong> {{university.phone}}<br/>
                   <strong>Address: </strong> {{university.address}}<br/>
@@ -45,17 +45,27 @@
 
 <script>
 
-import store from '@/components/Store'
+import { mapState } from 'vuex'
+
 
 export default {
-  components: {},
+
+  computed: mapState({
+    universities: state => state.universities.all
+  }),
+
+  created () {
+    this.$store.dispatch('universities/getAllUniversities')
+  },
+  
   data(){
 		return {
-      universities: store.state.universities,
+      filter_universities: this.universities,
       city_selected: '',
       type_selected: ''
     }
   },
+
   methods: {
     displayUniversityDetail (university_id) {
       this.$router.push({ name: 'university_detail', params: { university_id: university_id } })
@@ -65,38 +75,38 @@ export default {
       var self = this;
       var response = [];
       if (this.city_selected == '' && this.type_selected == ''){
-          this.universities = store.state.universities;
+          this.filter_universities = this.universities;
       } 
       else if (this.city_selected == '' && this.type_selected != ''){
-          response = _.filter(store.state.universities, function(university) {
-          if (university.type.toUpperCase() == self.type_selected ){
+          response = _.filter(this.universities, function(university) {
+          if (university.status.toUpperCase() == self.type_selected ){
               return university;
           }
         });
-        this.universities = response;
+        this.filter_universities = response;
       }
       else if( self.type_selected == '' && self.city_selected != '' ){
-          response = _.filter(store.state.universities, function(university) {
-          if (_.includes(_.mapValues(university.locations, _.method('toUpperCase')), self.city_selected)){
+          response = _.filter(this.universities, function(university) {
+          if (_.includes(_.mapValues(university.cities, _.method('toUpperCase')), self.city_selected)){
               return university;
           }
         });
-        this.universities = response;
+        this.filter_universities = response;
       } 
       else {
-          response = _.filter(store.state.universities, function(university) {
-          if (_.includes(_.mapValues(university.locations, _.method('toUpperCase')), self.city_selected) && university.type.toUpperCase() == self.type_selected ){
+          response = _.filter(this.universities, function(university) {
+          if (_.includes(_.mapValues(university.cities, _.method('toUpperCase')), self.city_selected) && university.status.toUpperCase() == self.type_selected ){
                 return university;
           }
           });
-          this.universities = response;
+          this.filter_universities = response;
       }
     },
 
     ListOfCities() {
         var response = [];
-        _.forEach(store.state.universities, (function(university) {
-          response.push(university.locations);
+        _.forEach(this.universities, (function(university) {
+          response.push(university.cities);
         }));
 
         response =_.flatten(response);

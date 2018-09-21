@@ -28,7 +28,7 @@
                 <hr/>
                 <div>
                     <span>Métiers</span>
-                    <ul v-for="role in FindCourse().roles" :key=role>
+                    <ul v-for="role in FindCourse().professions" :key=role>
                         <li>{{role}}</li>
                     </ul>
                 </div> 
@@ -47,14 +47,23 @@
 
 <script>
 
-import store from '@/components/Store'
+import { mapState } from 'vuex'
+
 
 export default {
+    created () {
+        this.$store.dispatch('courses/getAllCourses')
+    },
+
+    computed: mapState({
+        courses: state => state.courses.all
+    }),
+
     methods: {
         FindCourse() {
             var self = this;
             var response = {};
-            _.forEach(store.state.courses, function(course) {
+            _.forEach(this.courses, function(course) {
                 if (course.name == self.$route.params.course_name){
                     response = course;
                 }

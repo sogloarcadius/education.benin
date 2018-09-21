@@ -25,10 +25,10 @@
     <div class="mdl-grid">
         <div v-for="faculty in computed_faculties" :key=faculty.name class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">{{faculty.id.toUpperCase()}}</h2>
+                <h2 class="mdl-card__title-text">{{faculty.name.toUpperCase()}}</h2>
             </div>
             <div class="mdl-card__supporting-text">
-                <strong>Nom : </strong> {{faculty.id.toUpperCase()}} <br/>
+                <strong>Nom : </strong> {{faculty.name.toUpperCase()}} <br/>
                 <strong>Description : </strong> {{faculty.name}} <br/>
                 <strong>Université : </strong> {{faculty.university}} <br/>
                 <strong>Ville : </strong> {{faculty.city.toUpperCase()}}<br/>

@@ -1,15 +1,18 @@
 import Vue from 'vue'
-import store from '@/components/Store'
-import router from '@/router'
-import App from '@/App'
 
-store.load()
+import App from '@/App'
+import router from '@/router'
+import store from '@/store'
+
+import { BaseApi } from '@/common/api'
+
+BaseApi.init()
+
+BaseApi.setHeaders()
 
 new Vue({
 	el: '#app',
 	router,
-	data: {
-		state: store.state
-	},
+	store,
 	render: h => h(App)
 })

@@ -4,3 +4,4 @@ django-filter
 djangorestframework
 django-rest-swagger
 PyYaml
+django-cors-headers

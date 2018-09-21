@@ -17,7 +17,7 @@
                     <label class="mdl-selectfield__label" for="faculty">Faculté</label>
                     <select v-model="faculty_selected" class="mdl-selectfield__select" id="faculty" name="faculty">
                         <option v-on:click="Filter()"></option>
-                        <option v-for='faculty in faculties' :key=faculty.id v-on:click="Filter()">{{faculty.id.toUpperCase()}}</option>
+                        <option v-for='faculty in faculties' :key=faculty.name v-on:click="Filter()">{{faculty.name.toUpperCase()}}</option>
                     </select>
                 </span>
               </div>
@@ -31,7 +31,7 @@
                     <h2 class="mdl-card__title-text">{{course.name}}</h2>
                 </div>
                 <div class="mdl-card__supporting-text">
-                    <strong>UFR : </strong> {{course.college.toUpperCase()}}<br/>
+                    <strong>UFR : </strong> {{course.faculty.toUpperCase()}}<br/>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -100,7 +100,7 @@ export default {
             }
             else if(this.field_selected == '' && this.faculty_selected != '' ){
                 response = _.filter(this.courses, function(course) {
-                if (course.college.toUpperCase() == self.faculty_selected){
+                if (course.faculty.toUpperCase() == self.faculty_selected){
                     return faculty;
                 }
                 });
@@ -110,7 +110,7 @@ export default {
                 var response = [];
                 var courses = this.FindCoursesByField(this.field_selected);
                 _.forEach(courses, (function(course){
-                    if (course.college.toUpperCase() == self.faculty_selected){
+                    if (course.faculty.toUpperCase() == self.faculty_selected){
                         response.push(course);
                     }
                 }));         
