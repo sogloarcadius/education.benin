@@ -2,24 +2,27 @@
   <div>
     <div>
     <br/>
+    <div class="mdl-layout__title">
+        <div class="mdl-layout">
+            <div> 
+                <strong>FACULTES</strong>
+            </div>
+        </div>
+    </div>
+    <br/>
      <div class="mdl-grid filter-wrapper">
-          <span class="mdl-cell--12-col">
+          <span class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--1-col-phone">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-
                 <label class="mdl-selectfield__label" for="university">Université</label>
                 <select v-model="university_selected" class="mdl-selectfield__select" id="university" name="university">
                   <option v-on:click="Filter()"></option>
                   <option v-for='university in ListOfUniversities()' :key=university v-on:click="Filter()">{{university}}</option>
                 </select>
-                &nbsp;
-
-
                 <label class="mdl-selectfield__label" for="fields">Domaine</label>
                 <select v-model="field_selected" class="mdl-selectfield__select" id="field" name="field">
                   <option v-on:click="Filter()"></option>
                   <option v-for='field in ListOfFields()' :key=field v-on:click="Filter()">{{field}}</option>
                 </select>
-              
               </div>
           </span>
      </div>

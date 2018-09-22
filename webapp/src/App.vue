@@ -16,12 +16,11 @@
           <div class="mdl-layout__header-row education-logo-row">
               <span class="mdl-layout__title">
                   <div class="education-logo"></div>
-                  <span class="mdl-layout__title">edubenin.bj</span>
+                  <span class="mdl-layout__title"><a href="http://api.edubenin.bj" target="_blank">api.edubenin.bj</a></span>
               </span>      
           </div>
        </div>
     </footer>
-    
   </div>
 </template>
 
@@ -45,6 +44,9 @@ export default {
   border: 1px;
 }
 
+a {
+      text-decoration:none;
+}
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://code.getmdl.io/1.2.1/material.blue-red.min.css');
 </style>

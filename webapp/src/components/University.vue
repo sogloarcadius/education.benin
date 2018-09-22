@@ -2,8 +2,16 @@
   <div>
     <div>
     <br/>
+    <div class="mdl-layout__title">
+        <div class="mdl-layout">
+            <div> 
+                <strong>UNIVERSITES</strong>
+            </div>
+        </div>
+    </div>
+    <br/>
      <div class="mdl-grid filter-wrapper">
-          <span class="mdl-cell--3-col">
+          <span class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--1-col-phone">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
                 <label class="mdl-selectfield__label" for="type">Statut</label>
                 <select v-model="type_selected" class="mdl-selectfield__select" id="type" name="type">
@@ -11,7 +19,6 @@
                   <option v-on:click="Filter()" value='PUBLIC'>PUBLIC</option>
                   <option v-on:click="Filter()" value='PRIVATE'>PRIVEE</option>
                 </select>
-                &nbsp;
                 <label class="mdl-selectfield__label" for="city">Ville</label>
                 <select v-model="city_selected" class="mdl-selectfield__select" id="city" name="city">
                   <option v-on:click="Filter()"></option>
@@ -21,7 +28,7 @@
           </span>
      </div>
       <div class="mdl-grid">
-          <div v-for="university in filter_universities" :key="university.name" class="mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--1-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university.name)">
+          <div v-for="university in filter_universities" :key="university.name" class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university.name)">
               <div class="mdl-card__title mdl-card--expand">
                   <h2 class="mdl-card__title-text">{{university.name}}</h2>
               </div>

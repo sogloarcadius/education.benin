@@ -2,17 +2,22 @@
   <div>
     <div>
     <br/>
+    <div class="mdl-layout__title">
+        <div class="mdl-layout">
+            <div> 
+                <strong>FORMATION</strong>
+            </div>
+        </div>
+    </div>
+    <br/>
      <div class="mdl-grid filter-wrapper">
-          <span class="mdl-cell--12-col">
+          <span class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--1-col-phone">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-
                 <label class="mdl-selectfield__label" for="university">Université</label>
                 <select v-model="university_selected" class="mdl-selectfield__select" id="university" name="university">
                   <option v-on:click="Filter()"></option>
                   <option v-for='university in ListOfUniversities()' :key=university v-on:click="Filter()">{{university}}</option>
                 </select>
-                &nbsp;
-
                 <label class="mdl-selectfield__label" for="fields">Domaine</label>
                 <select v-model="field_selected" class="mdl-selectfield__select" id="field" name="field">
                   <option v-on:click="Filter()"></option>
@@ -22,7 +27,6 @@
           </span>
      </div>
     </div>
-    
     <div class="mdl-grid">
         <div v-if="courses" v-for="course in computed_courses" :key=course.name class="mdl-cell--12-col university-card mdl-card mdl-shadow--2dp" @click="displayFormationDetail(course.name)">
                 <div class="mdl-card__title mdl-card--expand">
@@ -39,11 +43,9 @@
                     </a>
                 </div>
         </div>
-         
     </div>
   </div>
 </template>
-
 <script>
 
 import { mapState } from 'vuex'

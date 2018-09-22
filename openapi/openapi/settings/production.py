@@ -1,12 +1,6 @@
 from openapi.settings.base import *
 
-
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [".sogloarcadius.com"]
 
-
-CORS_ORIGIN_ALLOW_ALL = False
-
-CORS_ORIGIN_WHITELIST = (
-)

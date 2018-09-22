@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--1dp">
+  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--1dp">
      <span class="mdl-layout__title">
         <br/>
         <div class="education-logo"></div>
@@ -44,34 +44,6 @@
             </div>
             <div class="mdl-card__supporting-text">
                 <strong>Rechercher une formation</strong>
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                Voir
-            </a>
-            </div>
-        </div>
-
-        <div class=" university-card mdl-card mdl-shadow--2dp" @click="Redirect('company')">
-            <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">ENTREPRISES</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-                <strong>Rechercher une entreprise</strong>
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                Voir
-            </a>
-            </div>
-        </div>
-
-         <div class=" university-card mdl-card mdl-shadow--2dp" @click="Redirect('jobs')">
-            <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">EMPLOI</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-                <strong>Rechercher un emploi</strong>
             </div>
             <div class="mdl-card__actions mdl-card--border">
             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
