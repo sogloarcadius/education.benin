@@ -1,6 +1,6 @@
-from openapi.settings.base import *
+from .base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['.sogloarcadius.com']
 
