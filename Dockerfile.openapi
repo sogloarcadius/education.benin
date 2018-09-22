@@ -56,6 +56,7 @@ RUN python3 ${CODE_DIR}/openapi/manage.py collectstatic --no-input
 RUN chown -R nginx:nginx ${CODE_DIR}/
 
 EXPOSE 80
+EXPOSE 443
 
 WORKDIR ${CODE_DIR}
 
