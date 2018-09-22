@@ -1,5 +1,5 @@
 django==2.1.1
-markdown
+Markdown==2.6.11
 django-filter
 djangorestframework
 django-rest-swagger

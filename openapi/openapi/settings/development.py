@@ -1,4 +1,4 @@
-from .base import *
+from openapi.settings.base import *
 from corsheaders.defaults import default_headers
 
 DEBUG = True

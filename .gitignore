@@ -2,5 +2,5 @@ node_modules/
 __pycache__/
 .vscode/
 
-openapi/openapi/static/
+static/
 docs/content/.vuepress/dist

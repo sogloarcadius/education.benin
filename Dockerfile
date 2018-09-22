@@ -14,8 +14,8 @@ RUN apk --no-cache add \
 	python3-dev \
 	py-setuptools \
 	py-pip \
+	sqlite \
 	nginx \
-	sqlite \ 
 	supervisor \
 	uwsgi-python3 && \
 	pip install --upgrade pip
@@ -56,6 +56,8 @@ RUN python3 ${CODE_DIR}/openapi/manage.py collectstatic --no-input
 RUN chown -R nginx:nginx ${CODE_DIR}/
 
 EXPOSE 80
+
+EXPOSE 443
 
 WORKDIR ${CODE_DIR}
 
