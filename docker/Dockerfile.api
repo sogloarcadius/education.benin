@@ -37,17 +37,17 @@ COPY openapi/requirements.txt ${CODE_DIR}/app/
 RUN pip3 install -r ${CODE_DIR}/app/requirements.txt
 
 # setup all the configfiles
-COPY configuration/nginx.conf /etc/nginx/nginx.conf
-COPY configuration/nginx-app.conf /etc/nginx/conf.d/
-COPY configuration/supervisor-app.conf /etc/supervisord.conf
+COPY settings/nginx.conf /etc/nginx/nginx.conf
+COPY settings/nginx-api.conf /etc/nginx/conf.d/
+COPY settings/supervisor-app.conf /etc/supervisord.conf
 
 # add (the rest of) our code
 COPY openapi ${CODE_DIR}/openapi
 
 
-# add configuration files
-COPY configuration/uwsgi_params ${CODE_DIR}/uwsgi_params
-COPY configuration/uwsgi.ini ${CODE_DIR}/uwsgi.ini
+# add settings files
+COPY settings/uwsgi_params ${CODE_DIR}/uwsgi_params
+COPY settings/uwsgi.ini ${CODE_DIR}/uwsgi.ini
 
 # Collect static files and media
 RUN python3 ${CODE_DIR}/openapi/manage.py collectstatic --no-input
@@ -56,8 +56,6 @@ RUN python3 ${CODE_DIR}/openapi/manage.py collectstatic --no-input
 RUN chown -R nginx:nginx ${CODE_DIR}/
 
 EXPOSE 80
-
-EXPOSE 443
 
 WORKDIR ${CODE_DIR}
 

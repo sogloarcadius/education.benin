@@ -16,7 +16,7 @@
           <div class="mdl-layout__header-row education-logo-row">
               <span class="mdl-layout__title">
                   <div class="education-logo"></div>
-                  <span class="mdl-layout__title"><a href="http://api.edubenin.bj" target="_blank">api.edubenin.bj</a></span>
+                  <span class="mdl-layout__title">edubenin.bj</span>
               </span>      
           </div>
        </div>
