@@ -6,29 +6,33 @@
         <div class="mdl-layout">
             <div> 
                 <strong>UNIVERSITES</strong>
+                <br/><br/>
+                <div v-if="this.$store.state.universities.loading" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>            
             </div>
         </div>
     </div>
     <br/>
-     <div class="mdl-grid filter-wrapper">
+
+     <div v-if="!this.$store.state.universities.loading" class="mdl-grid filter-wrapper">
           <span class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--1-col-phone">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
                 <label class="mdl-selectfield__label" for="type">Statut</label>
-                <select v-model="type_selected" class="mdl-selectfield__select" id="type" name="type">
-                  <option v-on:click="Filter()"></option>
-                  <option v-on:click="Filter()" value='PUBLIC'>PUBLIC</option>
-                  <option v-on:click="Filter()" value='PRIVATE'>PRIVEE</option>
+                <select v-model="status_selected" class="mdl-selectfield__select" id="type" name="type">
+                  <option></option>
+                  <option value='PUBLIC'>PUBLIC</option>
+                  <option value='PRIVATE'>PRIVEE</option>
                 </select>
                 <label class="mdl-selectfield__label" for="city">Ville</label>
                 <select v-model="city_selected" class="mdl-selectfield__select" id="city" name="city">
-                  <option v-on:click="Filter()"></option>
-                  <option v-for='city in ListOfCities()' :key=city v-on:click="Filter()">{{city}}</option>
+                  <option></option>
+                  <option v-for='city in ListOfCities()' :key=city>{{city}}</option>
                 </select>
               </div>
           </span>
      </div>
-      <div class="mdl-grid">
-          <div v-for="university in filter_universities" :key="university.name" class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university.name)">
+     
+      <div v-if="!this.$store.state.universities.loading" class="mdl-grid">
+          <div v-for="university in universities" :key="university.name" class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone university-card mdl-card mdl-shadow--2dp" @click="displayUniversityDetail(university.name)">
               <div class="mdl-card__title mdl-card--expand">
                   <h2 class="mdl-card__title-text">{{university.name}}</h2>
               </div>
@@ -54,26 +58,33 @@
 
 import { mapState } from 'vuex'
 
-
 export default {
 
-  computed: mapState({
-    universities: state => state.universities.all
-  }),
-
   created () {
-    this.$store.dispatch('universities/getAllUniversities')
+    this.$store.dispatch('universities/getAllUniversities');
   },
-  
-  data(){
+
+
+  data: function(){
 		return {
-      filter_universities: this.$store.state.universities.all,
+      universities: this.$store.state.universities.all,
       city_selected: '',
-      type_selected: ''
+      status_selected: ''
+    }
+  },
+
+  watch: {
+
+    city_selected: function(oldvalue, newvalue){
+      this.Filter();
+    },
+    status_selected: function (oldvalue, newvalue){
+      this.Filter();
     }
   },
 
   methods: {
+
     displayUniversityDetail (university_id) {
       this.$router.push({ name: 'university_detail', params: { university_id: university_id } })
     },
@@ -81,38 +92,40 @@ export default {
     Filter(){
       var self = this;
       var response = [];
-      if (this.city_selected == '' && this.type_selected == ''){
-          this.filter_universities = this.universities;
+    
+      if (this.city_selected == '' && this.status_selected == ''){
+          response = this.$store.state.universities.all;
+          this.universities = response;
       } 
-      else if (this.city_selected == '' && this.type_selected != ''){
-          response = _.filter(this.universities, function(university) {
-          if (university.status.toUpperCase() == self.type_selected ){
+      else if (this.city_selected == '' && this.status_selected != ''){
+          response = _.filter(this.$store.state.universities.all, function(university) {
+          if (university.status.toUpperCase() == self.status_selected ){
               return university;
           }
         });
-        this.filter_universities = response;
+        this.universities = response;
       }
-      else if( self.type_selected == '' && self.city_selected != '' ){
-          response = _.filter(this.universities, function(university) {
+      else if( self.status_selected == '' && self.city_selected != '' ){
+          response = _.filter(this.$store.state.universities.all, function(university) {
           if (_.includes(_.mapValues(university.cities, _.method('toUpperCase')), self.city_selected)){
               return university;
           }
         });
-        this.filter_universities = response;
+        this.universities = response;
       } 
       else {
-          response = _.filter(this.universities, function(university) {
-          if (_.includes(_.mapValues(university.cities, _.method('toUpperCase')), self.city_selected) && university.status.toUpperCase() == self.type_selected ){
+          response = _.filter(this.$store.state.universities.all, function(university) {
+          if (_.includes(_.mapValues(university.cities, _.method('toUpperCase')), self.city_selected) && university.status.toUpperCase() == self.status_selected ){
                 return university;
           }
           });
-          this.filter_universities = response;
+          this.universities = response;
       }
     },
 
     ListOfCities() {
         var response = [];
-        _.forEach(this.universities, (function(university) {
+        _.forEach(this.$store.state.universities.all, (function(university) {
           response.push(university.cities);
         }));
 

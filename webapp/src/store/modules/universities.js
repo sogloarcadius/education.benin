@@ -3,11 +3,13 @@ import { UniversityApi } from '@/common/api'
 
 // initial state
 export const state = {
-    all: []
+    all: [],
+    loading: true
 }
 
 // getters
-export const getters = {}
+export const getters = {
+}
 
 // actions
 export const actions = {
@@ -22,7 +24,8 @@ export const actions = {
 // mutations
 export const mutations = {
     setUniversities (state, universities) {
-      state.all = universities
+      state.all = universities;
+      state.loading = false;
   }
 }
 

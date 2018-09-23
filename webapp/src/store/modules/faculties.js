@@ -3,7 +3,8 @@ import { FacultyApi } from '@/common/api'
 
 // initial state
 export const state = {
-    all: []
+    all: [],
+    loading: true
 }
 
 // getters
@@ -22,7 +23,8 @@ export const actions = {
 // mutations
 export const mutations = {
     setFaculties (state, faculties) {
-      state.all = faculties
+      state.all = faculties;
+      state.loading = false;
   }
 }
 

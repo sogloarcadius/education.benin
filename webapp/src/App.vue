@@ -10,17 +10,6 @@
   				<router-view name="panel"></router-view>
       </div>
     </main>
-    
-     <footer class="mdl-mini-footer education-footer">
-       <div class="mdl-mini-footer__right-section">
-          <div class="mdl-layout__header-row education-logo-row">
-              <span class="mdl-layout__title">
-                  <div class="education-logo"></div>
-                  <span class="mdl-layout__title">edubenin.bj</span>
-              </span>      
-          </div>
-       </div>
-    </footer>
   </div>
 </template>
 

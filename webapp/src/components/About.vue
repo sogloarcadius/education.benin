@@ -1,15 +1,14 @@
 <template>
 <div>
-  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--1dp">
-     <span class="mdl-layout__title">
+    <div class="mdl-layout__title">
         <br/>
         <div class="education-logo"></div>
-        <span class="mdl-layout__title">edubenin.bj</span>
+        <div class="mdl-layout__title">edubenin</div>
         <br/>
-        <span class="mdl-layout__title">La plateforme qui simplifie la vie des étudiant(e)s béninois(es).</span>
-        <br/>
-     </span>
-    <div class="mdl-grid">
+        <div class="mdl-layout__title">La plateforme qui simplifie la vie des étudiant(e)s béninois(es).</div>
+     </div>
+     <br/><br/>
+    <div class="mdl-grid center-items">
         <div class="university-card mdl-card mdl-shadow--2dp" @click="Redirect('university')">
             <div class="mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">UNIVERSITES</h2>
@@ -51,8 +50,7 @@
             </a>
             </div>
         </div>
-      </div>
-  </div>
+    </div>
 </div>
 </template>
 

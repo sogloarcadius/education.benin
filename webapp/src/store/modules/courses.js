@@ -3,7 +3,8 @@ import { CourseApi } from '@/common/api'
 
 // initial state
 export const state = {
-    all: []
+    all: [],
+    loading: true
 }
 
 // getters
@@ -22,7 +23,8 @@ export const actions = {
 // mutations
 export const mutations = {
     setCourses (state, courses) {
-      state.all = courses
+      state.all = courses;
+      state.loading = false;
   }
 }
 

@@ -6,29 +6,31 @@
         <div class="mdl-layout">
             <div> 
                 <strong>FORMATION</strong>
+                 <br/><br/>
+                 <div v-if="this.$store.state.courses.loading" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
             </div>
         </div>
     </div>
     <br/>
-     <div class="mdl-grid filter-wrapper">
+     <div v-if="!this.$store.state.courses.loading" class="mdl-grid filter-wrapper">
           <span class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--1-col-phone">
              <div class="filter-wrapper-options mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
                 <label class="mdl-selectfield__label" for="university">Université</label>
                 <select v-model="university_selected" class="mdl-selectfield__select" id="university" name="university">
-                  <option v-on:click="Filter()"></option>
-                  <option v-for='university in ListOfUniversities()' :key=university v-on:click="Filter()">{{university}}</option>
+                  <option></option>
+                  <option v-for='university in ListOfUniversities()' :key=university >{{university}}</option>
                 </select>
                 <label class="mdl-selectfield__label" for="fields">Domaine</label>
                 <select v-model="field_selected" class="mdl-selectfield__select" id="field" name="field">
-                  <option v-on:click="Filter()"></option>
-                  <option v-for='field in ListOfFields()' :key=field v-on:click="Filter()">{{field}}</option>
+                  <option></option>
+                  <option v-for='field in ListOfFields()' :key=field >{{field}}</option>
                 </select>
               </div>
           </span>
      </div>
     </div>
-    <div class="mdl-grid">
-        <div v-if="courses" v-for="course in computed_courses" :key=course.name class="mdl-cell--12-col university-card mdl-card mdl-shadow--2dp" @click="displayFormationDetail(course.name)">
+    <div v-if="!this.$store.state.courses.loading" class="mdl-grid">
+        <div v-if="courses" v-for="course in courses" :key=course.name class="mdl-cell--12-col university-card mdl-card mdl-shadow--2dp" @click="displayFormationDetail(course.name)">
                 <div class="mdl-card__title mdl-card--expand">
                     <h2 class="mdl-card__title-text">{{course.name}}</h2>
                 </div>
@@ -58,19 +60,24 @@ export default {
 
     },
 
-    computed: mapState({
-        courses: state => state.courses.all,
-        faculties: state => state.faculties.all
-
-    }),
-
     data(){
         return {
+            courses: this.$store.state.courses.all,
+            faculties: this.$store.state.faculties.all,
             university_selected: '',
-            field_selected: '',
-            computed_courses: this.$store.state.courses.all
+            field_selected: ''
         }
     },
+
+    watch: {
+
+        university_selected: function(oldvalue, newvalue){
+            this.Filter();
+        },
+        field_selected: function (oldvalue, newvalue){
+            this.Filter();
+        }
+  },
 
     methods: {
 
@@ -80,7 +87,7 @@ export default {
 
         ListOfUniversities(){
             var universities = [];
-            _.forEach(this.courses, (function(course) {
+            _.forEach(this.$store.state.courses.all, (function(course) {
                     universities.push(course.university);
                 }));
 
@@ -94,7 +101,7 @@ export default {
 
         ListOfFields(){
             var response = [];
-            _.forEach(this.courses, (function(course){
+            _.forEach(this.$store.state.courses.all, (function(course){
                 response.push(course.fields);
             }))
 
@@ -108,11 +115,12 @@ export default {
 
         FindCoursesByField(field_selected) {
             var courses = [];
-            _.forEach(this.courses, (function(course) {
+            _.forEach(this.$store.state.courses.all, (function(course) {
                 if (_.includes(course.fields, field_selected.toLowerCase())) {
                     courses.push(course);
                 }
                 }));
+
             courses = _.uniq(_.flatten(courses)).sort();
 
             return courses;
@@ -122,18 +130,18 @@ export default {
             var self = this;
             
             if (this.university_selected == '' && this.field_selected == '' ){
-                this.computed_courses = this.courses;
+                this.courses = this.$store.state.courses.all;
             } 
             else if (this.university_selected == '' && this.field_selected != ''){
-                this.computed_courses = this.FindCoursesByField(this.field_selected);
+                this.courses = this.FindCoursesByField(this.field_selected);
             }
             else if(this.field_selected == '' && this.university_selected != '' ){
-                var response = _.filter(this.courses, function(course) {
+                var response = _.filter(this.$store.state.courses.all, function(course) {
                 if (course.university.toUpperCase() == self.university_selected){
                         return course;
                 }
                 });
-                this.computed_courses = response;
+                this.courses = response;
             } 
             else {
                 var response = [];
@@ -143,7 +151,7 @@ export default {
                         response.push(course);
                     }
                 }));         
-                this.computed_courses = response;
+                this.courses = response;
             }
             
         },
