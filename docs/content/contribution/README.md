@@ -82,7 +82,7 @@ Depuis 2011, le système LMD (Licence, Master, Doctorat) est devenu la norme au 
 
 * [Liste des univs](http://didierhoundenou.centerblog.net/6463427-delivrance-des-licences-et-masters-au-benin)
 
-
+*[Acupro - Portail de la formation professionnelle](http://www.acupro.org/)
 
 
 ## Le projet openapi
