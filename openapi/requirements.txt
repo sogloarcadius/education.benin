@@ -3,5 +3,5 @@ Markdown==3.0.1
 django-filter==2.0.0
 djangorestframework==3.9.0
 django-rest-swagger==2.2.0
-PyYaml
+PyYaml==3.13
 django-cors-headers
