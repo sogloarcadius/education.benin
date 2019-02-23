@@ -38,17 +38,17 @@ RUN pip3 install pip --upgrade
 RUN pip3 install -r ${CODE_DIR}/app/requirements.txt
 
 # setup all the configfiles
-COPY docker/nginx.conf /etc/nginx/nginx.conf
-COPY docker/nginx-api.conf /etc/nginx/conf.d/
-COPY docker/supervisor-app.conf /etc/supervisord.conf
+COPY docker/api/nginx.conf /etc/nginx/nginx.conf
+COPY docker/api/nginx-app.conf /etc/nginx/conf.d/
+COPY docker/api/supervisor-app.conf /etc/supervisord.conf
 
 # add (the rest of) our code
 COPY openapi ${CODE_DIR}/openapi
 
 
 # add docker files
-COPY docker/uwsgi_params ${CODE_DIR}/uwsgi_params
-COPY docker/uwsgi.ini ${CODE_DIR}/uwsgi.ini
+COPY docker/api/uwsgi_params ${CODE_DIR}/uwsgi_params
+COPY docker/api/uwsgi.ini ${CODE_DIR}/uwsgi.ini
 
 # Collect static files and media
 RUN python3 ${CODE_DIR}/openapi/manage.py collectstatic --no-input

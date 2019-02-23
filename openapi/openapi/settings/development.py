@@ -3,11 +3,11 @@ from corsheaders.defaults import default_headers
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*',]
 
 INSTALLED_APPS += ['corsheaders']
 
-MIDDLEWARE += ['corsheaders.middleware.CorsMiddleware']
+MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware'] + MIDDLEWARE
 
 CORS_ALLOW_HEADERS = default_headers + (
     'Cache-Control',
