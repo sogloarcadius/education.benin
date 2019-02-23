@@ -1,7 +1,7 @@
 django
 Markdown==2.6.11
 django-filter
-djangorestframework
+djangorestframework==3.9.1
 django-rest-swagger
 PyYaml
 django-cors-headers
