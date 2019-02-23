@@ -1,2 +1,2 @@
 
-from openapi.settings.production import *
+from .production import *

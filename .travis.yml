@@ -1,0 +1,48 @@
+dist: trusty
+language: node_js
+node_js:
+  - "lts/*"
+install: true
+script:
+    - cd docs
+    - npm install
+    - npm run docs:build
+deploy:
+  provider: pages
+  local-dir: docs/content/.vuepress/dist
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
+
+
+
+##################
+# Push from my PC
+##################
+# #!/usr/bin/env sh
+
+# # abort on errors
+# set -e
+
+# # build
+# npm run docs:build
+
+# # navigate into the build output directory
+# cd content/.vuepress/dist
+
+# # if you are deploying to a custom domain
+# # echo 'www.example.com' > CNAME
+
+# git init
+# git add -A
+# git commit -m 'deploy'
+
+# # if you are deploying to https://<USERNAME>.github.io
+# # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# # if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:sogloarcadius/education.benin.git master:gh-pages
+
+# cd -
