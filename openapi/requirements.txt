@@ -1,6 +1,6 @@
 django
 Markdown==2.6.11
-django-filter
+django-filter==2.1.0
 djangorestframework
 django-rest-swagger
 PyYaml
