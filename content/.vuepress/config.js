@@ -1,7 +1,7 @@
 module.exports = {
-    title: 'edubenin.bj',
+    title: 'edubenin.github.io/docs/',
     description: "Documentation",
-    base: '/edubenin/',
+    base: '/docs/',
     themeConfig: {
       sidebar: 'auto',
       displayAllHeaders: true,
