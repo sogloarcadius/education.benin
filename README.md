@@ -1,7 +1,6 @@
-# education.benin
+## Documentation
 
-* Le site de référence sur l'éducation et l'emploi au Bénin.
+## Contributors
 
-* API ouvert à tous pour recupérer des données sur le Bénin.
-
+Arcadius SOGLO
 
