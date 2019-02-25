@@ -1,12 +1,12 @@
 module.exports = {
     title: 'edubenin.bj',
     description: "Documentation",
-    base: '/education.benin/',
+    base: '/edubenin/',
     themeConfig: {
       sidebar: 'auto',
       displayAllHeaders: true,
       nav: [
-        { text: 'openapi', link: 'http://github.com/sogloarcadius/education.benin' },
+        { text: 'openapi', link: 'http://github.com/edubenin/openapi' },
         { text: 'contribution', link: '/contribution/' }
 
       ],
