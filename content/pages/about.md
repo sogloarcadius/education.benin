@@ -1,7 +1,3 @@
 
-Vuepress template
 
-
-
-
-
+* Vuepress template
