@@ -1,6 +1,6 @@
 ## Edubenin Documentation
 
-[https://edubenin.github.io/docs/](https://edubenin.github.io/docs/)
+[https://sogloarcadius.github.io/edubenin_docs/](https://sogloarcadius.github.io/edubenin_docs/)
 
 ## Contributors
 
