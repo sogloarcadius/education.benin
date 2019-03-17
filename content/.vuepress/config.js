@@ -1,12 +1,12 @@
 module.exports = {
-    title: 'edubenin.github.io/docs/',
+    title: 'sogloarcadius.github.io/edubenin_docs/',
     description: "Documentation",
-    base: '/docs/',
+    base: '/edubenin_docs/',
     themeConfig: {
       sidebar: 'auto',
       displayAllHeaders: true,
       nav: [
-        { text: 'openapi', link: 'http://github.com/edubenin/openapi' },
+        { text: 'openapi', link: 'http://github.com/sogloarcadius/edubenin_openapi' },
         { text: 'contribution', link: '/contribution/' }
 
       ],
