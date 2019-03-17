@@ -4,7 +4,7 @@ Deploy a vuepress application on github using travis-ci
 
 ## Contributors
 
-Arcadius SOGLO
+* Arcadius SOGLO
 
 ## Licence
 
