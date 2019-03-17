@@ -4,6 +4,3 @@ actionText: Contribution
 actionLink: /contribution/
 footer: "MIT Licence"
 ---
-
-
-

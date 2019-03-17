@@ -1,12 +1,12 @@
 module.exports = {
-    title: 'sogloarcadius.github.io/edubenin_docs/',
-    description: "Documentation",
-    base: '/edubenin_docs/',
+    title: 'vuepress',
+    description: "vuepress",
+    base: '/vuepress/',
     themeConfig: {
       sidebar: 'auto',
       displayAllHeaders: true,
       nav: [
-        { text: 'openapi', link: 'http://github.com/sogloarcadius/edubenin_openapi' },
+        { text: 'github', link: 'http://github.com/sogloarcadius/vuepress/' },
         { text: 'contribution', link: '/contribution/' }
 
       ],
