@@ -1,4 +1,4 @@
-## Vuepress
+## Maintenance Page using Vuepress
 
 Deploy a vuepress application on github using travis-ci
 
