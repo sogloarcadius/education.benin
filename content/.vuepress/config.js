@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Maintenance Page',
     description: "Down for maintenance",
-    base: '/sogloarcadius.maintenance/',
+    base: '/portfolio.offline/',
     themeConfig: {
       sidebar: 'auto',
       displayAllHeaders: true,

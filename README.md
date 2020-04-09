@@ -1,11 +1,10 @@
-## Maintenance Page using Vuepress
+## Portfolio Offline
 
-Deploy a vuepress application on github using travis-ci
+Maintenance Page for Online Website.
 
-## Contributors
+Deployment of a vuepress application on github using travis-ci.
+
+## Author
 
 * Arcadius SOGLO
 
-## Licence
-
-CC BY-NC-ND
