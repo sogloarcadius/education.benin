@@ -1,5 +1,5 @@
 module.exports = {
-    title: '',
+    title: ' ',
     description: "Maintenance Page",
     base: '/portfolio.offline/',
     themeConfig: {
