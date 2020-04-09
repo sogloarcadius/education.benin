@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Maintenance Page',
-    description: "Down for maintenance",
+    title: '',
+    description: "Maintenance Page",
     base: '/portfolio.offline/',
     themeConfig: {
       sidebar: 'auto',
